@@ -1,0 +1,8 @@
+---
+title: "STT 5812"
+author: "Alan Arnholt"
+date: "12/8/2015"
+output: html_document
+---
+
+## STT 5812 Homepage
