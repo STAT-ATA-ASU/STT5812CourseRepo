@@ -28,6 +28,7 @@ output: html_document
 * [*Advanced R Development* by Hadley Wickham](http://adv-r.had.co.nz/)
 * [Free Code School intro R Course](https://www.codeschool.com/courses/try-r)
 * [swirl](swirlstat.com) "swirl teaches you R programming and data science interactively, at your own pace, and right in the R console"
+* [_R Packages_ by Hadley Wickham](http://r-pkgs.had.co.nz/)
 
 ## RStudio Cheatsheets
 * [Cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
@@ -86,6 +87,15 @@ output: html_document
 * [Free Code School Intro to Git](https://www.codeschool.com/courses/try-git)
 * [Pro Git Book](http://git-scm.com/book)
 * [Try Git on GitHub](http://try.github.io/levels/1/challenges/1)
+* [Phillip Guo's Basic Git and Github tutorials (Three tutorials about 10 minutes each)](http://www.pgbovine.net/git-tutorial.htm)
+* [Clone a GitHub Repo with RStudio (Video)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)
+* [Clone a GitHub Repo with RStudio (Slides)](https://github.com/alanarnholt/Homework-Examples/blob/master/Slides/ForkCloneRStudio.pdf)
+
+## Using Unix Like Commands
+* [Play Terminus to learn basics of the shell](http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)
+* [Phillip Guo's Unix-like command line tutorials (Four tutorials about 10 minutes each)](http://www.pgbovine.net/command-line-tutorial.htm)
+* [Michael Stonebank's Unix Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
+
 
 ## Other Interesting Stuff
 * [R-bloggers](http://r-bloggers.com)
