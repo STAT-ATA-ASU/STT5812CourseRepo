@@ -5,7 +5,7 @@ date: "Spring 2016"
 output: html_document
 ---
 
-**Instructor:**  Dr. Alan T. Arnholt    
+**Instructor:**  Dr. Alan T. Arnholt  
 **Office:** Walker Hall 340      
 **Office Hours:** 4:15-5:45 Tuesday, 4:15-5:45 Thursday, 8:30-10:00 Friday
 
