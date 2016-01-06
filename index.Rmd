@@ -8,7 +8,7 @@ output: html_document
 
 * The course syllabus is stored in the `Syllabus` directory of the STT 5812 repository.
 
-* Questions related to ISCAM III materials should be addressed with the [piazza account for STT 5812](https://piazza.com/class/ida59td3ddq3zi).
+* Questions related to ISCAM III materials should be addressed with the [piazza account for STT 5812](https://piazza.com/class/ij30sna9alj1pq).
 
 
 # Resources you may find helpful
