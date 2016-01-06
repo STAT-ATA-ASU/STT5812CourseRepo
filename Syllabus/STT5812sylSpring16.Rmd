@@ -11,7 +11,7 @@ output: html_document
 
 Make an appointment to see me by clicking https://arnholtat.youcanbook.me/.
 
-Questions related to the class should be addressed with the [piazza account for STT 5812](https://piazza.com/class/ida59td3ddq3zi).
+Questions related to the class should be addressed with the [piazza account for STT 5812](https://piazza.com/class/ij30sna9alj1pq).
 
 
 **Course Description:**  
