@@ -30,12 +30,15 @@ output: html_document
 * [swirl](swirlstat.com) "swirl teaches you R programming and data science interactively, at your own pace, and right in the R console"
 * [_R Packages_ by Hadley Wickham](http://r-pkgs.had.co.nz/)
 
-## RStudio Cheatsheets
-* [Cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
-* [Data Visualization](https://www.rstudio.com/wp-content/uploads/2015/08/ggplot2-cheatsheet.pdf)
-* [Data Wrangling](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
-* [R markdown](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
-* [R markdown reference](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+## [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
+
+* RStudio IDE Cheat Sheet
+* Shiny Cheat Sheet
+* Data Visualization Cheat Sheet
+* Package Development Cheat Sheet
+* Data Wrangling Cheat Sheet
+* R Markdown Cheat Sheet
+* R Markdown Reference Guide
 
 ## Graphics
 
@@ -45,6 +48,7 @@ output: html_document
 * [Cookbook for R](http://www.cookbook-r.com/Graphs/)
 * [Lattice: Multivariate Data Visualization with R - Figures and code](http://lmdvr.r-forge.r-project.org/figures/figures.html)
 * [Graph Catalog `ggplot2`](http://shinyapps.stat.ubc.ca/r-graph-catalog/)
+* [The Grammar and Graphics of Data Science (Video)](https://www.rstudio.com/resources/webinars/the-grammar-and-graphics-of-data-science/) (58:50)
 
 ## Using `dplyr`
 
@@ -58,12 +62,14 @@ output: html_document
 * [`knitr` Package Development on GitHub](https://github.com/yihui/knitr)
 * [*Reproducible Research with* R/RStudio Development on GitHub](https://github.com/christophergandrud/Rep-Res-Book)
 * [CRAN views of Reproducible Analysis](http://cran.r-project.org/web/views/ReproducibleResearch.html)
+* [Reproducible Reporting (Video)](https://www.rstudio.com/resources/webinars/reproducible-reporting/) (58:03)
 
 ## Markdown
-* [Using RMarkdown](https://support.rstudio.com/hc/en-us/sections/200149716-R-Markdown)
+* [Using R Markdown](https://support.rstudio.com/hc/en-us/sections/200149716-R-Markdown)
 * [Markdown](http://daringfireball.net/projects/markdown/)
 * [Getting started with R Markdown Blog](http://jeromyanglim.blogspot.com.au/2012/05/getting-started-with-r-markdown-knitr.html)
-* [RMarkdown V2](http://rmarkdown.rstudio.com)
+* [R Markdown V2](http://rmarkdown.rstudio.com)
+* [Getting started with R Markdown (Video)](https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/) (1:02:44)
   
 ## LaTeX  
 
@@ -88,8 +94,9 @@ output: html_document
 * [Pro Git Book](http://git-scm.com/book)
 * [Try Git on GitHub](http://try.github.io/levels/1/challenges/1)
 * [Phillip Guo's Basic Git and Github tutorials (Three tutorials about 10 minutes each)](http://www.pgbovine.net/git-tutorial.htm)
-* [Clone a GitHub Repo with RStudio (Video)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)
+* [Clone a GitHub Repo with RStudio (Video)](https://www.youtube.com/watch?v=YxZ8J2rqhEM) (5:05)
 * [Clone a GitHub Repo with RStudio (Slides)](https://github.com/alanarnholt/Homework-Examples/blob/master/Slides/ForkCloneRStudio.pdf)
+* [Collaboration and time travel: version control with git, github and RStudio (Video)](https://www.rstudio.com/resources/webinars/collaboration-and-time-travel-version-control-with-git-github-and-rstudio/) (48:56)
 
 ## Using Unix Like Commands
 * [Play Terminus to learn basics of the shell](http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)
