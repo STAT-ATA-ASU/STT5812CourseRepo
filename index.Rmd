@@ -5,7 +5,7 @@ date: '`r Sys.Date()`'
 output: html_document
 ---
 
-# STT 5812 Homepage
+# STT 5812 Homepage - Dude
 
 
 * The course syllabus is stored in the `Syllabus` directory of this repository.
