@@ -1,0 +1,71 @@
+---
+title: "STT 5812 Syllabus - Spring 2016"
+author: ''
+date: "Spring 2016"
+output: html_document
+---
+
+**Instructor:**  Dr. Alan T. Arnholt  
+**Office:** Walker Hall 340      
+**Office Hours:** 4:15-5:45 Tuesday, 4:15-5:45 Thursday, 8:30-10:00 Friday
+
+Make an appointment to see me by clicking https://arnholtat.youcanbook.me/.
+
+Questions related to the class should be addressed with the [piazza account for STT 5812](https://piazza.com/class/ij30sna9alj1pq).
+
+
+**Course Description:**  
+
+This course is a continuation of STT 5811 which introduces students at the post-calculus level to statistical concepts, applications, and theory. Topics include: comparisons with categorical and numerical data, statistical significance, sampling and sampling distributions, and randomized experiments. Statistical concepts will be developed through simulations, and applications will focus on statistical problem-solving.  
+
+**Course Objectives:**
+
+1.  Students will use a reproducible research work flow.
+2.  Students will improve their technology expertise.
+3.  Students will learn how to construct and test hypotheses using both classical and randomization approaches.
+4.  Students will learn how to construct confidence intervals using both classical and bootstrap approaches.
+5.  Students will learn how to generate random and simple random samples and their relationships to permutation and bootstrap distributions.
+6.  Students will learn how to work with named sampling distributions (*t*, *F*, binomial, chi-square, hypergeometric, and normal).
+7.  Students will learn the scope of inferential conclusions for numerous scenarios (experiments, observational studies, etc.). 
+
+
+**Course Text:**
+
+[_Investigating Statistical Concepts, Applications, and Methods, Third Edition_ (ISCAMIII)](http://www.rossmanchance.com/iscam3/) by Beth L. Chance and Allan J. Rossman
+
+**Optional Reference:**
+
+[_Reproducible Research with R and RStudio, Second Edition_](https://github.com/christophergandrud/Rep-Res-Book) by Christopher Gandrud
+
+
+**Course Grading:**
+
+* There will be a midterm and final exam which will each count for 25% of the course grade.
+* 50% of the course grade will come from quizzes.
+
+
+**How To Get Unstuck**
+
+If you have a course related question, please ask your question on [piazza](https://piazza.com/class/ij30sna9alj1pq).  Your classmates may have the same question or may answer your question before I can provide an answer.  Well constructed questions will elicit answers more rapidly than poorly constructed questions.  This [video](https://www.youtube.com/watch?v=ZFaWxxzouCY&list=PLjTlxb-wKvXNSDfcKPFH2gzHGyjpeCZmJ&index=3) provides some background on asking questions.  This stackoverflow thread details how to create a [minimal R reproducible example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example/5963610#5963610). Please read [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) by Eric Raymond and Rick Moen and heed their advice.
+
+**University Policies**
+
+This course conforms with all Appalachian State University policies with respect to academic integrity, disability services, and class attendance.  The details of the policies may be found at <http://academicaffairs.appstate.edu/resources/syllabi>.
+
+
+**Computers and Software**
+
+This course will use the RStudio server  (https://mathr.math.appstate.edu/) that has the programs listed below and more installed.
+
+* [R](http://cran.r-project.org) 
+* [Git](http://git-scm.com/downloads) 
+* [RStudio](http://www.rstudio.com/products/rstudio/download/)
+* [LaTeX](http://www.ctan.org/starter)
+
+You must have an active internet connection and be registered in the course to access the server. To access the server, point any web browser to <https://mathr.math.appstate.edu/>.  You will need to acknowledge the connection is unsecure and possibly add a security exception to your web browser. Use your Appstate Username and Password to access the server.  A screen shot of the RStudio server is shown below.
+
+![LogIn](RStudioLogIn.png)
+
+If you have problems with your Appstate Username or Password visit [IT Support Services](http://support.appstate.edu/) or call 262-6266.  
+
+
