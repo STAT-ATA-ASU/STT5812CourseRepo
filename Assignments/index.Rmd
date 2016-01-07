@@ -1,0 +1,123 @@
+---
+title: "Assignments STT 5812"
+author: "Alan Arnholt"
+date: 'Last Updated on: `r Sys.Date()`'
+output: html_document
+---
+
+**Jan 12:**
+
+* Go over syllabus.
+
+* In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
+
+* Most will have completed what follows in STT 5811.  
+
+* Sign-up for free accounts on [GitHub](https://github.com) and [Rpubs](https://rpubs.com).
+
+* When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **first_name_last_name** as your username when you register with GitHub.  For example, my username on GitHub is *alanarnholt*. If you have a popular name such as John Smith, you may need to provide some other distinquishing characteristic in your username.  Please use the same **username** for your account on Rpubs. 
+
+* Once you have a GitHub account, send an email to arnholtat@appstate.edu with a Subject line of **STT5812 - GitHub Username**, and tell me in the body of your email your first name, last name, and your GitHub username.  I will then manually add you as a team member to the repository in the STAT-ATA-ASU organization that has your name (**Last_name-First_name**).  This repository will be where you store all of your work for this course.  I will also change your repository to a private repository.
+
+* Watch this [video](https://www.youtube.com/watch?v=ZFaWxxzouCY&list=PLjTlxb-wKvXNSDfcKPFH2gzHGyjpeCZmJ&index=3) which provides some background on asking questions.  This stackoverflow thread details how to create a [minimal R reproducible example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example/5963610#5963610). Please read [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) by Eric Raymond and Rick Moen and heed their advice.
+
+**Jan 14:**
+
+* In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
+
+Watch the following Videos:
+
+* [Phillip Guo's Basic Git and Github tutorials (Three tutorials about 10 minutes each)](http://www.pgbovine.net/git-tutorial.htm)
+* [Clone a GitHub Repo with RStudio (Video)](https://www.youtube.com/watch?v=YxZ8J2rqhEM) (5:05)
+* [Phillip Guo's Unix-like command line tutorials (Four tutorials about 10 minutes each)](http://www.pgbovine.net/command-line-tutorial.htm)
+
+* Become familiar with the Appstate [RStudio server](https://mathr.math.appstate.edu/). You will use your Appstate user name and password to log in to the server.  You must be registered in the class to access the server.
+
+* Follow the directions from [Jenny Bryan's STAT 545](https://stat545-ubc.github.io/git00_index.html) to [Introduce yourself to Git](https://stat545-ubc.github.io/git04_introduce-self-to-git.html), [Make sure you can communicate with GitHub](https://stat545-ubc.github.io/git05_github-connection.html), [Test drive RStudio and GitHub](https://stat545-ubc.github.io/git07_git-github-rstudio.html), and [Cache your GitHub credentials](https://stat545-ubc.github.io/git06_credential-caching.html).
+
+* Start Investigation 3.1: Teen hearing loss (cont.)
+
+
+**Jan 19:**
+
+* Finish Investigation 3.1: Teen hearing loss (cont.)
+* Start Investigation 3.2: Nightlights and near-sightedness
+
+**Jan 21:**
+
+* Finish Investigation 3.2: Nightlights and near-sightedness
+* Start Investigation 3.3: Handwriting and SAT scores
+
+**Jan 26:**
+
+* Finish Investigation 3.3: Handwriting and SAT scores
+* Start Investigation 3.4: Have a nice trip - Random assignment, scope of conclusions
+
+**Jan 28:**
+
+* Finish Investigation 3.4: Have a nice trip - Random assignment, scope of conclusions
+* Start Investigation 3.5: Boxtos for back pain - Designing experiments
+
+**Feb 2:**
+
+* Finish Investigation 3.5: Boxtos for back pain - Designing experiments
+* Start Investigation 3.6: Dolphin therapy - Randomization test
+
+**Feb 4:**
+
+* Finish Investigation 3.6: Dolphin therapy - Randomization test
+* Start Investigation 3.7: Is yawning contagious? Fisher's exact test
+
+**Feb 9:**
+
+* Finish Investigation 3.7: Is yawning contagious? Fisher's exact test
+* Start Investigation 3.8: CPR vs chest compressions - $z$-procedures
+
+**Feb 11:**
+
+* Finish Investigation 3.8: CPR vs chest compressions - $z$-procedures
+* Start Investigation 4.1: Employment discrimination
+
+**Feb 16:**
+
+**Feb 18:**
+
+**Feb 23:**
+
+**Feb 25:**
+
+**Mar 1:**
+
+**Mar 3:**
+
+**~~Mar 7 - Mar 11~~ **No Class - Spring Break**
+
+**Mar 15:**
+
+**Mar 17:**
+
+**Mar 22:**
+
+**Mar 24:**
+
+**~~Mar 29~~ No Class**
+
+**Mar 31:**
+
+**Apr 5:**
+
+**Apr 7:**
+
+**Apr 12:**
+
+**Apr 14:**
+
+**Apr 19:**
+
+**Apr 21:**
+
+**Apr 26:**
+
+**Apr 28:**
+
+**May 3:**
