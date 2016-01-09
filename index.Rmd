@@ -15,9 +15,11 @@ output:
 
 * Questions related to ISCAM III materials should be addressed with the [piazza account for STT 5812](https://piazza.com/class/ij30sna9alj1pq).
 
-* [`Flow Control`](../STT3851Spring2016/Rmarkdown/FlowControl.html)
+* [Class RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server)
 
-* [`The Bootstrap`](../STT3851Spring2016/Rmarkdown/TheBootstrap.html)
+* [Flow Control](../STT3851Spring2016/Rmarkdown/FlowControl.html)
+
+* [The Bootstrap](../STT3851Spring2016/Rmarkdown/TheBootstrap.html)
 
 
 # Resources you may find helpful
@@ -59,7 +61,7 @@ output:
 * [Graph Catalog `ggplot2`](http://shinyapps.stat.ubc.ca/r-graph-catalog/)
 * [The Grammar and Graphics of Data Science (Video)](https://www.rstudio.com/resources/webinars/the-grammar-and-graphics-of-data-science/) (58:50)
 
-## Using `dplyr`
+## Using [`dplyr`](https://cran.r-project.org/web/packages/dplyr/index.html)
 
 * [`dplyr` video1-tutorial](http://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)
 * [`dplyr` video2-tutorial](http://www.dataschool.io/dplyr-tutorial-part-2/)
