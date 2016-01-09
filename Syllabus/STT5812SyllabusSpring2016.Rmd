@@ -36,9 +36,11 @@ This course is a continuation of STT 5811 which introduces students at the post-
 
 [_Investigating Statistical Concepts, Applications, and Methods, Third Edition_ (ISCAMIII)](http://www.rossmanchance.com/iscam3/) by Beth L. Chance and Allan J. Rossman
 
-**Optional Reference:**
+**Optional References:**
 
 [_Reproducible Research with R and RStudio, Second Edition_](https://github.com/christophergandrud/Rep-Res-Book) by Christopher Gandrud
+
+[_R Graphics Cookbook_](http://www.amazon.com/R-Graphics-Cookbook-Winston-Chang/dp/1449316956) by Winston Chang - Available via `SafariBooksOnline` through the Appalachian State University [library](http://library.appstate.edu/). 
 
 
 **Course Grading:**
