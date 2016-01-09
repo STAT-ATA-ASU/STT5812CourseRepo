@@ -12,6 +12,8 @@ output: html_document
 
 * Questions related to ISCAM III materials should be addressed with the [piazza account for STT 5812](https://piazza.com/class/ij30sna9alj1pq).
 
+* [`Flow Control`](../STT3851Spring2016/Rmarkdown/TheBootstrap.html)
+
 
 # Resources you may find helpful
 
