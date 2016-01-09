@@ -2,7 +2,10 @@
 title: "STT 5812 Syllabus - Spring 2016"
 author: ''
 date: "Spring 2016"
-output: html_document
+output: 
+  html_document: 
+    highlight: textmate
+    theme: readable
 ---
 
 **Instructor:**  Dr. Alan T. Arnholt  

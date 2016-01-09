@@ -2,7 +2,10 @@
 title: "Assignments STT 5812"
 author: "Alan Arnholt"
 date: 'Last Updated on: `r Sys.Date()`'
-output: html_document
+output: 
+  html_document: 
+    highlight: textmate
+    theme: readable
 ---
 
 **Jan 12:**
