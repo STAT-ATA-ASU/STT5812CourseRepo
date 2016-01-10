@@ -1,7 +1,7 @@
 ---
 title: "STT 5812 Syllabus - Spring 2016"
 author: ''
-date: "Spring 2016"
+date: ''
 output: 
   html_document: 
     highlight: textmate
@@ -46,8 +46,9 @@ This course is a continuation of STT 5811 which introduces students at the post-
 **Course Grading:**
 
 * There will be a midterm and final exam which will each count for 25% of the course grade.
-* 50% of the course grade will come from quizzes.
-
+* 40% of the course grade will come from quizzes.
+* 10% of the course grade will come from participation (attendance, participation in discussion in-class and/or online).
+* Up to 10 points may be added to your final course average for an excellent compilation of all homework assignments and class notes in a single hyperlinked *.html document.  
 
 **How To Get Unstuck**
 
