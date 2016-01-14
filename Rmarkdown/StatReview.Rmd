@@ -1,0 +1,117 @@
+---
+title: "Statistics Review"
+author: "Alan Arnholt"
+date: 'Last Updated on: `r Sys.Date()`'
+output: 
+  html_document: 
+    highlight: textmate
+    theme: readable
+---
+
+
+Notation: $X \sim N(\mu_X, \sigma_X)$ and $Y \sim N(\mu_Y, \sigma_Y)$
+
+```{r}
+# Standard Nomal
+curve(dnorm(x), -3.5, 3.5)
+```
+
+## Z-score
+
+$Z = \frac{\text{stat} - \mu_{\text{stat}}}{\sigma_{\text{stat}}} \sim N(0, 1)$
+
+Suppose $n = 1$ and $X \sim N(100, 10) \rightarrow \bar{X} \sim N(100, 10)$.
+
+## Normal distribution
+
+$f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{\frac{-(x - \mu)^2}{2\sigma^2}}$
+
+Given $X \sim(100, 10)$, find $P(X \geq 120)$.
+
+```{r}
+MU <- 100
+SIG <- 10
+f <- function(x){(1/(sqrt(2*pi*SIG^2)))*exp(-(x - MU)^2/(2*SIG^2))}
+integrate(f, 120, Inf)
+ans <- integrate(f, 120, Inf)$value
+```
+
+The $P(X \geq 120) = \int_{120}^{\infty}f(x)\,dx = `r ans`.$
+
+```{r}
+# Using pnorm
+pnorm(120, 100, 10, lower = FALSE)
+```
+
+```{r message = FALSE, warning = FALSE, fig.align = "center"}
+library(PASWR2)
+summary(CALCULUS)
+library(ggplot2)
+ggplot(data = CALCULUS, aes(sample = score, color = calculus)) + 
+  geom_qq() + 
+  theme_bw()
+```
+
+Assume $\sigma_X = 5$ and $\sigma_Y=12$.
+
+```{r fig.align = "center"}
+tapply(CALCULUS$score, CALCULUS$calculus, mean)
+# sigX = 5, sigY = 12
+X <- CALCULUS$score[CALCULUS$calculus == "Yes"]
+Y <- CALCULUS$score[CALCULUS$calculus == "No"]
+Zobs <- (mean(X) - mean(Y) -(0)) / (sqrt(25/18 + 144/18))
+Zobs
+# Or using z.test() from PASWR2
+z.test(x = X, sigma.x = 5, y = Y, sigma.y = 12, mu = 0, alternative = "greater")
+# T-test now
+SX <- sd(X)
+SY <- sd(Y)
+t.test(X, Y, alternative = "greater")
+# 
+t.test(score ~ calculus, data = CALCULUS, alternative = "less")
+#
+# Draw t_{20.585}
+curve(dt(x, 20.585), from = -4, to = 4, n = 500, col = "blue")
+curve(dt(x, 2), from = -4, to = 4, n = 500, col = "purple", add = TRUE)
+curve(dnorm(x), from = -4, to = 4, n = 500, col = "pink", add = TRUE)
+
+#### Randomization test
+
+#### Distribute Cards and go through example before this code
+####
+obsDIFF <- diff(tapply(CALCULUS$score, CALCULUS$calculus, mean))
+obsDIFF
+R <- 10000
+TS <- numeric(R)
+set.seed(123)
+for(i in 1:R){
+  index <- sample(length(CALCULUS$score), 18, replace = FALSE)
+  TS[i] <- mean(CALCULUS$score[index]) - mean(CALCULUS$score[-index])
+}
+pvalue <- (sum(TS >= obsDIFF) + 1)/(R + 1)
+pvalue
+# Another approach using the standardized t
+obsDIFF <- t.test(score ~ calculus, data = CALCULUS, alternative = "less")$stat
+obsDIFF
+R <- 10000
+TS <- numeric(R)
+set.seed(123)
+for(i in 1:R){
+  TS[i] <- t.test(score ~ sample(calculus), data = CALCULUS, alternative = "less")$stat
+}
+pvalue <- (sum(TS <= obsDIFF) + 1)/(R + 1)
+pvalue
+#### What about a Confidence Interval --- Bootstrap
+#### Key concept sample with replacement!
+R <- 10000
+TS <- numeric(R)
+set.seed(123)
+for(i in 1:R){
+  xbar1 <- mean(sample(X, 18, replace = TRUE))
+  xbar2 <- mean(sample(Y, 18, replace = TRUE))
+  TS[i] <- xbar1 - xbar2
+}
+hist(TS, breaks = "Scott")
+CI <- quantile(TS, probs = c(0.025, 0.975))  # 95% Percentile Boostrap CI
+CI 
+```
