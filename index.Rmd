@@ -21,6 +21,8 @@ output:
 
 * [The Bootstrap](../STT3851Spring2016/Rmarkdown/TheBootstrap.html)
 
+* [JSE Data Archive](http://www.amstat.org/publications/jse/jse_data_archive.htm)
+
 
 # Resources you may find helpful
 
