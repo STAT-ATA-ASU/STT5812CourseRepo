@@ -45,6 +45,7 @@ Watch the following Videos:
 
 **Jan 19:**
 
+* * In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
 * Finish Investigation 3.1: Teen hearing loss (cont.)
 * Start Investigation 3.2: Nightlights and near-sightedness
 
