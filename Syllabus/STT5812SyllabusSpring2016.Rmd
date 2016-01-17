@@ -81,4 +81,4 @@ You must have an active internet connection and be registered in the course to a
 
 If you have problems with your Appstate Username or Password visit [IT Support Services](http://support.appstate.edu/) or call 262-6266.  
 
-
+#[Home Page](http://stat-ata-asu.github.io/STT5812Spring2016/)

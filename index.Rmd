@@ -27,10 +27,10 @@ output:
 
 ## Resources you may find helpful
 
-## John Chambers recounts the history of S and R
+### John Chambers recounts the history of S and R
 [John Chambers recounts the history of S and R](http://blog.revolutionanalytics.com/2014/01/john-chambers-recounts-the-history-of-s-and-r.html)
 
-## R
+### R
 * [R homepage](http://www.r-project.org/)
 * [Download R](http://cran.r-project.org/)
 * [RStudio (IDE)](http://rstudio.org/)
@@ -44,7 +44,7 @@ output:
 * [swirl](swirlstat.com) "swirl teaches you R programming and data science interactively, at your own pace, and right in the R console"
 * [_R Packages_ by Hadley Wickham](http://r-pkgs.had.co.nz/)
 
-## [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
+### [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
 
 * RStudio IDE Cheat Sheet
 * Shiny Cheat Sheet
@@ -54,7 +54,7 @@ output:
 * R Markdown Cheat Sheet
 * R Markdown Reference Guide
 
-## Graphics
+### Graphics
 
 * [`ggplot2` documentation](http://docs.ggplot2.org/current/)
 * [`ggplot2` Main Page](http://ggplot2.org/)
@@ -64,13 +64,13 @@ output:
 * [Graph Catalog `ggplot2`](http://shinyapps.stat.ubc.ca/r-graph-catalog/)
 * [The Grammar and Graphics of Data Science (Video)](https://www.rstudio.com/resources/webinars/the-grammar-and-graphics-of-data-science/) (58:50)
 
-## Using [`dplyr`](https://cran.r-project.org/web/packages/dplyr/index.html)
+### Using [`dplyr`](https://cran.r-project.org/web/packages/dplyr/index.html)
 
 * [`dplyr` video1-tutorial](http://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)
 * [`dplyr` video2-tutorial](http://www.dataschool.io/dplyr-tutorial-part-2/)
 
 
-## Reproducible Analysis
+### Reproducible Analysis
 
 * [`knitr` Homepage](http://yihui.name/knitr/)
 * [`knitr` Package Development on GitHub](https://github.com/yihui/knitr)
@@ -78,14 +78,14 @@ output:
 * [CRAN views of Reproducible Analysis](http://cran.r-project.org/web/views/ReproducibleResearch.html)
 * [Reproducible Reporting (Video)](https://www.rstudio.com/resources/webinars/reproducible-reporting/) (58:03)
 
-## Markdown
+### Markdown
 * [Using R Markdown](https://support.rstudio.com/hc/en-us/sections/200149716-R-Markdown)
 * [Markdown](http://daringfireball.net/projects/markdown/)
 * [Getting started with R Markdown Blog](http://jeromyanglim.blogspot.com.au/2012/05/getting-started-with-r-markdown-knitr.html)
 * [R Markdown V2](http://rmarkdown.rstudio.com)
 * [Getting started with R Markdown (Video)](https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/) (1:02:44)
   
-## LaTeX  
+### LaTeX  
 
 * [Download LaTeX for Macs (TeXLive)](http://tug.org/mactex/)
 * [Download LaTeX for Windows (MikTeX)](http://miktex.org/)
@@ -94,11 +94,11 @@ output:
 * [LaTeX Wikipedia](http://en.wikipedia.org/wiki/LaTeX) 
 * [Clever help finding LaTeX symbols](http://detexify.kirelabs.org/classify.html)
 
-## Creating Slides with R
+### Creating Slides with R
 * [R Presentations](https://support.rstudio.com/hc/en-us/sections/200130218-R-Presentations)
 * [Slidify](http://slidify.org/index.html)
 
-## Git
+### Git
 * [Download Git](http://git-scm.com)
 * [GitHub Help Page](https://help.github.com/)
 * [Git Tutorials (bitbucket)](https://www.atlassian.com/git/tutorial)
@@ -112,11 +112,11 @@ output:
 * [Clone a GitHub Repo with RStudio (Slides)](https://github.com/alanarnholt/Homework-Examples/blob/master/Slides/ForkCloneRStudio.pdf)
 * [Collaboration and time travel: version control with git, github and RStudio (Video)](https://www.rstudio.com/resources/webinars/collaboration-and-time-travel-version-control-with-git-github-and-rstudio/) (48:56)
 
-## Using Unix Like Commands
+### Using Unix Like Commands
 * [Play Terminus to learn basics of the shell](http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)
 * [Phillip Guo's Unix-like command line tutorials (Four tutorials about 10 minutes each)](http://www.pgbovine.net/command-line-tutorial.htm)
 * [Michael Stonebank's Unix Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
 
 
-## Other Interesting Stuff
+### Other Interesting Stuff
 * [R-bloggers](http://r-bloggers.com)
