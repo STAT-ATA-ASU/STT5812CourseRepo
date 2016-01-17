@@ -4,7 +4,7 @@ author: "Alan Arnholt"
 date: 'Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`'
 output:
   html_document:
-    css: alans.css
+    css: asu.css
     highlight: textmate
     theme: readable
 ---

@@ -4,7 +4,7 @@ author: ""
 date: 'Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`'
 output:
   html_document:
-    css: alans.css
+    css: asu.css
     highlight: textmate
     theme: readable
 ---
@@ -25,7 +25,7 @@ output:
 * [JSE Data Archive](http://www.amstat.org/publications/jse/jse_data_archive.htm)
 
 
-# Resources you may find helpful
+## Resources you may find helpful
 
 ## John Chambers recounts the history of S and R
 [John Chambers recounts the history of S and R](http://blog.revolutionanalytics.com/2014/01/john-chambers-recounts-the-history-of-s-and-r.html)
