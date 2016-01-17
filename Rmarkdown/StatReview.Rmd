@@ -2,8 +2,9 @@
 title: "Statistics Review"
 author: "Alan Arnholt"
 date: 'Last Updated on: `r Sys.Date()`'
-output: 
-  html_document: 
+output:
+  html_document:
+    css: alans.css
     highlight: textmate
     theme: readable
 ---
@@ -11,7 +12,7 @@ output:
 
 Notation: $X \sim N(\mu_X, \sigma_X)$ and $Y \sim N(\mu_Y, \sigma_Y)$
 
-```{r}
+```{r fig.align = "center"}
 # Standard Nomal
 curve(dnorm(x), -3.5, 3.5)
 ```
