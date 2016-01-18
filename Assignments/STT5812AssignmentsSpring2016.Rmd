@@ -41,17 +41,22 @@ Watch the following Videos:
 
 * Follow the directions from [Jenny Bryan's STAT 545](https://stat545-ubc.github.io/git00_index.html) to [Introduce yourself to Git](https://stat545-ubc.github.io/git04_introduce-self-to-git.html), [Make sure you can communicate with GitHub](https://stat545-ubc.github.io/git05_github-connection.html), [Test drive RStudio and GitHub](https://stat545-ubc.github.io/git07_git-github-rstudio.html), and [Cache your GitHub credentials](https://stat545-ubc.github.io/git06_credential-caching.html).
 
-* Start Investigation 3.1: Teen hearing loss (cont.)
-
 
 **Jan 19:**
 
-* * In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
-* Finish Investigation 3.1: Teen hearing loss (cont.)
-* Start Investigation 3.2: Nightlights and near-sightedness
+* In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
+
+* [Statistics Review](../../STT3851Spring2016/Rmarkdown/StatReview.html)
+
+
 
 **Jan 21:**
 
+
+
+* Start Investigation 3.1: Teen hearing loss (cont.)
+* Finish Investigation 3.1: Teen hearing loss (cont.)
+* Start Investigation 3.2: Nightlights and near-sightedness
 * Finish Investigation 3.2: Nightlights and near-sightedness
 * Start Investigation 3.3: Handwriting and SAT scores
 
