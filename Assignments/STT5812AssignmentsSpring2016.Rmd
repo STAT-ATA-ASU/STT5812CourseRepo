@@ -48,20 +48,26 @@ Watch the following Videos:
 
 * [Statistics Review](../../STT3851Spring2016/Rmarkdown/StatReview.html)
 
+* Update README file in private repository
+
+* Use an avatar or picture on your GitHub account
+
 
 
 **Jan 21:**
 
+* Quiz
+* Discuss JSE project
 
+----
+
+**Jan 26:**
 
 * Start Investigation 3.1: Teen hearing loss (cont.)
 * Finish Investigation 3.1: Teen hearing loss (cont.)
 * Start Investigation 3.2: Nightlights and near-sightedness
 * Finish Investigation 3.2: Nightlights and near-sightedness
 * Start Investigation 3.3: Handwriting and SAT scores
-
-**Jan 26:**
-
 * Finish Investigation 3.3: Handwriting and SAT scores
 * Start Investigation 3.4: Have a nice trip - Random assignment, scope of conclusions
 
