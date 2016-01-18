@@ -56,7 +56,12 @@ Watch the following Videos:
 
 **Jan 21:**
 
+* In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
+
+* [Statistics Review](../../STT3851Spring2016/Rmarkdown/StatReview.html)
+
 * Quiz
+
 * Discuss JSE project
 
 ----
