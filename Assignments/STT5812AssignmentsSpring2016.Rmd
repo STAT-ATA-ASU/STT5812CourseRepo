@@ -76,7 +76,7 @@ Watch the following Videos:
 
 **Feb 2:**
 
-* Reproduce [Modified Introduction to R](../Rmarkdown/LabChap2.html) up to but not including the _Additional Graphical and Numerical Summaries_ section.  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1750) no later than 5 pm Feb 5.
+* Reproduce [Modified Introduction to R](http://stat-ata-asu.github.io/STT3851Spring2016/Rmarkdown/LabChap2.html) up to but not including the _Additional Graphical and Numerical Summaries_ section.  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1750) no later than 5 pm Feb 5.
 
 **Feb 4:**
 
@@ -84,7 +84,7 @@ Watch the following Videos:
 
 **Feb 9:**
 
-* Reproduce [Modified Introduction to R](../Rmarkdown/LabChap2.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/) no later than 5 pm Feb 12.
+* Reproduce [Modified Introduction to R](http://stat-ata-asu.github.io/STT3851Spring2016/Rmarkdown/LabChap2.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/) no later than 5 pm Feb 12.
 
 
 
