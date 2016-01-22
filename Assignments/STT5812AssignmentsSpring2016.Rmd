@@ -68,38 +68,29 @@ Watch the following Videos:
 
 **Jan 26:**
 
-* Start Investigation 3.1: Teen hearing loss (cont.)
-* Finish Investigation 3.1: Teen hearing loss (cont.)
-* Start Investigation 3.2: Nightlights and near-sightedness
-* Finish Investigation 3.2: Nightlights and near-sightedness
-* Start Investigation 3.3: Handwriting and SAT scores
-* Finish Investigation 3.3: Handwriting and SAT scores
-* Start Investigation 3.4: Have a nice trip - Random assignment, scope of conclusions
+
 
 **Jan 28:**
 
-* Finish Investigation 3.4: Have a nice trip - Random assignment, scope of conclusions
-* Start Investigation 3.5: Boxtos for back pain - Designing experiments
+
 
 **Feb 2:**
 
-* Finish Investigation 3.5: Boxtos for back pain - Designing experiments
-* Start Investigation 3.6: Dolphin therapy - Randomization test
+* Reproduce [Modified Introduction to R](../Rmarkdown/LabChap2.html) up to but not including the _Additional Graphical and Numerical Summaries_ section.  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1750) no later than 5 pm Feb 5.
 
 **Feb 4:**
 
-* Finish Investigation 3.6: Dolphin therapy - Randomization test
-* Start Investigation 3.7: Is yawning contagious? Fisher's exact test
+
 
 **Feb 9:**
 
-* Finish Investigation 3.7: Is yawning contagious? Fisher's exact test
-* Start Investigation 3.8: CPR vs chest compressions - $z$-procedures
+* Reproduce [Modified Introduction to R](../Rmarkdown/LabChap2.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/) no later than 5 pm Feb 12.
+
+
 
 **Feb 11:**
 
-* Finish Investigation 3.8: CPR vs chest compressions - $z$-procedures
-* Start Investigation 4.1: Employment discrimination
+
 
 **Feb 16:**
 
@@ -144,5 +135,23 @@ Watch the following Videos:
 **Apr 28:**
 
 **May 3:**
+
+* Start Investigation 3.1: Teen hearing loss (cont.)
+* Finish Investigation 3.1: Teen hearing loss (cont.)
+* Start Investigation 3.2: Nightlights and near-sightedness
+* Finish Investigation 3.2: Nightlights and near-sightedness
+* Start Investigation 3.3: Handwriting and SAT scores
+* Finish Investigation 3.3: Handwriting and SAT scores
+* Start Investigation 3.4: Have a nice trip - Random assignment, scope of conclusions
+* Finish Investigation 3.4: Have a nice trip - Random assignment, scope of conclusions
+* Start Investigation 3.5: Boxtos for back pain - Designing experiments
+* Finish Investigation 3.5: Boxtos for back pain - Designing experiments
+* Start Investigation 3.6: Dolphin therapy - Randomization test
+* Finish Investigation 3.6: Dolphin therapy - Randomization test
+* Start Investigation 3.7: Is yawning contagious? Fisher's exact test
+* Finish Investigation 3.7: Is yawning contagious? Fisher's exact test
+* Start Investigation 3.8: CPR vs chest compressions - $z$-procedures
+* Finish Investigation 3.8: CPR vs chest compressions - $z$-procedures
+* Start Investigation 4.1: Employment discrimination
 
 #[Home Page](http://stat-ata-asu.github.io/STT5812Spring2016/)
