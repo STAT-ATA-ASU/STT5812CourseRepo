@@ -68,7 +68,13 @@ Watch the following Videos:
 
 **Jan 26:**
 
+* Amber - [Handwriting and Gender: A multi-use data set](http://www.amstat.org/publications/jse/v23n1/bradley.pdf)
 
+* Josh - [1993 New Car Data](http://www.amstat.org/publications/jse/v1n1/datasets.lock.html)
+
+* Indy - [What Does It Take to Heat a New Room? Estimating Utility Demand in a Home](http://www.amstat.org/publications/jse/v6n1/datasets.carver.html)
+
+* Stephanie - [Using Cigarette Data for An Introduction to Multiple Regression](http://www.amstat.org/publications/jse/v2n1/datasets.mcintyre.html)
 
 **Jan 28:**
 
