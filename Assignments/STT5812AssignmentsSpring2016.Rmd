@@ -76,6 +76,12 @@ Watch the following Videos:
 
 * Stephanie - [Using Cigarette Data for An Introduction to Multiple Regression](http://www.amstat.org/publications/jse/v2n1/datasets.mcintyre.html)
 
+* Sussanah - [Comparing the lifetimes of two brands of batteries](http://www.amstat.org/publications/jse/v21n1/dunn.pdf)
+
+* Huy - [How Much Do Minority Lives Matter?](http://www.amstat.org/publications/jse/v23n2/witmer.pdf)
+
+* Kevin - [OkCupid Data for Introductory Statistics and Data Science Courses](http://www.amstat.org/publications/jse/v23n2/kim.pdf)
+
 **Jan 28:**
 
 
