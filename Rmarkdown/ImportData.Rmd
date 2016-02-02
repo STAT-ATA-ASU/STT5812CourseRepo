@@ -1,0 +1,157 @@
+---
+title: "Importing Data From Flat Files"
+author: "Alan Arnholt"
+date: 'Last Updated: `r Sys.Date()`'
+output: html_document
+---
+
+```{r, label = "SETUP", echo = FALSE, results= 'hide', message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(comment = NA, fig.align = 'center', fig.height = 5, fig.width = 5,  warning = FALSE, message = FALSE, tidy.opts=list(blank = TRUE, width.cutoff = 75))
+```
+
+The main function to read a flat file is `read.table()` from the `utils` package which is automatically loads when an R session is running.  There are a many arguments `read.table()` can accept.  See the help file by typing `?read.table` at the `R` prompt (>) to read about the various arguments.  
+
+The function `read_delim()` from the `readr` package is the analog to `read.table()`.  It also has a large number of arguments.  
+
+One difference in the defaults arguments for `read.table()` and `read_delim()` is that strings are read in as factors with `read.table()` but are read in as characters with `read_delim()`. The argument for the type of delimiter is `sep = ` and `delim = ` for `read.table()` and `read_delim()`, respectively. 
+
+```{r, echo = FALSE}
+DF <- data.frame(utils = c("read.table()", "read.csv()", "read.delim()"), readr = c("read_delim()", "read_csv()", "read_tsv()"), data.table = c("fread()", "fread()", "fread()"))
+knitr::kable(DF, align = c('c', 'c'))
+```
+
+### Using `read.table()`
+
+```{r}
+site <- "http://www.amstat.org/publications/jse/datasets/utility.dat.txt"
+utility <- read.table(file = site, na.strings = "*", col.names = c("Date", "DaysInMonth", "MeanMonTemp", "MeanGasUse", "TotTherms", "DaysGasCycle", "TotKilowatt", "MeanKilowatt", "DaysElecCycle", "Method", "TotHeatingDays","TotCoolingDays", "NewRoom"), colClasses = c("character", rep("double", 8), "factor", rep("double", 2), "factor") )
+library(zoo)
+utility$Date <- as.Date(as.yearmon(utility$Date, "%B-%y"))
+utility$Method <- factor(utility$Method, labels = c("actual", "estimated"))
+utility$NewRoom <- factor(utility$NewRoom, labels = c("pre-addition","post-addition"))
+```
+
+### Using `fread()`
+
+```{r}
+library(data.table)
+site <- "http://www.amstat.org/publications/jse/datasets/utility.dat.txt"
+utility1 <- fread(input = site, na.strings = "*", col.names = c("Date", "DaysInMonth", "MeanMonTemp", "MeanGasUse", "TotTherms", "DaysGasCycle", "TotKilowatt", "MeanKilowatt", "DaysElecCycle", "Method", "TotHeatingDays","TotCoolingDays", "NewRoom"), colClasses = c("character", rep("double", 8), "factor", rep("double", 2), "factor") )
+library(zoo)
+utility1$Date <- as.Date(as.yearmon(utility$Date, "%B-%y"))
+utility1$Method <- factor(utility1$Method, labels = c("actual", "estimated"))
+utility1$NewRoom <- factor(utility1$NewRoom, labels = c("pre-addition","post-addition"))
+```
+
+
+### Dispalying the Data
+
+```{r, echo = FALSE}
+library(DT)
+datatable(utility)
+```
+
+### Some Graphs
+
+```{r}
+library(ggplot2)
+ggplot(data = utility, aes(x = MeanGasUse)) + geom_density(fill = "pink") + theme_bw()
+ggplot(data = utility, aes(x = MeanKilowatt)) + geom_density(fill = "pink") + theme_bw()
+```
+
+```{r fig.width = 7}
+plot(MeanGasUse ~ Date, data = utility, type = "b")
+ggplot(data = utility, aes(x = Date, y = MeanGasUse, color = NewRoom)) + 
+  geom_line() +
+  geom_point() + 
+  theme_bw()
+ggplot(data = utility, aes(x = Date, y = MeanMonTemp, color = NewRoom)) + 
+  geom_line() +
+  geom_point() + 
+  theme_bw()
+```
+
+
+```{r}
+ggplot(data= utility, aes(x = NewRoom, y = MeanGasUse)) + 
+  geom_boxplot() + 
+  theme_bw() + 
+  facet_grid(.~Method)
+ggplot(data = utility, aes(x = MeanGasUse, y = MeanMonTemp, color = NewRoom)) + 
+  geom_point() +
+  theme_bw() + 
+  geom_smooth(method = "lm") + 
+  facet_grid(.~Method)
+```
+
+```{r}
+mod1 <- lm(MeanGasUse ~ MeanMonTemp, data = utility)
+summary(mod1)
+mod2 <- lm(MeanGasUse ~ MeanMonTemp + NewRoom, data = utility)
+summary(mod2)
+mod3 <- lm(MeanGasUse ~ MeanMonTemp + NewRoom + Method, data = utility)
+summary(mod3)
+mod4 <- lm(MeanKilowatt ~ MeanMonTemp + NewRoom + Method, data = utility)
+summary(mod4)
+```
+
+```{r}
+site <- "http://www.amstat.org/publications/jse/datasets/cigarettes.dat.txt"
+download.file(url = site, destfile = "./DATA/cigs.txt")
+CIGS1 <- read.table(file = "./DATA/cigs.txt", header = FALSE, col.names = c("Brand", "Tar", "Nicotine", "Weight", "CO2"))
+head(CIGS1)
+site <- "http://www.amstat.org/publications/jse/v23n1/bradley/HandwritingSummaryData.csv"
+HW <- read.csv(file = site, na.strings = "")
+head(HW)
+HWF <- HW[, -(9:10)]
+head(HWF)
+site <- "http://www.amstat.org/publications/jse/v21n1/dunn/batteries1.csv"
+BATT <- read.csv(file = site)
+head(BATT)
+# Cleaner data set
+site <- "http://www.amstat.org/publications/jse/v23n2/Simpson_Stand_Ground_2015.csv"
+SYG <- read.csv(file = site)
+head(SYG)
+library(readr)
+SYG2 <- read_csv(file = site)
+head(SYG2)
+SYG3 <- fread(input = site)
+head(SYG3)
+table(SYG3$WhiteVictim)
+SYG3$WhiteVictim <- factor(SYG3$WhiteVictim, labels = c("No","Yes"))
+SYG3$MinVictim <- factor(SYG3$MinVictim, labels = c("No","Yes"))
+xtabs(~Convicted + Accused + WhiteVictim, data = SYG3)
+```
+
+
+### Downloading some bigger files
+
+```{r}
+site <- "https://github.com/rudeboybert/JSE_OkCupid/raw/master/profiles.csv.zip"
+temp <- tempfile()
+download.file(site, temp, method = "wget")
+profiles <- read.csv(unz(temp, "profiles.csv"))
+unlink(temp)
+```
+
+**Note:** Make sure to ignore the _big_ binary data sets if you are using version control!  Ask how in class.
+
+### Using the Data
+
+```{r}
+xtabs(~sex + smokes, data = profiles)
+ggplot(data = subset(profiles, body_type == "overweight"), aes(x = height, y = income)) + 
+  geom_point(position = "jitter", alpha = 0.3) + 
+  theme_bw() + 
+  facet_grid(smokes~drugs)
+```
+
+```{r}
+ggplot(data = profiles, aes(x = sex, y = income)) + geom_boxplot() + theme_bw()
+tapply(profiles$income, list(profiles$sex, profiles$drugs), min)     # What does this mean?
+tapply(profiles$income, list(profiles$sex, profiles$drugs), median)  # What does this mean?
+tapply(profiles$income, list(profiles$sex, profiles$drugs), mean)    # What does this mean?
+tapply(profiles$income, list(profiles$sex, profiles$drugs), max)     # What does this mean?
+ggplot(data = profiles, aes(x = age, fill = sex)) + geom_density() + theme_bw() + facet_grid(sex~smokes)
+```
+
