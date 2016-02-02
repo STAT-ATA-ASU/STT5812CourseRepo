@@ -44,7 +44,7 @@ utility1$NewRoom <- factor(utility1$NewRoom, labels = c("pre-addition","post-add
 ```
 
 
-### Dispalying the Data
+### Displaying the Data
 
 ```{r, echo = FALSE}
 library(DT)
