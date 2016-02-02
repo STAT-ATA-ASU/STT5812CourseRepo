@@ -90,6 +90,8 @@ Watch the following Videos:
 
 * Reproduce [Modified Introduction to R](http://stat-ata-asu.github.io/STT3851Spring2016/Rmarkdown/LabChap2.html) up to but not including the _Additional Graphical and Numerical Summaries_ section.  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/1750) no later than 5 pm Feb 5.
 
+* [Reading flat files with examples]("../Rmarkdown/ImportData.html")
+
 **Feb 4:**
 
 
