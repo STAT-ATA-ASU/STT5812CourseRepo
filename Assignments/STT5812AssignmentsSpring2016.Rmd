@@ -142,11 +142,26 @@ Watch the following Videos:
 
 **Mar 15:**
 
+
+* Read pages 59-119 of [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
+* Watch [Simple Linear Regression and Confidence Intervals](https://www.youtube.com/watch?v=PsE9UqoWtS4) (13:01)
+* Watch [Hypothesis Testing ](https://www.youtube.com/watch?v=J6AdoiNUyWI) (8:24)
+* Watch [Multiple Linear Regression and Interpreting Regression Coefficients ](https://www.youtube.com/watch?v=1hbCJyM9ccs) (15:38)
+* [Review this document](../Rmarkdown/Chap2Slides.html)
+* Work on Chapter 3 Assessment - due no later than 10am March 18, 2016 - The Chapter 3 Assessment will be recorded as both a quiz grade and a midterm grade. 
+
+
 **Mar 17:**
+
+* Work on Chapter 3 Assessment - due no later than 10am March 18, 2016
 
 **Mar 22:**
 
+* JSE Talks
+
 **Mar 24:**
+
+* JSE Talks
 
 **~~Mar 29~~ No Class**
 
