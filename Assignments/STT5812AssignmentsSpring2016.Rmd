@@ -148,19 +148,21 @@ Watch the following Videos:
 * Watch [Hypothesis Testing ](https://www.youtube.com/watch?v=J6AdoiNUyWI) (8:24)
 * Watch [Multiple Linear Regression and Interpreting Regression Coefficients ](https://www.youtube.com/watch?v=1hbCJyM9ccs) (15:38)
 * [Review this document](../Rmarkdown/Chap2Slides.html)
-* Watch [Model Selection and Qualitative Predictors](https://www.youtube.com/watch?v=3T6RXmIHbJ4) (14:51)
-* Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
-* Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
 * Work on Chapter 3 Assessment - due no later than 10am March 18, 2016 - The Chapter 3 Assessment will be recorded as both a quiz grade and a midterm grade. 
 
 
 **Mar 17:**
 
+* Review as needed pages 59-119 of [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
+* Watch [Model Selection and Qualitative Predictors](https://www.youtube.com/watch?v=3T6RXmIHbJ4) (14:51)
+* Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
+* Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
 * Work on Chapter 3 Assessment - due no later than 10am March 18, 2016
 
 **Mar 22:**
 
-* JSE Talks
+* Assign JSE Talks
+* Go over Chapter 3 Assessment
 
 **Mar 24:**
 
@@ -170,7 +172,12 @@ Watch the following Videos:
 
 **Mar 31:**
 
+* Place materials (Solution to Project, Lab Activity with Key, Presentation Slides) 
+in the "LABS" directory of the class repository.
+
 **Apr 5:**
+
+* Develop a second Lab Activity
 
 **Apr 7:**
 
