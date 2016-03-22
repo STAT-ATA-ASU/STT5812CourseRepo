@@ -163,6 +163,7 @@ Watch the following Videos:
 
 * Assign JSE Talks
 * Go over Chapter 3 Assessment
+* [Cross Validation Hand Out](../../STT3851Spring2016/Rmarkdown/Cross-ValidationClassHO.pdf)
 
 **Mar 24:**
 
