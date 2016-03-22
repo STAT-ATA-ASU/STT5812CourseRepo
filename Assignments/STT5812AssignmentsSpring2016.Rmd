@@ -163,22 +163,38 @@ Watch the following Videos:
 
 * Assign JSE Talks
 * Go over Chapter 3 Assessment
-* [Cross Validation Hand Out](../../STT3851Spring2016/Rmarkdown/Cross-ValidationClassHO.pdf)
+* [Cross Validation Hand Out](../../STT3851Spring2016/Rmarkdown/Cross-ValidationInClassHO.pdf)
+
+Watch the following videos:
+
+* [Estimating Prediction Error and Validation Set Approach](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14:01)
+* [K-fold Cross-Validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (13:33)
+
 
 **Mar 24:**
 
 * JSE Talks
+* [Cross Validation Hand Out](../../STT3851Spring2016/Rmarkdown/Cross-ValidationInClassHO.pdf)
+
+Watch the following videos:
+
+* [Cross-Validation: The Right and Wrong Ways](https://www.youtube.com/watch?v=S06JpVoNaA0) (10:07)
+* [Watch: Lab: Cross-Validation](https://www.youtube.com/watch?v=6dSXlqHAoMk) (11:21)
+
 
 **~~Mar 29~~ No Class**
 
 **Mar 31:**
 
+* JSE Talks
 * Place materials (Solution to Project, Lab Activity with Key, Presentation Slides) 
 in the "LABS" directory of the class repository.
+* [Reproduce _Lab: Cross-Validation_](../../STT3851Spring2016/Rmarkdown/LabCrossValidation.html).  
 
 **Apr 5:**
 
 * Develop a second Lab Activity
+* [Bias Variance Trade-Off](../../STT3851Spring2016/Rmarkdown/BiasVariance.html)
 
 **Apr 7:**
 
