@@ -195,7 +195,7 @@ in the ["JSE-Materials" repository](https://github.com/STAT-ATA-ASU/JSE-Material
 
 Start Project 2 - Due NLT 10 am, April 22
 
-* Example Project 2 Template available in [piazza resources](https://piazza.com/class_profile/get_resource/ij30tx2hndb4ew/imbzx5c48k76f)
+* Example Project 2 Template available in [piazza resources](https://piazza.com/class_profile/get_resource/ij30sna9alj1pq/imbzy5w4jz47i6)
 * Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [Housing Data](http://stat-ata-asu.github.io/STT3851Spring2016/Rmarkdown/HousingData.html)
 * Develop a second Lab Activity - Add written activity to ["JSE-Materials" repository](https://github.com/STAT-ATA-ASU/JSE-Materials)
 * [Bias Variance Trade-Off](../../STT3851Spring2016/Rmarkdown/BiasVariance.html)
