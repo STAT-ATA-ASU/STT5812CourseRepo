@@ -189,13 +189,13 @@ Watch the following videos:
 * JSE Talks
 * Place materials (Solution to Project, Lab Activity with Key, Presentation Slides) 
 in the ["JSE-Materials" repository](https://github.com/STAT-ATA-ASU/JSE-Materials).  All class members have read and write permission to this private repository.
-* [Reproduce _Lab: Cross-Validation_](../../STT3851Spring2016/Rmarkdown/LabCrossValidation.html).  
+* [Reproduce _Lab: Cross-Validation_](../../STT3851Spring2016/Rmarkdown/LabCrossValidation.html). Due NLT 10 am, April 8 - Commit to your private repository 
 
 **Apr 5:**
 
 Start Project 2 - Due NLT 10 am, April 22
 
-* Example Template available in [piazza resources](https://piazza.com/class_profile/get_resource/ij30tx2hndb4ew/imbzx5c48k76f)
+* Example Project 2 Template available in [piazza resources](https://piazza.com/class_profile/get_resource/ij30tx2hndb4ew/imbzx5c48k76f)
 * Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [Housing Data](http://stat-ata-asu.github.io/STT3851Spring2016/Rmarkdown/HousingData.html)
 * Develop a second Lab Activity - Add written activity to ["JSE-Materials" repository](https://github.com/STAT-ATA-ASU/JSE-Materials)
 * [Bias Variance Trade-Off](../../STT3851Spring2016/Rmarkdown/BiasVariance.html)
@@ -208,6 +208,7 @@ Watch videos:
 * [Forward Stepwise Selection](https://www.youtube.com/watch?v=nLpJd_iKmrE) (12:26)
 * [Backward Stepwise Selection ](https://www.youtube.com/watch?v=NJhMSpI2Uj8) (5:26)
 * [Estimating Test Error Using Mallow’s Cp, AIC, BIC, Adjusted R-squared](https://www.youtube.com/watch?v=LkifE44myLc) (14:06)
+* [Reproduce _Lab: Cross-Validation_](../../STT3851Spring2016/Rmarkdown/LabCrossValidation.html). Due NLT 10 am, April 8 - Commit to your private repository 
 
 **Apr 12:**
 
