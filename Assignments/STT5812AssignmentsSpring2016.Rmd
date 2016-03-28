@@ -188,12 +188,16 @@ Watch the following videos:
 
 * JSE Talks
 * Place materials (Solution to Project, Lab Activity with Key, Presentation Slides) 
-in the "LABS" directory of the class repository.
+in the ["JSE-Materials" repository](https://github.com/STAT-ATA-ASU/JSE-Materials).  All class members have read and write permission to this private repository.
 * [Reproduce _Lab: Cross-Validation_](../../STT3851Spring2016/Rmarkdown/LabCrossValidation.html).  
 
 **Apr 5:**
 
-* Develop a second Lab Activity
+Start Project 2 - Due NLT 10 am, April 22
+
+* Example Template available in [piazza resources](https://piazza.com/class_profile/get_resource/ij30tx2hndb4ew/imbzx5c48k76f)
+* Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [Housing Data](http://stat-ata-asu.github.io/STT3851Spring2016/Rmarkdown/HousingData.html)
+* Develop a second Lab Activity - Add written activity to ["JSE-Materials" repository](https://github.com/STAT-ATA-ASU/JSE-Materials)
 * [Bias Variance Trade-Off](../../STT3851Spring2016/Rmarkdown/BiasVariance.html)
 
 **Apr 7:**
@@ -203,44 +207,45 @@ Watch videos:
 * [Linear Model Selection and Best Subset Selection](https://www.youtube.com/watch?v=91si52nk3LA) (13:44)
 * [Forward Stepwise Selection](https://www.youtube.com/watch?v=nLpJd_iKmrE) (12:26)
 * [Backward Stepwise Selection ](https://www.youtube.com/watch?v=NJhMSpI2Uj8) (5:26)
+* [Estimating Test Error Using Mallow’s Cp, AIC, BIC, Adjusted R-squared](https://www.youtube.com/watch?v=LkifE44myLc) (14:06)
 
 **Apr 12:**
 
 Watch videos:
 
-* [Estimating Test Error Using Mallow’s Cp, AIC, BIC, Adjusted R-squared](https://www.youtube.com/watch?v=LkifE44myLc) (14:06)
 * [Estimating Test Error Using Cross-Validation](https://www.youtube.com/watch?v=3p9JNaJCOb4) (8:43)
-
-**Apr 14:**
-
-Watch Videos:
-
 * [Shrinkage Methods and Ridge Regression](https://www.youtube.com/watch?v=cSKzqb0EKS0) (12:37)
 * [The Lasso](https://www.youtube.com/watch?v=A5I1G1MfUmA) (15:21)
 * [Tuning Parameter Selection for Ridge Regression and Lasso](https://www.youtube.com/watch?v=xMKVUstjXBE) (5:27)
 
-**Apr 19:**
+**Apr 14:**
 
 Watch Videos:
 
 * [Dimension Reduction](https://www.youtube.com/watch?v=QlyROnAjnEk) (4:45)
 * [Principal Components Regression and Partial Least Squares ](https://www.youtube.com/watch?v=eYxwWGJcOfw) (15:48)
 * [Lab: Best Subset Selection](https://www.youtube.com/watch?v=3kwdDGnV8MM) (10:36)
-
-
-**Apr 21:**
-
-Watch Videos:
-
 * [Lab: Forward Stepwise Selection and Model Selection Using Validation Set](https://www.youtube.com/watch?v=mv-vdysZIb4) (10:32)
 * [Lab: Model Selection Using Cross-Validation](https://www.youtube.com/watch?v=F8MMHCCoALU) (5:32)
 
 
-**Apr 26:**
+**Apr 19:**
 
-Watch Video:
+Watch Videos:
 
 * [Lab: Ridge Regression and Lasso ](https://www.youtube.com/watch?v=1REe3qSotx8) (16:34)
+
+
+**Apr 21:**
+
+* Turn in Project 2 NLT 10 am, April 22
+
+
+**Apr 26:**
+
+* [Poster Template Directory](https://github.com/STAT-ATA-ASU/STT2810ClassRepo/tree/gh-pages/Poster)
+* Work on Poster
+
 
 **Apr 28:**
 
