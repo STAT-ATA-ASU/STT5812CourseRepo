@@ -202,6 +202,8 @@ Start Project 2 - Due NLT 10 am, April 22
 
 **Apr 7:**
 
+* [Notes on Credit Problem](../../STT3851Spring2016/Rmarkdown/CreditProblemMore.html)
+
 Watch videos:
 
 * [Linear Model Selection and Best Subset Selection](https://www.youtube.com/watch?v=91si52nk3LA) (13:44)
