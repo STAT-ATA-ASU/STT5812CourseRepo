@@ -189,7 +189,7 @@ Watch the following videos:
 * JSE Talks
 * Place materials (Solution to Project, Lab Activity with Key, Presentation Slides) 
 in the ["JSE-Materials" repository](https://github.com/STAT-ATA-ASU/JSE-Materials).  All class members have read and write permission to this private repository.
-* [Reproduce _Lab: Cross-Validation_](../../STT3851Spring2016/Rmarkdown/LabCrossValidation.html). Due NLT 10 am, April 8 - Commit to your private repository 
+* [Reproduce _Lab: Cross-Validation_](../../STT3851Spring2016/Rmarkdown/LabCrossValidation.html). Submit to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/1991) NLT 5:00 PM Friday (2/8/2016).
 
 **Apr 5:**
 
@@ -208,7 +208,8 @@ Watch videos:
 * [Forward Stepwise Selection](https://www.youtube.com/watch?v=nLpJd_iKmrE) (12:26)
 * [Backward Stepwise Selection ](https://www.youtube.com/watch?v=NJhMSpI2Uj8) (5:26)
 * [Estimating Test Error Using Mallow’s Cp, AIC, BIC, Adjusted R-squared](https://www.youtube.com/watch?v=LkifE44myLc) (14:06)
-* [Reproduce _Lab: Cross-Validation_](../../STT3851Spring2016/Rmarkdown/LabCrossValidation.html). Due NLT 10 am, April 8 - Commit to your private repository 
+* [Reproduce _Lab: Cross-Validation_](../../STT3851Spring2016/Rmarkdown/LabCrossValidation.html). Submit to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/1991) NLT 5:00 PM Friday (2/8/2016).
+* Quiz - Section 6.1 ISLR
 
 **Apr 12:**
 
