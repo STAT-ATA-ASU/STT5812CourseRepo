@@ -196,8 +196,8 @@ in the ["JSE-Materials" repository](https://github.com/STAT-ATA-ASU/JSE-Material
 Start Project 2 - Due NLT 10 am, April 22
 
 * [Example Template Directory](https://github.com/STAT-ATA-ASU/STT3851Spring2016/blob/gh-pages/BDbetaTemplate)
-* Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [Housing Data](http://stat-ata-asu.github.io/STT3851Spring2016/Rmarkdown/HousingData.html)
-* Develop a second Lab Activity - Add written activity to ["JSE-Materials" repository](https://github.com/STAT-ATA-ASU/JSE-Materials)
+* Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [King County Housing Data](http://stat-ata-asu.github.io/STT3851Spring2016/Rmarkdown/KingCounty.html)
+* ~~Develop a second Lab Activity - Add written activity to ["JSE-Materials" repository](https://github.com/STAT-ATA-ASU/JSE-Materials)~~
 * [Bias Variance Trade-Off](../../STT3851Spring2016/Rmarkdown/BiasVariance.html)
 
 **Apr 7:**
@@ -218,6 +218,7 @@ Watch videos:
 * Using [Book Down](https://bookdown.org/yihui/bookdown/)
 * [Example Template Directory](https://github.com/STAT-ATA-ASU/STT3851Spring2016/blob/gh-pages/BDbetaTemplate)
 * [Example Paper](../../STT3851Spring2016/BDbetaTemplate/MoreTemplates/main.html)
+* Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [King County Housing Data](http://stat-ata-asu.github.io/STT3851Spring2016/Rmarkdown/KingCounty.html)
 
 Watch videos:
 
