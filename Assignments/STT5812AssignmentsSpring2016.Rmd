@@ -255,7 +255,7 @@ Watch Videos:
 
 **Apr 26:**
 
-* [Poster Template Directory](https://github.com/STAT-ATA-ASU/STT2810ClassRepo/tree/gh-pages/Poster)
+* [Poster Template Directory](https://github.com/STAT-ATA-ASU/STT3851Spring2016/tree/gh-pages/Poster)
 * Work on Poster
 
 
@@ -269,7 +269,7 @@ Watch Videos:
 
 **May 12:**
 
-* Present Group Poster
+* Present Group Poster 12-2:30
 
 
 
