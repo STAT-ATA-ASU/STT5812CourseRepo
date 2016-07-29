@@ -1,3 +1,3 @@
-# STT 5812 Spring 2016 
+# STT 5812 
 
-Web page for [STT 5812 Spring 2016](http://stat-ata-asu.github.io/STT5812CourseRepo/)
+Web page for [STT 5812](http://stat-ata-asu.github.io/STT5812CourseRepo/)
