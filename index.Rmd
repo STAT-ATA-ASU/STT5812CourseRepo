@@ -11,9 +11,9 @@ title: "Welcome"
 
 * [Class RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server)
 
-* [Flow Control](../STT3851Spring2016/Rmarkdown/FlowControl.html)
+* [Flow Control](../STT3851ClassRepo/Rmarkdown/FlowControl.html)
 
-* [The Bootstrap](../STT3851Spring2016/Rmarkdown/TheBootstrap.html)
+* [The Bootstrap](../STT3851ClassRepo/Rmarkdown/TheBootstrap.html)
 
 * [JSE Data Archive](http://www.amstat.org/publications/jse/jse_data_archive.htm)
 
