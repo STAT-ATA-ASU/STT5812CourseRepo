@@ -30,7 +30,8 @@ blockquote {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #ffffff;
+    color: #FFD700;
+    background-color: gray;
 }
 /* link */
 .navbar-default .navbar-nav > li > a {
@@ -38,7 +39,8 @@ blockquote {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #ffffff;
+    color: #FFD700;
+    background-color: gray;
 }
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
@@ -49,7 +51,7 @@ blockquote {
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:hover, 
 .navbar-default .navbar-nav > .open > a:focus {
-    color: #ffffff;
+    color: black;
     background-color: #FFD700;
 }
 /* caret */
@@ -90,4 +92,14 @@ blockquote {
 }
 
 
+hr {
+height: 2px;
+color: #FFD700;
+background-color: #FFD700;
+border: none;
+}
+
+
 <link rel="stylesheet" href="./site_libs/font-awesome-4.6.3/css/font-awesome.min.css">
+
+
