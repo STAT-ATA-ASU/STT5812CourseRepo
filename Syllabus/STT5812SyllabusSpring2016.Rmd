@@ -77,8 +77,13 @@ This course will use the RStudio server  (https://mathr.math.appstate.edu/) that
 
 You must have an active internet connection and be registered in the course to access the server. To access the server, point any web browser to <https://mathr.math.appstate.edu/>.  You will need to acknowledge the connection is unsecure and possibly add a security exception to your web browser. Use your Appstate Username and Password to access the server.  A screen shot of the RStudio server is shown below.
 
-![LogIn](RStudioLogIn.png)
+<center>
+![](RStudioLogIn.png)
+</center>
+
 
 If you have problems with your Appstate Username or Password visit [IT Support Services](http://support.appstate.edu/) or call 262-6266.  
+
+***
 
 #[Home Page](http://stat-ata-asu.github.io/STT5812Spring2016/) -       [Assignments](http://stat-ata-asu.github.io/STT5812Spring2016/Assignments/STT5812AssignmentsSpring2016.html) - [piazza](https://piazza.com/class/ij30sna9alj1pq)
