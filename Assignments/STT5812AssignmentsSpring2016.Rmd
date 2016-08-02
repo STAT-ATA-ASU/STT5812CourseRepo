@@ -1,12 +1,12 @@
 ---
 title: "Assignments STT 5812"
-author: "Alan Arnholt"
-date: 'Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`'
-output:
-  html_document:
+author: "Alan T. Arnholt"
+date: 'Last compiled: `r format(Sys.time(), "%B %d, %Y")`'
+output: 
+  html_document: 
     css: asu.css
     highlight: textmate
-    theme: readable
+    theme: cosmo
 ---
 
 **Jan 12:**
@@ -271,6 +271,6 @@ Watch Videos:
 
 * Present Group Poster 12-2:30
 
-
+***
 
 #[Home Page](http://stat-ata-asu.github.io/STT5812Spring2016/) -       [Syllabus](http://stat-ata-asu.github.io/STT5812Spring2016/Syllabus/STT5812SyllabusSpring2016.html) - [piazza](https://piazza.com/class/ij30sna9alj1pq)
