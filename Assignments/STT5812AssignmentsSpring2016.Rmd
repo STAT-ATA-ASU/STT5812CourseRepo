@@ -273,4 +273,4 @@ Watch Videos:
 
 ***
 
-#[Home Page](http://stat-ata-asu.github.io/STT5812Spring2016/) -       [Syllabus](http://stat-ata-asu.github.io/STT5812Spring2016/Syllabus/STT5812SyllabusSpring2016.html) - [piazza](https://piazza.com/class/ij30sna9alj1pq)
+#[Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) -       [Syllabus](http://stat-ata-asu.github.io/STT5812CourseRepo/Syllabus/STT5812SyllabusSpring2016.html) - [piazza](https://piazza.com/class/ij30sna9alj1pq)
