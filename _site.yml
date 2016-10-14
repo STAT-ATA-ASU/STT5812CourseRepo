@@ -7,7 +7,7 @@ navbar:
       href: https://github.com/STAT-ATA-ASU/STT5812CourseRepo/         
 output:
   html_document:
-    theme: cosmo
+    theme: yeti
     highlight: textmate
     include:
       after_body: footer.html
