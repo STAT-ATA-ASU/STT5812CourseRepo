@@ -2,10 +2,10 @@ name: "my-website"
 output_dir: "."
 navbar:
   title: "STT 5812"
-  left:
+    
+  right:
     - text: "Home Page"
       href: https://alanarnholt.github.io   
-  right:
     - icon: fa-github fa-lg
       href: https://github.com/STAT-ATA-ASU/STT5812CourseRepo/         
 output:
