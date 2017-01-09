@@ -3,9 +3,9 @@ title: "Welcome"
 ---
 
 
-* The course syllabus is stored in the [`Syllabus`](./Syllabus/STT5812SyllabusSpring2016.html) directory of the STT 5812 repository.
+* The course syllabus is stored in the [`Syllabus`](./Syllabus/STT5812SyllabusSpring2017.html) directory of the STT 5812 repository.
 
-* Course pacing and assignments are stored in the [`Assignments`](./Assignments/STT5812AssignmentsSpring2016.html) directory of the STT 5812 repository.
+* Course pacing and assignments are stored in the [`Assignments`](./Assignments/STT5812AssignmentsSpring2017.html) directory of the STT 5812 repository.
 
 * Questions related to course materials should be addressed on the [course piazza account]()
 
