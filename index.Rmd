@@ -7,7 +7,7 @@ title: "Welcome"
 
 * Course pacing and assignments are stored in the [`Assignments`](./Assignments/STT5812AssignmentsSpring2016.html) directory of the STT 5812 repository.
 
-* Questions related to ISCAM III materials should be addressed with the [piazza account for STT 5812](https://piazza.com/class/ij30sna9alj1pq).
+* Questions related to course materials should be addressed on the [course piazza account]()
 
 * [Class RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server)
 
