@@ -86,4 +86,4 @@ If you have problems with your Appstate Username or Password visit [IT Support S
 
 ***
 
-#[Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) - [Assignments](http://stat-ata-asu.github.io/STT5812CourseRepo/Assignments/AssignmentsSTT5812Spring2017.html) - [Piazza](https://piazza.com/appstate/spring2017/stt/home)
+#[Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) - [Assignments](http://stat-ata-asu.github.io/STT5812CourseRepo/Assignments/STT5812AssignmentsSpring2017.html) - [Piazza](https://piazza.com/appstate/spring2017/stt/home)

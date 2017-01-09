@@ -296,4 +296,4 @@ Start Project 2
 
 
 
-#[Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT5812CourseRepo/Syllabus/STT5812Spring2017Syllabus.html) - [Piazza](https://piazza.com/appstate/spring2017/stt/home)
+#[Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT5812CourseRepo/Syllabus/STT5812SyllabusSpring2017.html) - [Piazza](https://piazza.com/appstate/spring2017/stt/home)
