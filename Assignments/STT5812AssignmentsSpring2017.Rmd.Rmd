@@ -49,8 +49,8 @@ output:
 * Before class:
     + [Watch Managing Change with RStudio]( https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-change-part-1/) (37 minutes)
 * In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
-* [Statistics Review](../Rmarkdown/StatReview.html)
-* [Schistosomiasis](../Rmarkdown/Schistosomiasis.html)
+* [Statistics Review](../../STT3851ClassRepo/Rmarkdown/StatReview.html)
+* [Schistosomiasis](../../STT3851ClassRepo/Rmarkdown/Schistosomiasis.html)
 * Update README file in private repository
 * Use an avatar or picture on your GitHub account
 * Quiz #2
@@ -63,22 +63,22 @@ output:
     + Watch [Opening Remarks and Examples](https://www.youtube.com/watch?v=2wLfFB_6SKI) (18:18)
     + Watch [Supervised and Unsupervised Learning](https://www.youtube.com/watch?v=LvaTokhYnDw) (12:12)
     + Read Section 3.4 of [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
-* Lecture - [Rmarkdown example](../Rmarkdown/FlowControl.html)
-* Bootstrap - [Rmarkdown example](../Rmarkdown/TheBootstrap.html)
-* [Overplotting Examples and possible Solutions](../Rmarkdown/HousingData.html)
+* Lecture - [Rmarkdown example](../../STT3851ClassRepo/Rmarkdown/FlowControl.html)
+* Bootstrap - [Rmarkdown example](../../STT3851ClassRepo/Rmarkdown/TheBootstrap.html)
+* [Overplotting Examples and possible Solutions](../../STT3851ClassRepo/Rmarkdown/HousingData.html)
 
 * Clone the repository to your local machine using RStudio by following these instructions:
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) the repository.
 2. Copy the clone URL to the clipboard.
 3. Click `File > New Project > Version Control > Git`
-4. Paste the clone URL (`https://github.com/YourUserName/STAT-ATA-ASU/STT3851ClassRepo.git`) in the `Repository URL:` box.
-5. Type a name (suggestion `UserNameSTT3851`) in the `Project directory name:` box.
+4. Paste the clone URL (`https://github.com/YourUserName/STAT-ATA-ASU/STT5812CourseRepo.git`) in the `Repository URL:` box.
+5. Type a name (suggestion `UserNameSTT5812`) in the `Project directory name:` box.
 6. Change if needed the location in the `Create project as subdirectory of:` box.
 7. Click the `Create Project` box.  You should now have a local copy of the forked repository on your local machine.  Congratulations!  
 * Set the upstream remote in your fork to this repository with the command
 ```
-git remote add upstream https://github.com/STAT-ATA-ASU/STT3851ClassRepo.git
+git remote add upstream https://github.com/STAT-ATA-ASU/STT5812CourseRepo.git
 ```
 * Verify with
 ```
@@ -112,17 +112,17 @@ git pull upstream gh-pages
     + Watch [Classification Problems and K-Nearest Neighbors](https://www.youtube.com/watch?v=vVj2itVNku4) (15:37)
     + Watch [Lab: Introduction to R](https://www.youtube.com/watch?v=jwBgGS_4RQA) (14:12)
 * Lecture - Bias Variance Tradeoff - Take notes
-* Reproduce [Modified Introduction to R](../Rmarkdown/LabChap2.html).  Submit your html file to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2743) no later than 5 pm Feb 10.
+* Reproduce [Modified Introduction to R](../../STT3851ClassRepo/Rmarkdown/LabChap2.html).  Submit your html file to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2743) no later than 5 pm Feb 10.
 
 
 **Feb 9:**
 
 * Before class: 
     + Review/read chapter 2 [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
-* Go over [Bias Variance Graphs](../Rmarkdown/BiasVariance.html) 
-* Go over [Chapter 2 Graphs](../Rmarkdown/Chap2Slides.html)
+* Go over [Bias Variance Graphs](../../STT3851ClassRepo/Rmarkdown/BiasVariance.html) 
+* Go over [Chapter 2 Graphs](../../STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 * Discuss flexible models and when to use them
-* Reproduce [Modified Introduction to R](../Rmarkdown/LabChap2.html).  Submit your html file to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2743) no later than 5 pm Feb 10.
+* Reproduce [Modified Introduction to R](../../STT3851ClassRepo/Rmarkdown/LabChap2.html).  Submit your html file to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2743) no later than 5 pm Feb 10.
 * Quiz #4
 
 
@@ -130,13 +130,13 @@ git pull upstream gh-pages
 
 * Before class:
     + Refer to [_bookdown: Authoring Books and Technical Documents with R Markdown_](https://bookdown.org/yihui/bookdown/) as needed
-* Reproduce [Writing Assignment](../Rmarkdown/WritingAssignment.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2745) no later than 5 pm Feb 17.
+* Reproduce [Writing Assignment](../../STT3851ClassRepo/Rmarkdown/WritingAssignment.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2745) no later than 5 pm Feb 17.
 
 
 **Feb 16:**
 
 * Work Day
-* Reproduce [Writing Assignment](../Rmarkdown/WritingAssignment.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2745) no later than 5 pm Feb 17.
+* Reproduce [Writing Assignment](../../STT3851ClassRepo/Rmarkdown/WritingAssignment.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2745) no later than 5 pm Feb 17.
 * Quiz #5
 
 **Feb 21:**
@@ -146,7 +146,7 @@ git pull upstream gh-pages
     + Watch [Simple Linear Regression and Confidence Intervals](https://www.youtube.com/watch?v=PsE9UqoWtS4) (13:01)
     + Watch [Hypothesis Testing ](https://www.youtube.com/watch?v=J6AdoiNUyWI) (8:24)
     + Watch [Multiple Linear Regression and Interpreting Regression Coefficients ](https://www.youtube.com/watch?v=1hbCJyM9ccs) (15:38)
-* Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)
+* Discuss [Chapter 2 and 3 material](../../STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
 
 
@@ -157,13 +157,13 @@ git pull upstream gh-pages
     + Watch [Model Selection and Qualitative Predictors](https://www.youtube.com/watch?v=3T6RXmIHbJ4) (14:51)
     + Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
     + Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
-* Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)
+* Discuss [Chapter 2 and 3 material](../../STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 * Quiz #6
 
 **Feb 28:**
 
 * Answer questions at the end of [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html).
-* Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2746) no later than 5 pm Mar 3.
+* Reproduce [Lab: Linear Regression](../../STT3851ClassRepo/Rmarkdown/LabChap3.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2746) no later than 5 pm Mar 3.
 
 
 **Mar 2:**
@@ -171,18 +171,18 @@ git pull upstream gh-pages
 * Before class:
     + [Start Project 1](http://www.amstat.org/publications/jse/v16n2/datasets.pardoe.html) - Read the hyperlinked paper.  
     + The data set can be downloaded from http://www.amstat.org/publications/jse/datasets/homes76.dat.txt, while the code book is available from http://www.amstat.org/publications/jse/datasets/homes76.txt
-* Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2746) no later than 5 pm Mar 3.
+* Reproduce [Lab: Linear Regression](../../STT3851ClassRepo/Rmarkdown/LabChap3.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2746) no later than 5 pm Mar 3.
 * Quiz #7
 
 
 **Mar 7:**
 
-* [Work on Project 1](../Rmarkdown/DirectionsMHP.html)
+* [Work on Project 1](../../STT3851ClassRepo/Rmarkdown/DirectionsMHP.html)
 
 
 **Mar 9:**
 
-* [Work on Project 1](../Rmarkdown/DirectionsMHP.html)
+* [Work on Project 1](../../STT3851ClassRepo/Rmarkdown/DirectionsMHP.html)
 * Quiz #8
 
 **~~Mar 13 - Mar 17:~~ ** **No Class - Spring Break**
@@ -200,7 +200,7 @@ git pull upstream gh-pages
     + Watch [K-fold Cross-Validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (13:33)
     + Watch [Cross-Validation: The Right and Wrong Ways](https://www.youtube.com/watch?v=S06JpVoNaA0) (10:07)
 
-* Discuss [Cross-Validation Hand Out](../Rmarkdown/Cross-ValidationInClassHO.html)
+* Discuss [Cross-Validation Hand Out](../../STT3851ClassRepo/Rmarkdown/Cross-ValidationInClassHO.html)
 * Quiz #9
 
 
@@ -211,8 +211,8 @@ git pull upstream gh-pages
     + Read/re-read chapter 5 [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
     + Watch [Lab: Cross-Validation](https://www.youtube.com/watch?v=6dSXlqHAoMk) (11:21)
 
-* Discuss [Cross-Validation Hand Out](../Rmarkdown/Cross-ValidationInClassHO.html)
-* [Reproduce _Lab: Cross-Validation_](../Rmarkdown/LabCrossValidation.html)
+* Discuss [Cross-Validation Hand Out](../../STT3851ClassRepo/Rmarkdown/Cross-ValidationInClassHO.html)
+* [Reproduce _Lab: Cross-Validation_](../../STT3851ClassRepo/Rmarkdown/LabCrossValidation.html)
 
 
 **Mar 30:**
@@ -222,13 +222,13 @@ git pull upstream gh-pages
     + [Forward Stepwise Selection](https://www.youtube.com/watch?v=nLpJd_iKmrE) (12:26)
     + [Backward Stepwise Selection ](https://www.youtube.com/watch?v=NJhMSpI2Uj8) (5:26)
 
-* [Finish Cross-Validation Hand Out](../Rmarkdown/Cross-ValidationInClassHO.html)
-* Complete [Reproduce _Lab: Cross-Validation_](../Rmarkdown/LabCrossValidation.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2753) no later than 5 pm March 31.
+* [Finish Cross-Validation Hand Out](../../STT3851ClassRepo/Rmarkdown/Cross-ValidationInClassHO.html)
+* Complete [Reproduce _Lab: Cross-Validation_](../../STT3851ClassRepo/Rmarkdown/LabCrossValidation.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2753) no later than 5 pm March 31.
 
 Start Project 2 
 
 * [Example Template Directory](https://github.com/STAT-ATA-ASU/STT3851Spring2016/blob/gh-pages/BDbetaTemplate)
-* Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [King County Housing Data](../Rmarkdown/KingCounty.html)
+* Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [King County Housing Data](../../STT3851ClassRepo/Rmarkdown/KingCounty.html)
 * Quiz 10
 
 **Apr 4:**
@@ -236,7 +236,7 @@ Start Project 2
 * Before class:
     + Watch [Estimating Test Error Using Mallow’s Cp, AIC, BIC, Adjusted R-squared](https://www.youtube.com/watch?v=LkifE44myLc) (14:06)
     + Watch [Estimating Test Error Using Cross-Validation](https://www.youtube.com/watch?v=3p9JNaJCOb4) (8:43)
-* [Notes on Credit Problem](../Rmarkdown/CreditProblemMore.html)
+* [Notes on Credit Problem](../../STT3851ClassRepo/Rmarkdown/CreditProblemMore.html)
 
 
 **Apr 6:**
@@ -277,7 +277,7 @@ Start Project 2
 
 * Turn in Project 2 - NLT April 26, 10 am
 * [CrowdGrader link](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2028)
-* Make sure a single `.Rmd` with the sections outlined in the [Example Paper](../BDbetaTemplate/TemplateBookDown.html) is in your `Project2` directory under your private course repository.  This is 10% of the assignment grade.
+* Make sure a single `.Rmd` with the sections outlined in the [Example Paper](../../STT3851ClassRepo/BDbetaTemplate/TemplateBookDown.html) is in your `Project2` directory under your private course repository.  This is 10% of the assignment grade.
 * Send an email to the instructor using a subject of "House Data Predictions" with an attached vector (csv file) of your predictions using the data set `housedataTEST.csv`.  Note: your vector should contain 4229 predictions. 
 
 **Apr 27:**
@@ -296,4 +296,4 @@ Start Project 2
 
 
 
-#[Home Page](http://stat-ata-asu.github.io/STT3851ClassRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT3851ClassRepo/Syllabus/STT3851Spring2017Syllabus.html) - [Piazza](https://piazza.com/appstate/spring2017/stt/home)
+#[Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT5812CourseRepo/Syllabus/STT5812Spring2017Syllabus.html) - [Piazza](https://piazza.com/appstate/spring2017/stt/home)
