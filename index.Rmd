@@ -7,7 +7,7 @@ title: "Welcome"
 
 * Course pacing and assignments are stored in the [`Assignments`](./Assignments/STT5812AssignmentsSpring2017.html) directory of the STT 5812 repository.
 
-* Questions related to course materials should be addressed on the [course piazza account]()
+* Questions related to course materials should be addressed on the [course piazza account](https://piazza.com/appstate/spring2017/stt/home)
 
 * [Class RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server)
 
