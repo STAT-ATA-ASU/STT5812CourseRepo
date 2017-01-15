@@ -19,3 +19,122 @@ title: "Welcome"
 
 
 * * *
+
+## Resources you may find helpful
+
+* [Web site for _The Elements of Statistical Learning_ (free pdf of book)](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
+
+* [Web site for _An Introduction to Statistical Learning_ (free pdf of book)](http://www-bcf.usc.edu/~gareth/ISL/)
+
+* [Course Notes STT 3850 (Spring 2014)](https://alanarnholt.github.io/STT3850/Notes/Parent/Parent.html) 
+
+### Chapter 1: Introduction ([slides](https://lagunita.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/introduction.pdf))
+
+* [Opening Remarks and Examples](https://www.youtube.com/watch?v=2wLfFB_6SKI) (18:18)
+* [Supervised and Unsupervised Learning](https://www.youtube.com/watch?v=LvaTokhYnDw) (12:12)
+
+### Chapter 2: Statistical Learning ([slides](https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/statistical_learning.pdf))
+
+* [Statistical Learning and Regression](https://www.youtube.com/watch?v=WjyuiK5taS8) (11:41)
+* [Curse of Dimensionality and Parametric Models](https://www.youtube.com/watch?v=UvxHOkYQl8g) (11:40)
+* [Assessing Model Accuracy and Bias-Variance Trade-off](https://www.youtube.com/watch?v=VusKAosxxyk) (10:04)
+* [Classification Problems and K-Nearest Neighbors](https://www.youtube.com/watch?v=vVj2itVNku4) (15:37)
+* [Lab: Introduction to R](https://www.youtube.com/watch?v=jwBgGS_4RQA) (14:12)
+
+### Chapter 3: Linear Regression ([slides](https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/linear_regression.pdf))
+
+* [Simple Linear Regression and Confidence Intervals](https://www.youtube.com/watch?v=PsE9UqoWtS4) (13:01)
+* [Hypothesis Testing ](https://www.youtube.com/watch?v=J6AdoiNUyWI) (8:24)
+* [Multiple Linear Regression and Interpreting Regression Coefficients ](https://www.youtube.com/watch?v=1hbCJyM9ccs) (15:38)
+* [Model Selection and Qualitative Predictors](https://www.youtube.com/watch?v=3T6RXmIHbJ4) (14:51)
+* [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
+* [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
+
+### Chapter 4: Classification ([slides](https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/classification.pdf))
+
+* [Introduction to Classification](https://www.youtube.com/watch?v=sqq21-VIa1c) (10:25)
+* [Logistic Regression and Maximum Likelihood](https://www.youtube.com/watch?v=31Q5FGRnxt4) (9:07)
+* [Multivariate Logistic Regression and Confounding](Multivariate Logistic Regression and Confounding) (9:53)
+* [Case-Control Sampling and Multiclass Logistic Regression](Case-Control Sampling and Multiclass Logistic Regression) (7:28)
+* [Linear Discriminant Analysis and Bayes Theorem](https://www.youtube.com/watch?v=RfrGiG1Hm3M) (7:12)
+* [Univariate Linear Discriminant Analysis](https://www.youtube.com/watch?v=QG0pVJXT6EU) (7:37)
+* [Multivariate Linear Discriminant Analysis and ROC Curves](https://www.youtube.com/watch?v=X4VDZDp2vqw) (17:42)
+* [Quadratic Discriminant Analysis and Naive Bayes](https://www.youtube.com/watch?v=6FiNGTYAOAA) (10:07)
+* [Lab: Logistic Regression](https://www.youtube.com/watch?v=TxvEVc8YNlU) (10:14)
+* [Lab: Linear Discriminant Analysis](https://www.youtube.com/watch?v=2cl7JiPzkBY) (8:22)
+* [Lab: K-Nearest Neighbors](https://www.youtube.com/watch?v=9TVVF7CS3F4) (5:01)
+
+### Chapter 5: Resampling Methods ([slides](https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/cv_boot.pdf))
+
+* [Estimating Prediction Error and Validation Set Approach](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14:01)
+* [K-fold Cross-Validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (13:33)
+* [Cross-Validation: The Right and Wrong Ways](https://www.youtube.com/watch?v=S06JpVoNaA0) (10:07)
+* [The Bootstrap](https://www.youtube.com/watch?v=p4BYWX7PTBM) (11:29)
+* [More on the Bootstrap](https://www.youtube.com/watch?v=BzHz0J9a6k0) (14:35)
+* [Lab: Cross-Validation](https://www.youtube.com/watch?v=6dSXlqHAoMk) (11:21)
+* [Lab: The Bootstrap](https://www.youtube.com/watch?v=YVSmsWoBKnA) (7:40)
+
+### Chapter 6: Linear Model Selection and Regularization ([slides](https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/model_selection.pdf))
+
+* [Linear Model Selection and Best Subset Selection](https://www.youtube.com/watch?v=91si52nk3LA) (13:44)
+* [Forward Stepwise Selection](https://www.youtube.com/watch?v=nLpJd_iKmrE) (12:26)
+* [Backward Stepwise Selection ](https://www.youtube.com/watch?v=NJhMSpI2Uj8) (5:26)
+* [Estimating Test Error Using Mallow’s Cp, AIC, BIC, Adjusted R-squared](https://www.youtube.com/watch?v=LkifE44myLc) (14:06)
+* [Estimating Test Error Using Cross-Validation](https://www.youtube.com/watch?v=3p9JNaJCOb4) (8:43)
+* [Shrinkage Methods and Ridge Regression](https://www.youtube.com/watch?v=cSKzqb0EKS0) (12:37)
+* [The Lasso](https://www.youtube.com/watch?v=A5I1G1MfUmA) (15:21)
+* [Tuning Parameter Selection for Ridge Regression and Lasso](https://www.youtube.com/watch?v=xMKVUstjXBE) (5:27)
+* [Dimension Reduction](https://www.youtube.com/watch?v=QlyROnAjnEk) (4:45)
+* [Principal Components Regression and Partial Least Squares ](https://www.youtube.com/watch?v=eYxwWGJcOfw) (15:48)
+* [Lab: Best Subset Selection](https://www.youtube.com/watch?v=3kwdDGnV8MM) (10:36)
+* [Lab: Forward Stepwise Selection and Model Selection Using Validation Set](https://www.youtube.com/watch?v=mv-vdysZIb4) (10:32)
+* [Lab: Model Selection Using Cross-Validation](https://www.youtube.com/watch?v=F8MMHCCoALU) (5:32)
+* [Lab: Ridge Regression and Lasso ](https://www.youtube.com/watch?v=1REe3qSotx8) (16:34)
+
+### Chapter 7: Moving Beyond Linearity ([slides](https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/nonlinear.pdf))
+
+* [Polynomial Regression and Step Functions ](https://www.youtube.com/watch?v=gtXQXA7qF3c) (14:59)
+* [Piecewise Polynomials and Splines](https://www.youtube.com/watch?v=7ZIqzTNB8lk) (13:13)
+* [Smoothing Splines](https://www.youtube.com/watch?v=mxXHJa1DsWQ) (10:10)
+* [Local Regression and Generalized Additive Models](https://www.youtube.com/watch?v=N2hBXqPiegQ) (10:45)
+* [Lab: Polynomials](https://www.youtube.com/watch?v=uQBnDGu6TYU) (21:11)
+* [Lab: Splines and Generalized Additive Models](https://www.youtube.com/watch?v=DCn83aXXuHc) (12:15)
+
+### Chapter 8:  Tree-Based Methods ([slides](https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/trees.pdf))
+
+* [Decision Trees](https://www.youtube.com/watch?v=6ENTbK3yQUQ) (14:37)
+* [Pruning a Decision Tree](https://www.youtube.com/watch?v=GfPR7Xhdokc) (11:45)
+* [Classification Trees and Comparison with Linear Models](https://www.youtube.com/watch?v=hPEJoITBbQ4) (11:00)
+* [Bootstrap Aggregation (Bagging) and Random Forests](https://www.youtube.com/watch?v=lq_xzBRIWm4) (13:45)
+* [Boosting and Variable Importance](https://www.youtube.com/watch?v=U3MdBNysk9w) (12:03)
+* [Lab: Decision Trees](https://www.youtube.com/watch?v=0wZUXtvAtDc) (10:13)
+* [Lab: Random Forests and Boosting ](https://www.youtube.com/watch?v=IY7oWGXb77o) (15:35)
+
+### Chapter 9: Support Vector Machines ([slides](https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/svm.pdf))
+
+* [Maximal Margin Classifier](https://www.youtube.com/watch?v=QpbynqiTCsY) (11:35)
+* [Support Vector Classifier](https://www.youtube.com/watch?v=xKsTsGE7KpI) (8:04)
+* [Kernels and Support Vector Machines](https://www.youtube.com/watch?v=dm32QvCW7wE) (15:04)
+* [Example and Comparison with Logistic Regression](https://www.youtube.com/watch?v=mI18GD4_ysE) (14:47)
+* [Lab: Support Vector Machine for Classification](https://www.youtube.com/watch?v=qhyyufR0930) (10:13)
+* [Lab: Nonlinear Support Vector Machine](https://www.youtube.com/watch?v=L3n2VF7yKkk) (7:54)
+
+### Chapter 10: Unsupervised Learning ([slides](https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/unsupervised.pdf))
+
+* [Unsupervised Learning and Principal Components Analysis ](https://www.youtube.com/watch?v=ipyxSYXgzjQ) (12:37)
+* [Exploring Principal Components Analysis and Proportion of Variance Explained](https://www.youtube.com/watch?v=dbuSGWCgdzw) (17:39)
+* [K-means Clustering](https://www.youtube.com/watch?v=aIybuNt9ps4) (17:17)
+* [Hierarchical Clustering](Hierarchical Clustering ) (14:45)
+* [Breast Cancer Example of Hierarchical Clustering](https://www.youtube.com/watch?v=yUJcTpWNY_o) (9:24)
+* [Lab: Principal Components Analysis](https://www.youtube.com/watch?v=lFHISDj_4EQ) (6:28)
+* [Lab: K-means Clustering](https://www.youtube.com/watch?v=YDubYJsZ9iM) (6:31)
+* [Lab: Hierarchical Clustering](https://www.youtube.com/watch?v=4u3zvtfqb7w) (6:33)
+
+### Interviews
+
+* [John Chambers recounts the history of S and R](http://blog.revolutionanalytics.com/2014/01/john-chambers-recounts-the-history-of-s-and-r.html) (10:10)
+* [Interview with Bradley Efron](https://www.youtube.com/watch?v=6l9V1sINzhE) (12:08)
+* [Interview with Jerome Friedman](https://www.youtube.com/watch?v=79tR7BvYE6w) (10:29)
+* [Graduate students](https://www.youtube.com/watch?v=MEMGOlJxxz0) (7:44)
+
+* * *
