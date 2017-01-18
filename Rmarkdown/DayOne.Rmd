@@ -1,12 +1,12 @@
 ---
 title: "Day One"
 author: "Alan Arnholt"
-date: "1/17/2017"
+date: '`r format(Sys.time(), "%b %d, %Y")`'
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, comment = NA, warning = FALSE, message = FALSE, fig.align = "center")
 ```
 
 # Creating A Data Frame
@@ -41,7 +41,7 @@ ggplot(data = DF, aes(x = HeightIn, y = WingSpan, color = Sex)) +
 library(dplyr)
 Res <- DF %>%
   group_by(Sex) %>%
-  summarize(MH = mean(HeightIn), SH = sd(HeightIn))
+  summarize(MH = mean(HeightIn), SH = sd(HeightIn), n = n())
 Res
 ```
 
@@ -53,4 +53,119 @@ knitr::kable(Res)
 
 ```{r}
 DT::datatable(Res)
+```
+
+## Testing Hypotheses
+
+$H_0: \textrm{The average height of males is the no different than the average height of females.}$
+
+$H_A: \textrm{The average height of males is greater than the average height of females.}$
+
+Written mathematically, 
+
+$H_0: \mu_{\textrm{males}} - \mu_{\textrm{females}} = 0$
+
+$H_A: \mu_{\textrm{males}} - \mu_{\textrm{females}} > 0$
+
+* Question - How should be test our hypotheses?
+
+1. $t$-test?
+2. Permutation Test?
+3. Bootstrap CI?
+
+* What are the assumptions for a $t$-test?
+
+```{r}
+# Using ggplot2
+ggplot(data = DF, aes(sample = HeightIn, color = Sex)) +
+  geom_qq() + 
+  theme_bw()
+```
+
+```{r}
+xbar1 <- Res[2, 2]
+xbar2 <- Res[1, 2]
+s1 <- Res[2, 3]
+s2 <- Res[1, 3]
+n1 <- Res[2, 4]
+n2 <- Res[1, 4]
+TS <- (xbar1 - xbar2)/(s1^2/n1 + s2^2/n2)^0.5
+names(TS) <- "TestStatistic"
+TS
+str(TS$TestStatistic)
+nu <- (s1^2/n1 + s2^2/n2)^2 / ((s1^2/n1)^2/(n1-1) + (s2^2/n2)^2/(n2-1))
+names(nu) <- "DegreesOfFreedom"
+nu
+```
+
+## Base R
+
+```{r}
+curve(dt(x, nu$DegreesOfFreedom), from = -4, to = 4, n = 500, col = "purple")
+```
+
+## Curve with `ggplot2`
+
+```{r}
+ggplot(data.frame(x = c(-4, 4)), aes(x=x)) +
+  stat_function(fun = dt, args = list(df = nu$DegreesOfFreedom)) + 
+  theme_bw() + 
+  geom_vline(xintercept = 1.38, color = "purple")
+```
+
+## $p$-value
+
+```{r}
+ts <- TS$TestStatistic
+ts
+nu <- nu$DegreesOfFreedom
+nu
+pvalue <- pt(ts, nu, lower = FALSE)
+pvalue
+```
+
+The $P(t_{\nu} > `r ts`) = `r pvalue`.$
+
+```{r}
+t.test(HeightIn ~ Sex, data = DF, alternative = "less")
+```
+
+## Permutation/Randomization Testing
+
+```{r}
+N <- 10^4 - 1
+PTS <- numeric(N)
+for(i in 1:N){
+  PTS[i] <- t.test(HeightIn ~ sample(Sex), data = DF)$stat
+}
+epv <- (sum(PTS >= ts) + 1)/(N + 1)
+epv
+ggplot(data = data.frame(x = PTS), aes(x = x)) +
+  geom_density(fill = "purple") + 
+  theme_bw()
+```
+
+## Bootstrapping Percentile CI
+
+* Key difference is that sampling is done with replacement!
+
+```{r}
+HeightInM <- DF$HeightIn[DF$Sex =="M"]
+HeightInM
+HeightInF <- subset(DF, Sex == "F", select = HeightIn, drop = TRUE)
+HeightInF
+```
+
+```{r}
+B <- 10^4 - 1
+BSD <- numeric(B)
+for(i in 1:B){
+  bs1 <- sample(HeightInM, size = 5, replace = TRUE)
+  bs2 <- sample(HeightInF, size = 5, replace = TRUE)
+  BSD[i] <- mean(bs1) - mean(bs2)
+}
+ggplot(data = data.frame(x = BSD), aes(x = x)) +
+  geom_density(fill = "lightblue") +
+  theme_bw()
+quantile(BSD, probs = c(0.05, 0.90))
 ```
