@@ -1,7 +1,7 @@
 ---
 title: "Day One"
 author: "Alan Arnholt"
-date: '`r format(Sys.time(), "%b %d, %Y")`'
+date: Jan 17, 2017
 output: html_document
 ---
 
@@ -98,10 +98,12 @@ names(nu) <- "DegreesOfFreedom"
 nu
 ```
 
+During class, the question was asked "What are degrees of freedom?"  A good explanation is provided on [Wikipedia](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)).  
+
 ## Base R
 
 ```{r}
-curve(dt(x, nu$DegreesOfFreedom), from = -4, to = 4, n = 500, col = "purple")
+curve(dt(x, nu$DegreesOfFreedom), from = -4, to = 4, n = 500, col = "purple", ylab = "")
 ```
 
 ## Curve with `ggplot2`
@@ -110,7 +112,8 @@ curve(dt(x, nu$DegreesOfFreedom), from = -4, to = 4, n = 500, col = "purple")
 ggplot(data.frame(x = c(-4, 4)), aes(x=x)) +
   stat_function(fun = dt, args = list(df = nu$DegreesOfFreedom)) + 
   theme_bw() + 
-  geom_vline(xintercept = 1.38, color = "purple")
+  geom_vline(xintercept = TS$TestStatistic, color = "purple") + 
+  geom_hline(yintercept = 0)
 ```
 
 ## $p$-value
@@ -124,7 +127,7 @@ pvalue <- pt(ts, nu, lower = FALSE)
 pvalue
 ```
 
-The $P(t_{\nu} > `r ts`) = `r pvalue`.$
+The $P(t_{\nu} = t_{`r nu`} \ge `r ts`) = `r pvalue`.$
 
 ```{r}
 t.test(HeightIn ~ Sex, data = DF, alternative = "less")
