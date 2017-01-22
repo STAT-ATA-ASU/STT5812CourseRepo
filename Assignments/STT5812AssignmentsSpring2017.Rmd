@@ -33,7 +33,7 @@ output:
 * [Statistics Review](../../STT3851ClassRepo/Rmarkdown/StatReview.html)
 * Quiz #1
 * Read Chapters 1-2 of [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
-
+* Link to [Day One Activity and Code](../Rmarkdown/DayOne.html)
 
 **Jan 24:**
 
