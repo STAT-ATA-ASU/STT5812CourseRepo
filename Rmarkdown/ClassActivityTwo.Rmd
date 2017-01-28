@@ -1,0 +1,85 @@
+---
+title: "In Class Activity 1/26/17"
+output: 
+    bookdown::html_document2
+date: 'Last compiled: `r format(Sys.time(), "%b %d, %Y")`'
+---
+
+```{r label = "setup", include=FALSE}
+knitr::opts_chunk$set(comment = NA, fig.align = "center", message = FALSE, warning = FALSE)
+```
+
+# First level header {-}
+
+I want eveyone to see Figures \@ref(fig:FG) and \@ref(fig:GDOS).  If you need help with `ggplot2`, please see the online [documentation](http://docs.ggplot2.org/current/).  
+
+```{r}
+library(PASWR2)
+```
+
+## Create proper data set {-}
+
+```{r}
+library(dplyr)
+flys <- DROSOPHILA %>%
+  filter(line != "Susceptible")
+DT::datatable(flys)
+```
+
+## Graph with caption {-}
+
+```{r, label = "FG", fig.cap = "This is where you type your description"}
+library(ggplot2)
+ggplot(data = flys, aes(x = fecundity)) +
+  geom_histogram(fill = "pink", color = "black", binwidth = 5) +
+  theme_bw() + 
+  labs(x = "Number of eggs laid over a 25 day period", y = "Number of Flys")
+```
+
+
+## Hypotheses {-}
+
+$H_0: \mu_{\text{Non-selected}} - \mu_{\text{Resistant}} = 0$
+
+$H_A: \mu_{\text{Non-selected}} - \mu_{\text{Resistant}} \ne 0$
+
+### *t*-test {-}
+
+```{r}
+t.test(fecundity ~ line, data = flys)
+tobs <- t.test(fecundity ~ line, data = flys)$statistic
+tobs
+```
+
+### Permutation test {-}
+
+```{r}
+# Permutation
+N <- 10^4 - 1
+PTS <- numeric(N)
+for(i in 1:N){
+  PTS[i] <- t.test(fecundity ~ sample(line), data = flys)$statistic
+}
+epv <- (sum(PTS >= tobs) + sum(PTS <= -tobs) + 1)/(N + 1)
+epv
+```
+
+
+```{r, label = "GDOS", fig.cap = "The light blue is the simulated permutation distribution while the red line represents a theoretical t with 47 degrees of freedom"}
+GDF <- data.frame(x = PTS)
+ggplot(data = GDF, aes(x = x)) + 
+  geom_density(fill = "lightblue") + 
+  theme_bw() + 
+  stat_function(fun = dt, args = list(df = 47.087), color = "red") + 
+  geom_vline(xintercept = c(-tobs, tobs), col = "purple")
+```
+
+
+### Session Information {-}
+
+```{r}
+sessionInfo()
+```
+
+
+
