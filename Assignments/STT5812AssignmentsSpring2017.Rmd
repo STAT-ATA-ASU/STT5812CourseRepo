@@ -73,7 +73,7 @@ output:
 2. Copy the clone URL to the clipboard.
 3. Click `File > New Project > Version Control > Git`
 4. Paste the clone URL (`https://github.com/YourUserName/STAT-ATA-ASU/STT5812CourseRepo.git`) in the `Repository URL:` box.
-5. Type a name (suggestion `UserNameSTT5812`) in the `Project directory name:` box.
+5. Use the name (`STT5812CourseRepo`) in the `Project directory name:` box.
 6. Change if needed the location in the `Create project as subdirectory of:` box.
 7. Click the `Create Project` box.  You should now have a local copy of the forked repository on your local machine.  Congratulations!  
 * Set the upstream remote in your fork to this repository with the command
