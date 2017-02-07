@@ -111,7 +111,7 @@ git pull upstream gh-pages
     + Review/read chapter 2 [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
     + Watch [Classification Problems and K-Nearest Neighbors](https://www.youtube.com/watch?v=vVj2itVNku4) (15:37)
     + Watch [Lab: Introduction to R](https://www.youtube.com/watch?v=jwBgGS_4RQA) (14:12)
-* Lecture - Bias Variance Tradeoff - Take notes
+* Lecture - Bias Variance Tradeoff - Take notes - [Slides](../../STT3851ClassRepo/Rmarkdown/BiasVarDer.pdf)
 * Reproduce [Modified Introduction to R](../../STT3851ClassRepo/Rmarkdown/LabChap2.html).  Submit your html file to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2743) no later than 5 pm Feb 10.
 
 
