@@ -168,6 +168,7 @@ git pull upstream gh-pages
     + Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
     + Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
 * Discuss [Chapter 2 and 3 material](../../STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
+* Go over [Bias Variance Graphs Again](../../STT3851ClassRepo/Rmarkdown/BiasVarianceGGplot.html) 
 * Quiz #6
 
 **Feb 28:**
