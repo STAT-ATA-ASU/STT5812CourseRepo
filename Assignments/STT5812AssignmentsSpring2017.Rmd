@@ -182,7 +182,7 @@ git pull upstream gh-pages
     + [Start Project 1](http://www.amstat.org/publications/jse/v16n2/datasets.pardoe.html) - Read the hyperlinked paper.  
     + The data set can be downloaded from http://www.amstat.org/publications/jse/datasets/homes76.dat.txt, while the code book is available from http://www.amstat.org/publications/jse/datasets/homes76.txt
 * Reproduce [Lab: Linear Regression](../../STT3851ClassRepo/Rmarkdown/LabChap3.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2746) no later than 5 pm Mar 3.
-* Quiz #7
+* Quiz #7 (Chapter 3 Assessment)
 
 
 **Mar 7:**
@@ -193,7 +193,7 @@ git pull upstream gh-pages
 **Mar 9:**
 
 * [Work on Project 1](../../STT3851ClassRepo/Rmarkdown/DirectionsMHP.html)
-* Quiz #8
+* Quiz #8 (Chapter 3 Assessment)
 
 **~~Mar 13 - Mar 17:~~ ** **No Class - Spring Break**
 
