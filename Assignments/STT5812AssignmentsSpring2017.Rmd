@@ -2,12 +2,15 @@
 title: "Assignments STT 5812 - Spring 2017"
 author: "Alan T. Arnholt"
 date: 'Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`'
-output:
-  html_document:
-    css: ../CSS/asu.css
+output: 
+  bookdown::html_document2: 
     highlight: textmate
     theme: yeti
+    css: "../CSS/style.css"
 ---
+
+
+
 
 **Jan 17:**
 
@@ -22,6 +25,13 @@ output:
     + Read this stackoverflow thread details how to create a [minimal R reproducible example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example/5963610#5963610). 
     + Read [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) by Eric Raymond and Rick Moen and heed their advice.
     + Read [Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/)
+ 
+```{block2, note-text, type='rmdnote'}
+1.  Most due dates are 5 p.m. Friday for [CrowdGrader](https://www.crowdgrader.org/) assignments.
+
+2.  Most [CrowdGrader](https://www.crowdgrader.org/) peer reviews will be due by 11 p.m. on Tuesdays.
+```    
+
 
 **Jan 19:**
 
@@ -296,4 +306,4 @@ Start Project 2
 
 
 
-#[Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT5812CourseRepo/Syllabus/STT5812SyllabusSpring2017.html) - [Piazza](https://piazza.com/appstate/spring2017/stt/home)
+# [Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT5812CourseRepo/Syllabus/STT5812SyllabusSpring2017.html) - [Piazza](https://piazza.com/appstate/spring2017/stt/home) {-}
