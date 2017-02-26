@@ -200,7 +200,7 @@ git pull upstream gh-pages
 
 **Mar 21:**
 
-* Commit your final changes for Project 1 to your private repository and email the instructor your SHA prior to 10am March 22, 2016.  Use the subject line "Project 1-STT3851-Last_name First_name-SHA#" in your email.
+* Commit your final changes for Project 1 to your private repository and email the instructor your SHA prior to 10am March 22, 2016.  Use the subject line "Project 1-STT5812-Last_name First_name-SHA#" in your email.
 
 
 **Mar 23:**
