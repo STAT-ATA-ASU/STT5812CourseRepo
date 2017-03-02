@@ -170,5 +170,5 @@ for(i in 1:B){
 ggplot(data = data.frame(x = BSD), aes(x = x)) +
   geom_density(fill = "lightblue") +
   theme_bw()
-quantile(BSD, probs = c(0.05, 0.90))
+quantile(BSD, probs = c(0.05, 0.95))
 ```
