@@ -189,7 +189,7 @@ git pull upstream gh-pages
 **Mar 7:**
 
 * [Work on Project 1](../../STT3851ClassRepo/Rmarkdown/DirectionsMHP.html)
-
+* [Code for class notes](../../STT3851ClassRepo/Rmarkdown/BodyTemperatures.html)
 
 **Mar 9:**
 
