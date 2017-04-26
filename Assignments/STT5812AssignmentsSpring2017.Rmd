@@ -275,7 +275,7 @@ Start Project 2
 
 * Work on Project 2
 * Work on _Lab: Subset Selection Methods_
-* Quiz #12
+* ~~Quiz #12~~
 
 **~~Apr 17-18:~~ No Class - State Holidays**
 
@@ -287,15 +287,14 @@ Start Project 2
 **Apr 25:**
 
 * Turn in Project 2 - NLT April 26, 10 am
-* [CrowdGrader link](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2028)
-* Make sure a single `.Rmd` with the sections outlined in the [Example Paper](../../STT3851ClassRepo/BDbetaTemplate/TemplateBookDown.html) is in your `Project2` directory under your private course repository.  This is 10% of the assignment grade.
+* Make sure a single `.Rmd` with the sections outlined in the [Example Paper](../../STT3851ClassRepo/BDbetaTemplate/TemplateBookDown.html) is in your `Project2` directory under your private course repository.
 * Send an email to the instructor using a subject of "House Data Predictions" with an attached vector (csv file) of your predictions using the data set `housedataTEST.csv`.  Note: your vector should contain 4229 predictions. 
 
 **Apr 27:**
 
 * [Poster Template Directory](https://github.com/STAT-ATA-ASU/STT3851Spring2016/tree/gh-pages/Poster)
 * Work on Presentation
-* Quiz #13
+* ~~Quiz #13~~
 
 **May 2:**
 
