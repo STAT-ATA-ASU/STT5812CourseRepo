@@ -3,11 +3,11 @@ title: "Welcome"
 ---
 
 
-* The course syllabus is stored in the [`Syllabus`](./Syllabus/STT5812SyllabusSpring2017.html) directory of the STT 5812 repository.
+* The course syllabus is stored in the [`Syllabus`](./Syllabus/STT5812SyllabusSpring2018.html) directory of the STT 5812 repository.
 
-* Course pacing and assignments are stored in the [`Assignments`](./Assignments/STT5812AssignmentsSpring2017.html) directory of the STT 5812 repository.
+* Course pacing and assignments are stored in the [`Assignments`](./Assignments/STT5812AssignmentsSpring2018.html) directory of the STT 5812 repository.
 
-* Questions related to course materials should be addressed on the [course piazza account](https://piazza.com/appstate/spring2017/stt/home)
+* Questions related to course materials should be addressed on the [course piazza account](https://piazza.com/appstate/spring2018/stt5812)
 
 * [Class RStudio Server](https://mathr.math.appstate.edu) (you must be registered in the course to access the server)
 
