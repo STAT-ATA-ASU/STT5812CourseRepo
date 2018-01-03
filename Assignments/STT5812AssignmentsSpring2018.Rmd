@@ -1,0 +1,174 @@
+---
+title: "Assignments STT 5812 - Spring 2018"
+author: "Alan T. Arnholt"
+date: 'Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`'
+output: 
+  bookdown::html_document2: 
+    highlight: textmate
+    theme: yeti
+    css: "../CSS/style.css"
+---
+
+```{block2, note-text, type='rmdnote'}
+1.  Most due dates are 5 p.m. Tuesday for [DataCamp](https://www.datacamp.com) assignments.
+
+2.  Assignments are generally due at the start of the class.  
+
+3.  Homework solutions will be posted around 5 p.m. on Sundays.
+```  
+
+
+**Jan 16:**
+
+* Go over syllabus.
+* Become familiar with the Appstate [RStudio server](https://mathr.math.appstate.edu/). You will use your Appstate user name and password to log in to the server.  You must be registered in the class to access the server.
+* Sign-up for free accounts on [GitHub](https://github.com) and [Rpubs](https://rpubs.com).
+* When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **first_name_last_name** as your username when you register with GitHub.  For example, my username on GitHub is *alanarnholt*. If you have a popular name such as John Smith, you may need to provide some other distinquishing characteristic in your username.  Please use the same **username** for your account on Rpubs. 
+* Once you have a GitHub account, send an email to arnholtat@appstate.edu with a Subject line of **STT5812 - GitHub Username**, and tell me in the body of your email your first name, last name, and your GitHub username.  I will then manually add you as a team member to the repository in the STAT-ATA-ASU organization that has your name (**Last_name-First_name**).  This repository will be where you store all of your work for this course.  I will also change your repository to a private repository.
+* Follow the directions from [Happy Git and GitHub for the useR](http://happygitwithr.com/) to [Introduce yourself to Git](http://happygitwithr.com/hello-git.html), [Connect to GitHub](http://happygitwithr.com/push-pull-github.html), and [Cache credentials for HTTPS](http://happygitwithr.com/credential-caching.html).
+* In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
+* [Statistics Review](../../STT3851ClassRepo/Rmarkdown/StatReview.html)
+
+------------------
+
+* Homework: 
+    + Watch this [video](https://www.youtube.com/watch?v=ZFaWxxzouCY&list=PLjTlxb-wKvXNSDfcKPFH2gzHGyjpeCZmJ&index=3) which provides some background on asking questions.  
+    + Read this stackoverflow thread details how to create a [minimal R reproducible example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example/5963610#5963610). 
+    + Read [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) by Eric Raymond and Rick Moen and heed their advice.
+    + Read [Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/)
+    + Complete [DataCamp](https://datacamp.com) course _Reporting with R Markdown_ (3 hours)
+    + Read PASWR2E pages 453-490
+    + Complete chapter 8 homework problems 2-22 (evens) except 14
+
+--------------
+
+**Jan 23:**
+
+* In class lecture chapter 8 PASWR2E
+* Quiz #1
+
+--------------
+
+* Homework:
+     + Review pages 453-490 from PASWR2E 
+     + Read pages 491-509 from PASWR2E 
+     + Complete chapter 8 homework problems 24-36 (evens) 
+     + [Phillip Guo's Unix-like command line tutorials (Four tutorials about 10 minutes each)](http://www.pgbovine.net/command-line-tutorial.htm)
+     + [Phillip Guo's Basic Git and Github tutorials (Three tutorials about 10 minutes each)](http://www.pgbovine.net/git-tutorial.htm)
+     + [Clone a GitHub Repo with RStudio (Video)](https://www.youtube.com/watch?v=YxZ8J2rqhEM) (5:05)
+     + Read Chapters 1-3 of [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
+     + Complete [DataCamp](https://datacamp.com) course _Introduction to the Tidyverse_ (4 hours) - optional DataCamp courses you may want to complete include _Data Visulization with `ggplot2`_ (Part 1) and _Data Manipulation in `R` with `dplyr`_
+
+--------------
+
+**Jan 30:**
+
+* In class lecture chapter 9 PASWR2E
+* Quiz #2
+
+--------------
+
+* Homework:
+    + Read the [Git and GitHub](http://r-pkgs.had.co.nz/git.html) chapter from Hadley Wickham's book [R Packages](http://r-pkgs.had.co.nz/)
+    + Complete [DataCamp](https://datacamp.com) course _Working with the RStudio IDE_ (Part 1) (3 hours)
+    + Read/review [Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/)
+    + Read/review Chapters 1-3 of [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
+    + Read pages 519-562 PASWR2E
+    + Complete chapter 9 homework problems 2-18 (evens)
+
+--------------
+
+**Feb 6:**
+
+* In class lecture chapter 9 PASWR2E
+* Quiz #3
+
+--------------
+
+* Update README file in private repository
+* Use an avatar or picture on your GitHub account
+* Homework:
+    + Read pages 563-578 PASWR2E
+    + Complete chapter 9 problems 20-30 (evens)
+    + Complete [DataCamp](https://datacamp.com) course _Building Web Applications in R with Shiny_
+
+--------------
+
+**Feb 13:**
+
+* In class lecture on Shiny
+* Quiz #4
+* Assign groups and Shiny project (coverage probability)
+
+--------------
+
+* Homework:
+    + Complete [DataCamp](https://www.datacamp.com) course _Working with the RStudio IDE_ (Part 2) (3 hours)
+    + Work on Shiny project
+    + Reproduce [Modified Introduction to R](../../STT3851ClassRepo/Rmarkdown/LabChap2.html)
+
+-------------
+
+Clone the repository to your local machine using RStudio by following these instructions:
+
+1. [Fork](https://help.github.com/articles/fork-a-repo/) the repository.
+2. Copy the clone URL to the clipboard.
+3. Click `File > New Project > Version Control > Git`
+4. Paste the clone URL (`https://github.com/YourUserName/STAT-ATA-ASU/STT5812CourseRepo.git`) in the `Repository URL:` box.
+5. Use the name (`STT5812CourseRepo`) in the `Project directory name:` box.
+6. Change if needed the location in the `Create project as subdirectory of:` box.
+7. Click the `Create Project` box.  You should now have a local copy of the forked repository on your local machine.  Congratulations! 
+
+Set the upstream remote in your fork to this repository with the command
+```
+git remote add upstream https://github.com/STAT-ATA-ASU/STT5812CourseRepo.git
+```
+Verify with
+```
+git remote -v
+```
+To obtain updates from the upstream repository type
+```
+git pull upstream master
+```
+If the upstream repository is using `gh-pages`, use `gh-pages` instead of `master` to obtain updates.
+```
+git pull upstream gh-pages
+```
+If there are conflicts, you will need to resolve them before proceeding.
+
+--------------
+
+**Feb 20:**
+
+* In class lecture on Shiny
+* Quiz #5
+* Assign groups and Shiny project (power)
+
+--------------
+
+* Homework:
+    + Work on Shiny project
+    + Write up selected homework problems in RMarkdown
+
+--------------
+
+**Feb 27:**
+
+* Quiz #6
+* Group presentations:
+    + Imbed Shiny apps in slides
+    + Individual homework problems
+
+* Homework:
+     + Read pages 781-822 of PASWR2E
+     + Complete [DataCamp](https://www.datacamp.com) course _Correlation and Regression_ (Part 2) (4 hours)
+     
+--------------
+
+
+
+
+
+
+# [Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT5812CourseRepo/Syllabus/STT5812SyllabusSpring2018.html) - [Piazza](https://piazza.com/appstate/spring2018/stt/home) {-}
