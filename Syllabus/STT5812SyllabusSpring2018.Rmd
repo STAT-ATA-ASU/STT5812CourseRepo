@@ -48,7 +48,7 @@ This course covers elements of data management, descriptive statistics,  and inf
 
 
 * 25% of the course grade will come from quizzes (13).
-* 25% of the grade will come [DataCamp](https://datacamp.com) courses (8).
+* 25% of the grade will come from [DataCamp](https://datacamp.com) courses (8).
 * 25% of the course grade will come from group projects (3)
 * 10% of the grade will come from participation (attendance, participation in discussion in-class and/or online).
 * 15% of the course grade will come from the final project.
