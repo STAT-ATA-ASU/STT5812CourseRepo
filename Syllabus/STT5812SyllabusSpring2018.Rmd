@@ -4,7 +4,7 @@ author: ''
 date: "Spring 2018"
 output:
   html_document:
-    css: asu.css
+    css: "../CSS/style.css"
     highlight: textmate
     theme: yeti
 ---
@@ -20,13 +20,14 @@ Questions related to the class should be addressed with the [piazza account for 
 
 **Course Description:**  
 
-This course covers elements of data management, descriptive statistics,  and inferential statistics. The course also examines the variance-bias tradeoff, linear regression, cross-validation, bootstrapping, subset selection, and choosing optimal models. 
+**Statistical Concepts and Applications II with Probability Modeling**---This course is a continuation of STT 5811. Topics include: an introduction to the design of experiments, exploring and modeling relationships between variables, including chisquare analysis, regression models, ANOVA, and logistic regression. Inferential procedures for each of these models will also be covered. Computationally intensive methods, such as permutation tests, will also be introduced. Statistical concepts will be developed through simulations, and applications will focus on statistical problem-solving and appropriate communication of results of a statistical analysis. Students will use two or more statistical software packages during the course. The goal of the course is to provide sufficient theory and methodology to prepare students to teach the introductory level statistics course. Prerequisite: STT 5811 or permission of instructor.
+
 
 **Course Objectives:**
 
 1.  Students will use a reproducible research work flow.
 2.  Students will improve their technology expertise.
-3.  Students will learn to apply statistical learning techniques.
+3.  Students will learn to apply and communicate the results of statistical learning techniques.
 
 
 **Course Text:**
@@ -46,13 +47,16 @@ This course covers elements of data management, descriptive statistics,  and inf
 
 **Course Grading:**
 
-
 * 25% of the course grade will come from quizzes (13).
 * 25% of the grade will come from [DataCamp](https://datacamp.com) courses (8).
 * 25% of the course grade will come from group projects (3)
 * 10% of the grade will come from participation (attendance, participation in discussion in-class and/or online).
 * 15% of the course grade will come from the final project.
 * Up to 10 points may be added to your final course average for an excellent compilation of all assignments (quizzes, labs, projects) and class notes in a single hyperlinked `*.html` document. 
+
+**Course Assignaments:**
+
+Tentative assignments and due dates for the course may be found at [https://stat-ata-asu.github.io/STT5812CourseRepo/Assignments/STT5812AssignmentsSpring2018.html](https://stat-ata-asu.github.io/STT5812CourseRepo/Assignments/STT5812AssignmentsSpring2018.html)
 
 **Piazza:**
 
@@ -79,7 +83,7 @@ This course will use the RStudio server  (https://mathr.math.appstate.edu/) that
 * [RStudio](http://www.rstudio.com/products/rstudio/download/)
 * [LaTeX](http://www.ctan.org/starter)
 
-You must have an active internet connection and be registered in the course to access the server. To access the server, point any web browser to <https://mathr.math.appstate.edu/>.  You will need to acknowledge the connection is unsecure and possibly add a security exception to your web browser. Use your Appstate Username and Password to access the server.  A screen shot of the RStudio server is shown below.
+You must have an active internet connection and be registered in the course to access the server. To access the server, point any web browser to <https://mathr.math.appstate.edu/>.  Use your Appstate Username and Password to access the server.  A screen shot of the RStudio server is shown below.
 
 ```{r, echo = FALSE, fig.align = "center"}
 knitr::include_graphics("RStudioLogIn.png", dpi = 96)
@@ -89,4 +93,4 @@ If you have problems with your Appstate Username or Password visit [IT Support S
 
 ***
 
-#[Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) - [Assignments](http://stat-ata-asu.github.io/STT5812CourseRepo/Assignments/STT5812AssignmentsSpring2018.html) - [Piazza](https://piazza.com/appstate/spring2018/stt5812/home)
+#[Home Page](https://stat-ata-asu.github.io/STT5812CourseRepo/) - [Assignments](https://stat-ata-asu.github.io/STT5812CourseRepo/Assignments/STT5812AssignmentsSpring2018.html) - [Piazza](https://piazza.com/appstate/spring2018/stt5812/home)
