@@ -2,11 +2,11 @@
 title: "STT 5812 Syllabus - Spring 2018"
 author: ''
 date: "Spring 2018"
-output:
-  html_document:
-    css: "../CSS/style.css"
+output: 
+  bookdown::html_document2: 
     highlight: textmate
     theme: yeti
+    css: "../CSS/style.css"
 ---
 
 **Instructor:**  Dr. Alan T. Arnholt  
@@ -22,6 +22,10 @@ Questions related to the class should be addressed with the [piazza account for 
 
 **Statistical Concepts and Applications II with Probability Modeling**---This course is a continuation of STT 5811. Topics include: an introduction to the design of experiments, exploring and modeling relationships between variables, including chisquare analysis, regression models, ANOVA, and logistic regression. Inferential procedures for each of these models will also be covered. Computationally intensive methods, such as permutation tests, will also be introduced. Statistical concepts will be developed through simulations, and applications will focus on statistical problem-solving and appropriate communication of results of a statistical analysis. Students will use two or more statistical software packages during the course. The goal of the course is to provide sufficient theory and methodology to prepare students to teach the introductory level statistics course. Prerequisite: STT 5811 or permission of instructor.
 
+```{block, note-text, type='rmdnote'}
+1.  Please bring a notebook and pencil to every class.  
+2.  Access the [DataCamp](https://datacamp.com) assignments via [AsULearn](https://asulearn.appstate.edu)
+```
 
 **Course Objectives:**
 
@@ -93,4 +97,4 @@ If you have problems with your Appstate Username or Password visit [IT Support S
 
 ***
 
-#[Home Page](https://stat-ata-asu.github.io/STT5812CourseRepo/) - [Assignments](https://stat-ata-asu.github.io/STT5812CourseRepo/Assignments/STT5812AssignmentsSpring2018.html) - [Piazza](https://piazza.com/appstate/spring2018/stt5812/home)
+#[Home Page](https://stat-ata-asu.github.io/STT5812CourseRepo/) - [Assignments](https://stat-ata-asu.github.io/STT5812CourseRepo/Assignments/STT5812AssignmentsSpring2018.html) - [Piazza](https://piazza.com/appstate/spring2018/stt5812/home) {-}
