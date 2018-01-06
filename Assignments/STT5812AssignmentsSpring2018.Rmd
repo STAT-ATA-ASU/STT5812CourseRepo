@@ -1,7 +1,7 @@
 ---
 title: "Assignments STT 5812 - Spring 2018"
-author: "Alan T. Arnholt"
-date: 'Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`'
+author: ""
+date: ""
 output: 
   bookdown::html_document2: 
     highlight: textmate
@@ -172,6 +172,10 @@ If there are conflicts, you will need to resolve them before proceeding.
 ```{block, FINAL, type='rmdnote'}
 *  Follow the Tuesday evening (after 5 p.m.) meeting pattern on the [University Exam Schedule](https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2018_exam_schedule.pdf) to determine when you will present your Project.
 ```
+
+________________
+
+Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`
 
 ________________
 

@@ -1,7 +1,7 @@
 ---
 title: "STT 5812 Syllabus - Spring 2018"
 author: ''
-date: "Spring 2018"
+date: ""
 output: 
   bookdown::html_document2: 
     highlight: textmate
@@ -9,14 +9,19 @@ output:
     css: "../CSS/style.css"
 ---
 
+--------------
+
 **Instructor:**  Dr. Alan T. Arnholt  
 **Office:** Walker Hall 237      
-**Office Hours:** 1 p.m. - 1:50 p.m.  M-R
+**Office Hours:** 1 p.m. - 1:50 p.m.  M-R and by appointment
 
-Make an appointment to see me by clicking https://arnholtat.youcanbook.me/.
+--------------
 
-Questions related to the class should be addressed with the [piazza account for STT 5812](https://piazza.com/appstate/spring2018/stt5812/home).
+* Make an appointment to see me by clicking https://arnholtat.youcanbook.me/.
 
+* Questions related to the class should be addressed with the [piazza account for STT 5812](https://piazza.com/appstate/spring2018/stt5812/home).
+
+* * *
 
 **Course Description:**  
 
@@ -27,12 +32,15 @@ Questions related to the class should be addressed with the [piazza account for 
 2.  Access the [DataCamp](https://datacamp.com) assignments via [AsULearn](https://asulearn.appstate.edu)
 ```
 
+--------------
+
 **Course Objectives:**
 
 1.  Students will use a reproducible research work flow.
 2.  Students will improve their technology expertise.
 3.  Students will learn to apply and communicate the results of statistical learning techniques.
 
+--------------
 
 **Course Text:**
 
@@ -48,6 +56,7 @@ Questions related to the class should be addressed with the [piazza account for 
 
 [_R Graphics Cookbook_](http://www.amazon.com/R-Graphics-Cookbook-Winston-Chang/dp/1449316956) by Winston Chang - Available via `SafariBooksOnline` through the Appalachian State University [library](http://library.appstate.edu/). 
 
+--------------
 
 **Course Grading:**
 
@@ -58,9 +67,13 @@ Questions related to the class should be addressed with the [piazza account for 
 * 15% of the course grade will come from the final project.
 * Up to 10 points may be added to your final course average for an excellent compilation of all assignments (quizzes, labs, projects) and class notes in a single hyperlinked `*.html` document. 
 
-**Course Assignaments:**
+--------------
+
+**Course Assignments:**
 
 Tentative assignments and due dates for the course may be found at [https://stat-ata-asu.github.io/STT5812CourseRepo/Assignments/STT5812AssignmentsSpring2018.html](https://stat-ata-asu.github.io/STT5812CourseRepo/Assignments/STT5812AssignmentsSpring2018.html)
+
+--------------
 
 **Piazza:**
 
@@ -68,15 +81,19 @@ This term we will be using Piazza for class discussion. The system is highly cat
 
 Find our class page at: <https://piazza.com/appstate/spring2018/stt5812/home>
 
+--------------
 
 **How To Get Unstuck**
 
 If you have a course related question, please ask your question on [piazza](https://piazza.com/appstate/spring2018/stt/home).  Your classmates may have the same question or may answer your question before I can provide an answer.  Well constructed questions will elicit answers more rapidly than poorly constructed questions.  This [video](https://www.youtube.com/watch?v=ZFaWxxzouCY&list=PLjTlxb-wKvXNSDfcKPFH2gzHGyjpeCZmJ&index=3) provides some background on asking questions.  This stackoverflow thread details how to create a [minimal R reproducible example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example/5963610#5963610). Please read [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) by Eric Raymond and Rick Moen and heed their advice.
 
+--------------
+
 **University Policies**
 
 This course conforms with all Appalachian State University policies with respect to academic integrity, disability services, and class attendance.  The details of the policies may be found at <https://academicaffairs.appstate.edu/resources/syllabi-policy-and-statement-information>.
 
+--------------
 
 **Computers and Software**
 
@@ -95,6 +112,6 @@ knitr::include_graphics("RStudioLogIn.png", dpi = 96)
 
 If you have problems with your Appstate Username or Password visit [IT Support Services](http://support.appstate.edu/) or call 262-6266.  
 
-***
+--------------
 
 #[Home Page](https://stat-ata-asu.github.io/STT5812CourseRepo/) - [Assignments](https://stat-ata-asu.github.io/STT5812CourseRepo/Assignments/STT5812AssignmentsSpring2018.html) - [Piazza](https://piazza.com/appstate/spring2018/stt5812/home) {-}
