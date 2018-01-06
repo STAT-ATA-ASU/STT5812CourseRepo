@@ -3,9 +3,9 @@ title: "Welcome"
 ---
 
 
-* The course syllabus is stored in the [`Syllabus`](./Syllabus/STT5812SyllabusSpring2018.html) directory of the STT 5812 repository.
+* The course [syllabus](./Syllabus/STT5812SyllabusSpring2018.html) is stored in the `Syllabus` directory of the `STT5812CourseRepo` repository.
 
-* Course pacing and assignments are stored in the [`Assignments`](./Assignments/STT5812AssignmentsSpring2018.html) directory of the STT 5812 repository.
+* [Course pacing and assignments](./Assignments/STT5812AssignmentsSpring2018.html) are stored in the `Assignments` directory of the `STT5812CourseRepo` repository.
 
 * Questions related to course materials should be addressed on the [course piazza account](https://piazza.com/appstate/spring2018/stt5812)
 
