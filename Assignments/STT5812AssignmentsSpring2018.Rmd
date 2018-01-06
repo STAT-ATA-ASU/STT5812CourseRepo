@@ -173,10 +173,12 @@ If there are conflicts, you will need to resolve them before proceeding.
 *  Follow the Tuesday evening (after 5 p.m.) meeting pattern on the [University Exam Schedule](https://registrar.appstate.edu/sites/registrar.appstate.edu/files/asu_spring_2018_exam_schedule.pdf) to determine when you will present your Project.
 ```
 
+
+
+# [Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT5812CourseRepo/Syllabus/STT5812SyllabusSpring2018.html) - [Piazza](https://piazza.com/appstate/spring2018/stt/home) {-}
+
 ________________
 
 Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`
 
 ________________
-
-# [Home Page](http://stat-ata-asu.github.io/STT5812CourseRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT5812CourseRepo/Syllabus/STT5812SyllabusSpring2018.html) - [Piazza](https://piazza.com/appstate/spring2018/stt/home) {-}
