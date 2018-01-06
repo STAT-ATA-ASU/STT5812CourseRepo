@@ -179,6 +179,6 @@ If there are conflicts, you will need to resolve them before proceeding.
 
 ________________
 
-Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`
+<center> Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")` </center>
 
 ________________
