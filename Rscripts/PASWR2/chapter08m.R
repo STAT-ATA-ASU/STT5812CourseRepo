@@ -274,6 +274,14 @@ DF
 DF$LL
 DF$UL
 
+# Or
+
+NDF <- unstack(APPLE, hardness~location)
+NDF
+NDF %>% 
+  summarize(pe = mean(fresh) - mean(warehouse), 
+            z = qnorm(0.975), SE = 1.5*sqrt(2/17)) %>% 
+  mutate(LL = pe -z*SE, UL = pe + z*SE)
 
 ########################### Example 8.11 ##########################
 
@@ -318,12 +326,13 @@ CI <- z.test(x = ScoreYesCalc, y = ScoreNoCalc, sigma.x = sqrt(25), sigma.y = sq
 CI
 
 # Tidyverse approach
-library(dplyr)
-CALCULUS %>% 
-  group_by(calculus) %>% 
-  summarize(ME = mean(score), n = sum(!is.na(score))) %>% 
-  mutate(PE = ME[2] - ME[1], z = qnorm(0.975), SE = sqrt(25/n[1] + 144/n[2]), 
-         LL = PE - z*SE, UL = PE + z*SE)
+NDF2 <- unstack(CALCULUS, score ~ calculus)
+NDF2
+
+NDF2 %>% 
+  summarize(pe = mean(Yes) - mean(No), n = sum(!is.na(Yes))) %>% 
+  mutate(z = qnorm(0.975), SE = sqrt(25/n + 144/n), 
+         LL = pe - z*SE, UL = pe + z*SE)
 
 ########################### Example 8.13 ##########################
 
@@ -344,6 +353,21 @@ CI <- tsum.test(mean.x = xbar, mean.y = ybar, s.x = sqrt(s2x), s.y = sqrt(s2y), 
 CI
 
 ########################### Example 8.14 ##########################
+
+APPLE %>% 
+  group_by(location) %>% 
+  summarize(ME = mean(hardness), VAR = var(hardness))
+# OR
+NDF3 <- unstack(APPLE, hardness ~ location)
+NDF3
+
+NDF3 %>% 
+  summarize(MX = mean(fresh), MY = mean(warehouse),
+            VX = var(fresh), VY = var(warehouse), 
+            nx = sum(!is.na(fresh)), ny = sum(!is.na(warehouse)),
+            CT = qt(.975, nx + ny - 2)) %>% 
+  mutate(pe = MX - MY, sp = sqrt(((nx - 1)*VX + (ny - 1)*VY)/(nx + ny - 2)),
+         LL = pe - CT*sp*sqrt(1/nx + 1/ny), UL = pe + CT*sp*sqrt(1/nx + 1/ny))
 
 CI <- t.test(hardness ~ location, data = APPLE, var.equal=TRUE)$conf
 CI
@@ -393,12 +417,6 @@ ggplot(data = SUNDIG, aes(sample = difference)) +
 qt(0.025, 4)
 t.test(SUNDIG$sun, SUNDIG$digital, paired=TRUE)$conf
 
-# Tidyverse approach
-library(tidyr)
-
-NDF <- SUNDIG %>% 
-  gather(key = Workstation, value = Seconds, sun, digital)
-NDF
 
 ########################### Figure 8.8 ##########################
 
@@ -408,7 +426,7 @@ with(data = SUNDIG, ntester(difference))
 
 ########################### Figure 8.9 ##########################
 
-
+# For LaTeX use with tikz
 LV <- 22
 DF <- 6
 curve(dchisq(x, DF), 0, LV, axes = FALSE, ann = FALSE, n = 500)
@@ -431,13 +449,45 @@ text(5.5, 0.04, "$1 - \\alpha$")
 mtext("$\\chi^2_{\\alpha/2;6}$", side = 1, line = 0, at = qchisq(alpha/2, DF))
 mtext("$\\chi^2_{1-\\alpha/2;6}$", side = 1, line = 0, at = qchisq(1-alpha/2, DF))
 
+# All R
+LV <- 22
+DF <- 6
+curve(dchisq(x, DF), 0, LV, axes = FALSE, ann = FALSE, n = 500)
+alpha <- 0.05
+x <- seq(0, qchisq(alpha/2, 6), length = 100)
+y <- dchisq(x, DF)
+xs <- c(0, x, qchisq(alpha/2, DF))
+ys <- c(0, y, 0)
+polygon(xs, ys, col = "skyblue3")
+x <- seq(qchisq(1 - alpha/2, DF), LV, length = 100)
+y <- dchisq(x, DF)
+xs <- c(qchisq(1 - alpha/2, DF), x, LV)
+ys <- c(0, y, 0)
+polygon(xs, ys, col = "skyblue3")
+segments(0, 0, LV, 0, lwd = 3)
+curve(dchisq(x, DF), 0, LV, axes = FALSE, ann = FALSE, add = TRUE, lwd = 2)
+segments(qchisq(alpha/2, DF), 0, qchisq(alpha/2, DF), dchisq(qchisq(alpha/2, DF), DF), lwd = 2)
+segments(qchisq(1 - alpha/2, DF), 0, qchisq(1 - alpha/2, DF), dchisq(qchisq(1 - alpha/2, DF), DF), lwd = 2)
+text(5.5, 0.04, expression(1 - alpha))
+mtext(expression(chi[list(alpha/2, 6)]^2), side = 1, line = 0, at = qchisq(alpha/2, DF))
+mtext(expression(chi[list(1 - alpha/2, 6)]^2), side = 1, line = 0, at = qchisq(1-alpha/2, DF))
 
 ########################### Example 8.18 ##########################
 
+# From Example 8.15
+nx <- 15
+ny <- 11
+xbar <- 63/nx
+ybar <- 66.4/ny
+pe <- xbar - ybar
+s2x <- (338 - nx*xbar^2)/(nx - 1)
+s2x
+
+#
 lchi <- qchisq(0.1, 14)
 uchi <- qchisq(0.9, 14)
-lep <- (15 - 1)*5.2449/uchi
-uep <- (15 - 1)*5.2449/lchi
+lep <- (15 - 1)*s2x/uchi
+uep <- (15 - 1)*s2x/lchi
 c(lep, uep)
 
 
@@ -446,9 +496,18 @@ c(lep, uep)
 with(data = barley, qqnorm(yield[year == "1932"]))
 with(data = barley, qqline(yield[year == "1932"]))
 
+## tidyverse, ggplot2 approach
+
+barley %>% 
+  filter(year == 1932) %>%
+  ggplot(aes(sample = yield)) + 
+  geom_qq() + 
+  theme_bw()
+
 ########################### R Code 8.15 ##########################
 
-library(lattice) 
+# library(lattice) ----I prefer to use filter() as above
+
 BarleyYield1932 <- subset(barley, select = yield, 
                           subset = year == "1932", drop = TRUE)
 n <- sum(!is.na(BarleyYield1932))
@@ -460,6 +519,12 @@ qt(.975, n-1)
 
 t.test(BarleyYield1932, conf.level = 0.95)$conf
 
+#
+NB <- barley %>% 
+  filter(year == 1932)
+t.test(NB$yield)$conf
+
+#
 s2 <- var(BarleyYield1932)
 lchi <- qchisq(0.025, n - 1)
 uchi <- qchisq(0.975, n - 1)
@@ -472,6 +537,7 @@ CI
 
 ########################### Figure 8.11 ##########################
 
+# For LaTeX tikz
 LV <- 6
 DF1 <- 10
 DF2 <- 10
@@ -495,13 +561,47 @@ text(1.5, 0.1, "$1 - \\alpha$")
 mtext("$f_{\\alpha/2;10, 10}$", side = 1, line = 0, at = qf(alpha/2, DF1, DF2))
 mtext("$f_{1-\\alpha/2;10, 10}$", side = 1, line = 0, at = qf(1-alpha/2, DF1, DF2))
 
+# All R
+LV <- 6
+DF1 <- 10
+DF2 <- 10
+curve(df(x, DF1, DF2), 0, LV, axes = FALSE, ann = FALSE, n = 500)
+alpha <- 0.05
+x <- seq(0, qf(alpha/2, DF1, DF2), length = 100)
+y <- df(x, DF1, DF2)
+xs <- c(0, x, qf(alpha/2, DF1, DF2))
+ys <- c(0, y, 0)
+polygon(xs, ys, col = "skyblue3")
+x <- seq(qf(1 - alpha/2, DF1, DF2), LV, length = 100)
+y <- df(x, DF1, DF2)
+xs <- c(qf(1 - alpha/2, DF1, DF2), x, LV)
+ys <- c(0, y, 0)
+polygon(xs, ys, col = "skyblue3")
+segments(0, 0, LV, 0, lwd = 3)
+curve(df(x, DF1, DF2), 0, LV, axes = FALSE, ann = FALSE, add = TRUE, lwd = 2)
+segments(qf(alpha/2, DF1, DF2), 0, qf(alpha/2, DF1, DF2), df(qf(alpha/2, DF1, DF2), DF1, DF2), lwd = 2)
+segments(qf(1 - alpha/2, DF1, DF2), 0, qf(1 - alpha/2, DF1, DF2), df(qf(1 - alpha/2, DF1, DF2), DF1, DF2), lwd = 2)
+text(1.5, 0.1, expression(1 - alpha))
+mtext(expression(f[list(alpha/2, 10, 10)]), side = 1, line = 0, at = qf(alpha/2, DF1, DF2))
+mtext(expression(f[list(1 - alpha/2, 10, 10)]), side = 1, line = 0, at = qf(1-alpha/2, DF1, DF2))
+
 ########################### Example 8.20 ##########################
 
-lf <- qf(0.05, 10, 14)  # lower f value
-uf <- qf(0.95, 10, 14)  # upper f value
+# From Example 8.13
+nx <- 15
+ny <- 11
+xbar <- 53/nx
+ybar <- 77/ny
+s2x <- (222 - nx*xbar^2)/(nx - 1)
+s2y <- (560 -ny*ybar^2)/(ny - 1)
+
+
+
+lf <- qf(0.05, ny - 1, nx - 1)  # lower f value
+uf <- qf(0.95, ny - 1, nx - 1)  # upper f value
 c(lf, uf)
-lep <- lf*2.481/2.1  # lower CI point
-uep <- uf*2.481/2.1  # upper CI point
+lep <- lf*s2x/s2y  # lower CI point
+uep <- uf*s2x/s2y  # upper CI point
 CI <- c(lep, uep)
 CI
 
@@ -524,6 +624,7 @@ APPLE$location <- factor(APPLE$location,
                          levels = c("warehouse", "fresh"))
 levels(APPLE$location)  # changed levels of location
 var.test(hardness ~ location, data = APPLE)$conf
+
 
 ########################### R code 8.17 ##########################
 
