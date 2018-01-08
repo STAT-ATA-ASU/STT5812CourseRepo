@@ -59,7 +59,8 @@ _______________
      + [Clone a GitHub Repo with RStudio (Video)](https://www.youtube.com/watch?v=YxZ8J2rqhEM) (5:05)
      + Read Chapters 1-3 of [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
      + Complete [DataCamp](https://datacamp.com) course _Introduction to the Tidyverse_ (4 hours) - optional DataCamp courses you may want to complete include _Data Visulization with `ggplot2`_ (Part 1) and _Data Manipulation in `R` with `dplyr`_
-
+     + Replicate [this](./Rmarkdown/RmarkdownAssignment.html) document.  
+     
 --------------
 
 **Jan 30:**
