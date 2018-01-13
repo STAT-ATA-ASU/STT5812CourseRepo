@@ -9,23 +9,23 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-* Point your browser to [https://github.com/STAT-ATA-ASU](https://github.com/STAT-ATA-ASU)
+* Point your browser to [https://github.com/STAT-ATA-ASU](https://github.com/STAT-ATA-ASU).
 
-* Find your repository (Stephen's in the `.gif`)
+* Find your repository (Stephen's in the `.gif`).
 
-* Click the `Clone or download` button
+* Click the `Clone or download` button.
 
 * Clone with https - copy the address to the clipboard
 
-* Open the RStudio IDE
+* Open the RStudio IDE.
 
-* Click the `New Project` icon
+* Click the `New Project` icon.
 
-* Select `New Project > Version Control > Git`
+* Select `New Project > Version Control > Git`.
 
-* Paste the information on the clipboard in the `Repository URL` box
+* Paste the information on the clipboard in the `Repository URL` box.
 
-* In the `Project directory name` box paste the last bit of information on the clipboard without the `*.git`
+* In the `Project directory name` box paste the last bit of information on the clipboard without the `*.git`.
 
 * In the `Create project as a subdirectory of:` box select where you want the repository to be stored.
 
@@ -38,13 +38,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 * Please upload an avatar or picture for your GitHub profile by
 
-    + Logging into [GitHub](https://github.com)
+    + Logging into [GitHub](https://github.com),
     
-    + Click on the drop down triangle in the upper right pane of GitHub
+    + Clicking on the drop down triangle in the upper right pane of GitHub,
     
-    + Select `Settings > Upload new picture`
+    + Selecting `Settings > Upload new picture`
     
-    + Navigate to a picture (`.gif` or `.jpeg`) on your local computer and select your profile picture/avatar.
+    + Navigating to a picture (`.gif` or `.jpeg`) on your local computer and selecting your profile picture/avatar.
 
 #### Animated gif cycling through uploading a picture:
 
