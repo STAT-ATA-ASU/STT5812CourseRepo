@@ -42,7 +42,7 @@ knitr::opts_chunk$set(echo = TRUE)
     
     + Click on the drop down triangle in the upper right pane of GitHub
     
-    + Select `Settings > Uplad new picture`
+    + Select `Settings > Upload new picture`
     
     + Navigate to a picture (`.gif` or `.jpeg`) on your local computer and select your profile picture/avatar.
 
