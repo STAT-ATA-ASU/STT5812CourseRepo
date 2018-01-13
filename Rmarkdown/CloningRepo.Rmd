@@ -13,16 +13,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 * Find your repository
 
-* Click the "Clone or download" button
+* Click the `Clone or download` button
 
 * Clone with https - copy the address to the clipboard
 
 * Open the RStudio IDE
 
-* Click the New Project icon
+* Click the `New Project` icon
 
-* Select New Project > Version Control > Git
+* Select `New Project > Version Control > Git`
 
+* Paste the information on the clipboard in the `Repository URL` box
+
+* In the `Project directory name` box paste the last bit of information on the clipboard without the `*.git`
+
+* In the `Create project as a subdirectory of:` box select where you want the repository to be stored.
+
+
+#### Animated gif cycling through cloning a repository:
 
 `r knitr::include_graphics("./images/Cloning.gif")`
 
