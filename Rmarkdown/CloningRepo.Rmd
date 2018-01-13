@@ -44,7 +44,7 @@ knitr::opts_chunk$set(echo = TRUE)
     
     + Selecting `Settings > Upload new picture`
     
-    + Navigating to a picture (`.gif` or `.jpeg`) on your local computer and selecting your profile picture/avatar.
+    + Navigating to a picture (`.gif`, `.png`, `.jpeg`) on your local computer and selecting your profile picture/avatar.
 
 #### Animated gif cycling through uploading a picture:
 
