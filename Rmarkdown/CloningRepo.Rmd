@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 * Point your browser to [https://github.com/STAT-ATA-ASU](https://github.com/STAT-ATA-ASU)
 
-* Find your repository
+* Find your repository (Stephen's in the `.gif`)
 
 * Click the `Clone or download` button
 
@@ -29,11 +29,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 * In the `Create project as a subdirectory of:` box select where you want the repository to be stored.
 
+* Click the `Create project` button.
+
 
 #### Animated gif cycling through cloning a repository:
 
 `r knitr::include_graphics("./images/Cloning.gif")`
 
-* Please upload an avatar or picture for your GitHub profile
+* Please upload an avatar or picture for your GitHub profile by
+
+    + Logging into [GitHub](https://github.com)
+    
+    + Click on the drop down triangle in the upper right pane of GitHub
+    
+    + Select `Settings > Uplad new picture`
+    
+    + Navigate to a picture (`.gif` or `.jpeg`) on your local computer and select your profile picture/avatar.
+
+#### Animated gif cycling through uploading a picture:
 
 `r knitr::include_graphics("./images/Profile.gif")`
