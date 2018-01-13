@@ -1,0 +1,29 @@
+---
+title: "Cloning your Repository"
+author: "Alan T. Arnholt"
+date: "1/13/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+* Point your browser to [https://github.com/STAT-ATA-ASU](https://github.com/STAT-ATA-ASU)
+
+* Find your repository
+
+* Click the "Clone or download" button
+
+* Clone with https - copy the address to the clipboard
+
+* Open the RStudio IDE
+
+* Click the New Project icon
+
+* Select New Project > Version Control > Git
+
+
+`r knitr::include_graphics("./images/Cloning.gif")`
+
+ 
