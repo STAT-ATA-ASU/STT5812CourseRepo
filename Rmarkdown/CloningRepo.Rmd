@@ -26,4 +26,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 `r knitr::include_graphics("./images/Cloning.gif")`
 
- 
+* Please upload an avatar or picture for your GitHub profile
+
+`r knitr::include_graphics("./images/Profile.gif")`
