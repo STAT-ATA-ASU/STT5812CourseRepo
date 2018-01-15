@@ -1,0 +1,28 @@
+---
+title: "Recommended Global Options"
+author: "Alan T. Arnholt"
+date: 'Last compiled: `r format(Sys.time(), "%B %d, %Y")`'
+output: 
+  bookdown::html_document2: 
+    highlight: textmate
+    theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+* Click `Tools > Global Options > R General` (See Figure \@ref(fig:GO))
+
+```{r, label = "GO", echo = FALSE, fig.align = "center", fig.cap = "Global Options for R"}
+knitr::include_graphics("./images/GlobalOptions.png", dpi = 96)
+```
+
+* Change the default `Save workspace to .RData on exit:` from `Ask` to `Never` using the drop down menu.
+
+* Click on `Sweave` in Figure \@ref(fig:GO) and change the `Weave Rnw files using:` from the default Sweave to knitr.  (See Figure \@ref(fig:KN))
+
+```{r, label = "KN", echo = FALSE, fig.align = "center", fig.cap = "Global Options for Sweave"}
+knitr::include_graphics("./images/KN.png", dpi = 96)
+```
+
