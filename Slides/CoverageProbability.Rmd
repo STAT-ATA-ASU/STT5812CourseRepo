@@ -1,0 +1,93 @@
+---
+title: "Coverage Probability"
+author: "Alan T. Arnholt"
+date: 'Last edited on `r format(Sys.time(), "%B %d, %Y at %X")`'
+output:
+  ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Coverage Probability
+
+The coverage probability of a confidence interval procedure for estimating $\pi$ at a fixed value of $\pi$ is
+
+$$C_n(\pi) = \sum_{k=0}^nI(k, \pi)\binom{n}{k}\pi^k(1 - \pi)^{n-k}$$
+
+where $I(k, \pi)$ equals 1 if the interval contains $\pi$ when $X = k$ and equals 0 if it does not contain $\pi$.
+
+## Coverage Probability (concept)
+
+* The coverage probability of a confidence interval is the proportion of all possible confidence intervals for a fixed $\pi$ that contain $\pi$.
+
+* Confidence intervals are constructed at a given confidence level $(1 - \alpha)$, which is referred to as the **nominal coverage probability** or the **nominal confidence level**.
+
+* In an ideal setting, the nominal confidence level will equal the coverage probability; however, when assumptions used to derive a confidence interval are not satisfied, the actual coverage probability can be either **less than** or **greater than** the nominal confidence level.
+
+## Example 8.24
+
+Consider a random variable $X \sim Bin(n = 25, \pi)$, and define $P = \frac{X}{n}$.
+
+* Compute the coverage probability for a 95% Wald (asymptotic) confidence interval if $\pi = 0.70$.
+
+* The Wald (asymptotic) confidence interval for $\pi$ is given below.
+
+$$CI_{1 - \alpha}(\pi) = \left[ p - z_{1 - \alpha/2} \sqrt{\frac{p(1 - p)}{n}}, p + z_{1 - \alpha/2} \sqrt{\frac{p(1 - p)}{n}}\right]$$
+
+
+## Solution
+
+To compute $C_{n = 25}(\pi = 0.70)$, one must consider all the possible outcomes for $X$ when $n = 25$.  The random variable $X$ can assume values $0, 1, 2, \ldots,25$, and for each value of $X$ a different value of $p$ (the sample proportion of successes) results, which one uses with the Wald (asymptotic) confidence interval to compute a 95% confidence interval.
+
+## Code
+
+```{r, echo = TRUE}
+n <- 25            # number of Bernoulli trials
+alpha <- 0.05      # alpha level
+x <- 0:n           # vector containing values RV can assume
+p <- x/n           # vector of possible p values
+z <- qnorm(1 - alpha/2)     # critical value
+ME <- z*sqrt(p*(1 - p)/n)   # margin of error
+lcl <- p - ME      # lower confidence limit  
+ucl <- p + ME      # upper confidence limit  
+PI <- 0.70         # PI - P(Success)
+BP <- dbinom(x, n, PI)      # Binomial probability
+cover <- (PI >= lcl) & (PI <= ucl)  # Logical vector 
+```
+
+## Code (continued)
+
+```{r, echo = TRUE}
+RES <- cbind(x, p, lcl, ucl, BP, cover) # cover is coerced to 0/1
+DT::datatable(round(RES, 4), options = list(pageLength = 5, 
+                                            autoWidth = TRUE))
+```
+
+## Computing the Coverage Probability
+
+* Recall that $C_n(\pi) = \sum_{k=0}^nI(k, \pi)\binom{n}{k}\pi^k(1 - \pi)^{n-k}$. 
+* Need to programatically add all of the Binomial Probabilities (`BP`) values when the Wald interval contains $\pi$.
+
+```{r, echo = TRUE, comment = NA}
+x[cover]
+```
+
+
+In this problem, $$C_{n = 25}(\pi = 0.70) = P(X = 13) + \cdots + P(X = 21)$$.
+
+## Final Code
+
+```{r, echo = TRUE, comment = NA}
+dbinom(x[cover], n, PI)
+sum(dbinom(x[cover], n, PI))
+binom::binom.coverage(p = 0.70, n = 25, 
+                      conf.level = 0.95, method = "asymptotic")
+```
+
+$C_{n = 25}(\pi = 0.70) = `r sum(dbinom(x[cover], n, PI))`$.
+
+
+
+
