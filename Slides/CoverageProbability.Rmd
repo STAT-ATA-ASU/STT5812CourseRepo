@@ -52,7 +52,7 @@ z <- qnorm(1 - alpha/2)     # critical value
 ME <- z*sqrt(p*(1 - p)/n)   # margin of error
 lcl <- p - ME      # lower confidence limit  
 ucl <- p + ME      # upper confidence limit  
-PI <- 0.70         # PI - P(Success)
+PI <- 0.70         # PI = P(Success)
 BP <- dbinom(x, n, PI)      # Binomial probability
 cover <- (PI >= lcl) & (PI <= ucl)  # Logical vector 
 ```
@@ -89,5 +89,86 @@ binom::binom.coverage(p = 0.70, n = 25,
 $C_{n = 25}(\pi = 0.70) = `r sum(dbinom(x[cover], n, PI))`$.
 
 
+## Example 8.24 (continued)
+
+* Compute and graph the coverage probability for the Wald (asymptotic) confidence interval, using a confidence level of 95% with 2000 equally spaced values of $\pi$.
+
+* Previously we computed the coverage probability when $\pi$ was 0.70.  In this problem we will need to compute 2000 coverage probability values and graph those against the 2000 values of $\pi$.
+
+## R Code
+
+```{r, echo = TRUE, comment = FALSE}
+n <- 25            # number of Bernoulli trials
+alpha <- 0.05      # alpha level
+CL <-  1 - alpha   # Confidence level
+x <- 0:n           # vector containing values RV can assume
+p <- x/n           # vector of possible p values
+z <- qnorm(1 - alpha/2)     # critical value
+ME <- z*sqrt(p*(1 - p)/n)   # margin of error
+lcl <- p - ME      # lower confidence limit  
+ucl <- p + ME      # upper confidence limit  
+m <- 2000
+PI <- seq(1/m, 1 - 1/m, length = m)   # PI = P(Success)
+P_cov <- numeric(m) # allocating storage space
+for(i in 1:m){
+cover <- (PI[i] >= lcl) & (PI[i] <= ucl)  # Logical vector 
+P_cov[i] <- sum(dbinom(x[cover], n, PI[i]))
+}
+```
+
+## Final Graph Code
+
+```{r, echo = TRUE,  eval = FALSE}
+plot(PI, P_cov, type = "l", xlab = expression(pi), 
+     ylab = "Coverage Probability", ylim = c(0.0, 1.05))
+lines(c(1/m, 1 - 1/m), c(CL, CL), col = "red", 
+      lty = "dotted")
+text(0.5, CL + 0.05, paste("Targeted Confidence Level =", CL))
+```
+
+## Final Graph
+
+```{r, echo = FALSE, fig.height = 5, fig.width = 6, fig.align = "center"}
+plot(PI, P_cov, type = "l", xlab = expression(pi), 
+     ylab = "Coverage Probability", ylim = c(0.0, 1.05))
+lines(c(1/m, 1 - 1/m), c(1 - alpha, 1 - alpha), col = "red", 
+      lty = "dotted")
+text(0.5, 1, paste("Targeted Confidence Level =", 1 - alpha))
+```
+
+## `ggplot2` code
+
+```{r, echo = TRUE, eval = FALSE}
+DF <- data.frame(PI, P_cov)
+library(ggplot2)
+ggplot(data = DF, aes(x = PI, y = P_cov)) + 
+  geom_line() + 
+  theme_bw() + 
+  labs(x = expression(pi), y = "Coverage Probability") + 
+  geom_hline(yintercept = 0.95, color = "red", lty = "dashed") + 
+  geom_text(aes(x = 0.5, y = 1), 
+            label = paste("Targeted Confidence Level = ", CL))
+```
+
+## `ggplot2` Graph
+
+```{r, fig.align = "center", message = FALSE, warning = FALSE}
+DF <- data.frame(PI, P_cov)
+library(ggplot2)
+ggplot(data = DF, aes(x = PI, y = P_cov)) + 
+  geom_line() + 
+  theme_bw() + 
+  labs(x = expression(pi), y = "Coverage Probability") + 
+  geom_hline(yintercept = 0.95, color = "red", lty = "dashed") + 
+  geom_text(aes(x = 0.5, y = 1), 
+            label = paste("Targeted Confidence Level = ", CL))
+```
+
+## Using `binom`
+
+```{r, echo = TRUE, fig.align = "center", message = FALSE}
+library(binom)
+binom.plot(n = 25, method = binom.asymp, np = 2000)
+```
 
 
