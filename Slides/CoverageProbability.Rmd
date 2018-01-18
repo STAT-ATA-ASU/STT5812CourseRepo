@@ -7,7 +7,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, comment = NA, fig.align = "center")
 ```
 
 ## Coverage Probability
@@ -93,7 +93,7 @@ $C_{n = 25}(\pi = 0.70) = `r sum(dbinom(x[cover], n, PI))`$.
 
 * Compute and graph the coverage probability for the Wald (asymptotic) confidence interval, using a confidence level of 95% with 2000 equally spaced values of $\pi$.
 
-* Previously we computed the coverage probability when $\pi$ was 0.70.  In this problem we will need to compute 2000 coverage probability values and graph those against the 2000 values of $\pi$.
+* Previously, we computed the coverage probability when $\pi$ was 0.70.  In this problem, we will need to compute 2000 coverage probability values and graph those against the 2000 values of $\pi$.
 
 ## R Code
 
@@ -145,22 +145,22 @@ ggplot(data = DF, aes(x = PI, y = P_cov)) +
   geom_line() + 
   theme_bw() + 
   labs(x = expression(pi), y = "Coverage Probability") + 
-  geom_hline(yintercept = 0.95, color = "red", lty = "dashed") + 
-  geom_text(aes(x = 0.5, y = 1), 
+  geom_hline(yintercept = CL, color = "red", lty = "dashed") + 
+  geom_text(aes(x = 0.5, y = CL + 0.05), 
             label = paste("Targeted Confidence Level = ", CL))
 ```
 
 ## `ggplot2` Graph
 
-```{r, fig.align = "center", message = FALSE, warning = FALSE}
+```{r, fig.align = "center", echo = FALSE}
 DF <- data.frame(PI, P_cov)
 library(ggplot2)
 ggplot(data = DF, aes(x = PI, y = P_cov)) + 
   geom_line() + 
   theme_bw() + 
   labs(x = expression(pi), y = "Coverage Probability") + 
-  geom_hline(yintercept = 0.95, color = "red", lty = "dashed") + 
-  geom_text(aes(x = 0.5, y = 1), 
+  geom_hline(yintercept = CL, color = "red", lty = "dashed") + 
+  geom_text(aes(x = 0.5, y = CL + 0.05), 
             label = paste("Targeted Confidence Level = ", CL))
 ```
 
@@ -171,9 +171,87 @@ library(binom)
 binom.plot(n = 25, method = binom.asymp, np = 2000)
 ```
 
+## Better Confidence Intervals for $\pi$
+
+* Wilson confidence interval
+
+* Agresti-Coull confidence interval
+
+* Clopper-Pearson confidence interval
+
+
+## Wilson Confidence Interval
+
+$$
+\mathbb{P}\left(P-z_{1-\alpha/2}\sqrt{\frac{\pi(1-\pi)}{n}}\leq\pi\leq
+P + z_{1+\alpha/2}\sqrt{\frac{\pi(1-\pi)}{n}}\,\right)=\\1-\alpha
+$$
+Solution to above is
+
+$$
+CI_{1 - \alpha}(\pi) = [lcl, ucl],
+$$
+where $lcl = \dfrac{p+\frac{z^2_{1-\alpha/2}}{2n}-z_{1-\alpha/2}\sqrt{\frac{p(1-p)}{n}+\frac{z^2_{1-\alpha/2}}{4n^2}}}{\left(1+\frac{z^2_{1-\alpha/2}}{n}
+ \right)}$, and $ucl = \dfrac{p+\frac{z^2_{1-\alpha/2}}{2n}+z_{1-\alpha/2}\sqrt{\frac{p(1-p)}{n}+\frac{z^2_{1-\alpha/2}}{4n^2}}}{\left(1+\frac{z^2_{1-\alpha/2}}{n}
+\right)}$.
+
+## Computing Options for Wilson (score) Confidence Interval
+
+* Use `prop.test()`
+
+* Use `binom.confint()` from `binom`
+
+```{r, echo = TRUE}
+prop.test(x = 26, n = 40, correct = FALSE, conf.level = 0.90)$conf
+library(binom)
+binom.confint(x = 26, n = 40, conf.level = 0.90, methods = "wilson")
+```
+
+## Agresti-Coull Confidence Interval for $\pi$ 
+
+$$
+CI_{1-\alpha}(\pi)=\left[\tilde{p}-z_{1-\alpha/2}
+\sqrt{\frac{\tilde{p}(1-\tilde{p})}{\tilde{n}}},\: \tilde{p}+z_{1-\alpha/2}
+\sqrt{\frac{\tilde{p}(1-\tilde{p})}{\tilde{n}}} \right]
+$$
+
+where $X$ denotes the number of successes in a sample of size $n$, 
+
+  * $\tilde{n} = n + z^2_{1 - \alpha/2}$, and 
+
+  * $\tilde{p} = \frac{1}{\tilde{n}}\left(X + \frac{1}{2}z^2_{1 - \alpha/2} \right)$.
+  
+  * Compute with `binom.confint()` using `methods = "ac"` 
+  
+```{r, echo = TRUE}
+binom.confint(x = 26, n = 40, conf.level = 0.90, methods = "ac")
+```
+
+## Clopper-Pearson Confidence Interval for $\pi$
+
+Often referred to as an "exact" confidence interval for $\pi$.  The Clopper-Pearson confidence interval is
+
+$$
+CI_{1-\alpha}(\pi)=\left[\beta_{\alpha/2, x, n - x + 1}, \beta_{1 - \alpha/2, x + 1, n - x} \right]
+$$
+where $x$ is the number out of $n$ observed successes and $\beta_{\alpha/2, x, n - x + 1}$ and $\beta_{1 - \alpha/2, x + 1, n - x}$ are the $\alpha/2$ and $1-\alpha/2$ percentiles of the standard $\beta(\alpha,\beta)$ distribution.  The function `binom.confint()` from the `binom` package will return a Clopper-Pearson confidence interval when the user provides the argument `methods = "exact"`.
+
+## Computing Clopper-Pearson Confidence Interval
+
+```{r}
+alpha <- 0.10
+n <- 40
+x <- 26
+CI <- c(qbeta(alpha/2, x, n - x + 1), qbeta(1 - alpha/2, x + 1, n - x))
+CI
+binom.confint(x = x, n = n, conf.level = 1 - alpha, method = "exact")
+```
+
+
+
 ## Which One?
 
-```{r, fig.align = "center", warning = FALSE, message = FALSE}
+```{r, echo = FALSE}
 ## Traditional and Agresti-Coull
 n <- 20 # comment
 alpha <- 0.05
@@ -259,5 +337,12 @@ ggplot(data = DF, aes(x = Pi, y = ProbCoverage, color = Interval)) +
   ylim(0.7, 1.0)
 ```
 
+## Expected Width of 95% Confidence Intervals when $n = 20$
 
+```{r, echo = FALSE}
+ggplot(data = DF, aes(x = Pi, y = Elength, color = Interval,
+                      linetype = Interval )) + 
+  geom_line(size = 0.7) +
+  labs(x = expression(pi), y = "E(Width)") + theme_bw()
+```
 
