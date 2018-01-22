@@ -49,6 +49,7 @@ _______________
 
 * In class lecture chapter 8 PASWR2E
 * Quiz #1
+* [Coverage Probability](../Slides/CoverageProbability.html)
 
 --------------
 
