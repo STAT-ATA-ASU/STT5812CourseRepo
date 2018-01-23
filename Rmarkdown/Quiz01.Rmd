@@ -1,0 +1,73 @@
+---
+title: 'Quiz #1 - Partial Solution'
+author: "Your Name"
+date: 'Last knit on `r format(Sys.time(), "%B %d, %Y at %X")`'
+output: html_document
+---
+
+```{r label = "setup", include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, fig.align = "center", comment = NA)
+```
+
+**Directions: Change the author field in the `YAML` from "Your Name" to your name using the convention of FirstName LastName. For example, my entry would be `author: "Alan Arnholt"`.  The data frame `Y1980` contains the variables `teamID`, `W`, `L`, and `attendance` for the year 1980.  Create a `Quizzes` directory inside your private repository.  Store this file as `Quiz01.Rmd` inside the `Quizzes` directory.  When you finish, commit your changes and push your work to GitHub.  Use the commit message `Finished Quiz 01!`.  Verify you can see your files at `https://github.com/STAT-ATA-ASU/YourLast-YourFirst-STT5812-SP18/tree/master/Quizzes`.**
+
+```{r}
+library(Lahman)
+library(dplyr)
+Y1980 <- Teams %>%
+  filter(yearID == 1980) %>% 
+  select(teamID, W, L, attendance)
+head(Y1980)  # show frist six rows
+```
+
+1. Create a histogram or density plot showing the distribution of the variable `attendance` from the data frame `Y1980`.  
+
+```{r}
+# Your Code here
+#
+#
+#
+#
+```
+
+2. Create a quantile-quantile plot of the variable `attendance` from the data frame `Y1980`.
+
+```{r}
+# Your code here
+#
+#
+#
+#
+```
+
+3.  Assume the conditions for constructing a confidence interval for $\mu$ based on a $t$ distribution are satisfied.  Find a report the following values assuming $\alpha = 0.10$:
+
+```{r, echo = FALSE, results = "hide"}
+# You will need code here if you want to answer using inline R
+#
+#
+#
+#
+#
+#
+```
+
+
+  a. $\bar{x} =$
+  b. $s =$
+  c. $n =$
+  d. $t_{1 - \alpha/2,\, n -1} =$
+  e. $CI_{1 - \alpha}(\mu) =$
+ 
+**Extra Credit: if you use inline R to answer a-e.**
+
+```{r}
+# Your code here
+#
+#
+#
+#
+#
+#
+```
+    
