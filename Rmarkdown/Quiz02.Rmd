@@ -1,0 +1,96 @@
+---
+title: 'Quiz #2'
+author: "Your Name"
+date: 'Last knit on `r format(Sys.time(), "%B %d, %Y at %X")`'
+output: 
+  bookdown::html_document2
+---
+
+```{r label = "setup", include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, fig.align = "center", comment = NA, fig.height = 3.5)
+```
+
+**Directions: Change the author field in the `YAML` from "Your Name" to your name using the convention of FirstName LastName. For example, my entry would be `author: "Alan Arnholt"`.  The data frame `ncbirths` contains the variables `fage`, `mage`, `mature`, `weeks`, `premie`, `visits`, `marital`, `gained`, `weight`, `lowbirthweight`, `gender`, `habit`, and `whitemom`.  Store this file as `Quiz02.Rmd` inside your `Quizzes` directory.  When you finish, commit your changes and push your work to GitHub.  Use the commit message `Finished Quiz 02!`.  Verify you can see your files at `https://github.com/STAT-ATA-ASU/YourLast-YourFirst-STT5812-SP18/tree/master/Quizzes`.**
+
+```{r}
+library(openintro)
+names(ncbirths)
+# Type ?ncbirths 
+# in the console to open the help file
+```
+
+1. Compute mean, standard deviation, and number of non-missing observations for the weight gained during pregnancy (`gained`) by mothers according to their level of `mature` (`mature mom` or `younger mom`).
+
+```{r}
+# Your code here
+
+```
+
+The mean, standard deviation, and number of non-missing observations for mature mothers and younger mothers are: ________________________________________________, respectively.
+
+2. Based on your answers to question 1, the density plots shown in Figure \@ref(fig:dens), and the Q-Q plots shown in Figure \@ref(fig:qqp) 
+    + Should you pool or not pool the variances to compute a confidence interval for the mean weight gained during pregnancy for mature moms minus the mean weight gained during pregnancy for younger mothers  $\left( \mu_{\text{mature mom}} - \mu_{\text{younger mom}} \right)$?  
+    + Construct a 90% confidence interval for the mean weight gained during pregnancy for mature moms minus the mean weight gained during pregnancy for younger mothers  $\left( \mu_{\text{mature mom}} - \mu_{\text{younger mom}} \right)$.  
+    + Does your confidence interval contain zero?  If so, what does this mean? 
+
+
+```{r, label = "dens", fig.cap = "Density plots of weight gained (lbs.)", echo = FALSE}
+library(ggplot2)
+ggplot(data = ncbirths, aes(x = gained, fill = mature)) +
+  geom_density() + 
+  theme_bw() + 
+  facet_grid(.~mature) + 
+  guides(fill = FALSE)
+```
+
+```{r, label = "qqp", fig.cap = "Q-Q plot of weight gained by `mature`", echo = FALSE}
+ggplot(data = ncbirths, aes(sample = gained, color = mature)) +
+  geom_qq(size = 1, alpha = 0.2) + 
+  facet_grid(.~mature) + 
+  theme_bw() + 
+  guides(color = FALSE)
+```
+
+```{r}
+# Your answer here
+
+
+
+```
+
+* Your Answers:
+    + __________ pool the variances.
+    + A 90% confidence interval for the mean weight gained during pregnancy for mature moms minus the mean weight during preganancy gained for younger mothers  $\left( \mu_{\text{mature mom}} - \mu_{\text{younger mom}} \right)$ is $CI_{0.90}\left( \mu_{\text{mature mom}} - \mu_{\text{younger mom}} \right) = [,]$.
+    + Since the confidence interval ______________ zero, this suggests that there ______________ difference between the mean weight gained during pregnancy for mature mothers and the mean weight gained during pregnancy for younger mothers.
+
+3. Construct a 95% Wilson confidence interval for the proportion of mature mothers in North Carolina.
+
+```{r}
+xtabs(~mature, data = ncbirths)
+# Your code here
+
+
+
+
+
+
+```
+
+The 95% Wilson confidence interval for the proportion of mature mothers in North Carolina is $CI_{0.95}(\pi) = [,]$.
+
+
+4.  Compute a 90% confidence interval for the variance in weight gained during pregnancy by North Carolina mature mothers.
+
+
+```{r}
+# Your code here
+# 90% CI for sigma^2
+
+
+
+
+
+```
+
+The 90% confidence interval for the variance in weight gained during pregnancy by North Carolina mature mothers is $CI_{0.90}(\sigma^2) = [,]$.
