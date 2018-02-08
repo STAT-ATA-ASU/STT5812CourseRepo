@@ -86,7 +86,7 @@ _______________
 **Feb 6:**
 
 * In class lecture --- review some R basics and EDA material
-* Quiz #3
+* ~~Quiz #3~~
 
 --------------
 
@@ -104,7 +104,7 @@ _______________
 * In class lecture first 1/2 of Chapter 9---Power
 * Discuss writing a function
 * In class lecture on Shiny?
-* Quiz #4?
+* Quiz #3?
 * Assign groups and Shiny project (coverage probability)
 
 --------------
