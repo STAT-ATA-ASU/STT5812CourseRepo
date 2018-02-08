@@ -62,7 +62,7 @@ _______________
      + [Clone a GitHub Repo with RStudio (Video)](https://www.youtube.com/watch?v=YxZ8J2rqhEM) (5:05)
      + Read Chapters 1-3 of [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
      + Complete [DataCamp](https://datacamp.com) course _Introduction to the Tidyverse_ (4 hours) - optional DataCamp courses you may want to complete include _Data Visulization with `ggplot2`_ (Part 1) and _Data Manipulation in `R` with `dplyr`_
-     + Replicate [this](../Rmarkdown/RmarkdownAssignment.html) document. Due Feb 6. 
+     + Replicate [this](../Rmarkdown/RmarkdownAssignment.html) document. Due Feb 6.---First of two graded RMarkdown assignments 
      
 --------------
 
@@ -79,7 +79,7 @@ _______________
     + Read/review [Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/)
     + Read/review Chapters 1-3 of [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
     + Read pages 519-562 PASWR2E
-    + Replicate [this](../Rmarkdown/RmarkdownAssignment.html) document. 
+    + Replicate [this](../Rmarkdown/RmarkdownAssignment.html) document. Due Feb 6.---First of two graded RMarkdown assignments 
     
 --------------
 
@@ -95,14 +95,16 @@ _______________
 * Homework:
     + Read pages 519-562 PASWR2E
     + Complete chapter 9 problems 2-18 (evens)
-    + Complete [DataCamp](https://datacamp.com) course _Building Web Applications in R with Shiny_
+    + Complete [DataCamp](https://datacamp.com) course _Building Web Applications in R with Shiny_---This course is still in development so I am not able to link it to AsuLearn---Please complete the course and we will link it to AsuLearn later if it becomes available.  You have access to all Premium courses.  
 
 --------------
 
 **Feb 13:**
 
-* In class lecture on Shiny
-* Quiz #4
+* In class lecture first 1/2 of Chapter 9---Power
+* Discuss writing a function
+* In class lecture on Shiny?
+* Quiz #4?
 * Assign groups and Shiny project (coverage probability)
 
 --------------
