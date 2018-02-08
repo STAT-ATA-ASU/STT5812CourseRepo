@@ -93,7 +93,7 @@ _______________
 * Update README file in private repository
 * Use an avatar or picture on your GitHub account
 * Homework:
-    + Read pages 519-562 PASWR2E
+    + Read pages 519-555 PASWR2E
     + Complete chapter 9 problems 2-18 (evens)
     + Complete [DataCamp](https://datacamp.com) course _Building Web Applications in R with Shiny_---This course is still in development so I am not able to link it to AsuLearn---Please complete the course and we will link it to AsuLearn later if it becomes available.  You have access to all Premium courses.  
 
@@ -110,7 +110,7 @@ _______________
 --------------
 
 * Homework:
-    + Read pages 563-578 PASWR2E
+    + Read pages 555-578 PASWR2E
     + Complete chapter 9 problems 20-30 (evens)
     + Complete [DataCamp](https://www.datacamp.com) course _Working with the RStudio IDE_ (Part 2) (3 hours)
     + Work on Shiny project
