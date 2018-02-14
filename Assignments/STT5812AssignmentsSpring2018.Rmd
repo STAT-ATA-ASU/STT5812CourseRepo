@@ -113,9 +113,10 @@ _______________
 
 * Homework:
     + Read pages 555-578 PASWR2E
-    + Complete chapter 9 problems 20-30 (evens)
+    + Complete chapter 9 problems 2-18 (evens) 
     + Complete [DataCamp](https://www.datacamp.com) course _Working with the RStudio IDE_ (Part 2) (3 hours)
-    + Work on Shiny project
+    + Work on Shiny project - Devlop a Shiny App for the `binom.plot()` function from the `binom` package.  Note that the argument to `method` is not enclosed with quotes.       
+    + Create a function that graphs $\alpha$, $\beta$, and power assuming a normal distribution with a given $\sigma$.  Your function should have at a minimum arguments allowing the user to specify the alternative hypothesis, the sample size, and the true mean under the alternative hypothesis.
     
 
 -------------
@@ -159,6 +160,7 @@ If there are conflicts, you will need to resolve them before proceeding.
 --------------
 
 * Homework:
+    + 9 problems 20-30 (evens)
     + Work on Shiny project
     + Write up selected homework problems in RMarkdown
 
