@@ -22,7 +22,7 @@ server <- function(input, output) {
     switch(input$METH,
            "Asymptotic" = binom.asymp,
            "Wilson" = binom.wilson,
-           "Agresti-Coull" = binom.wilson,
+           "Agresti-Coull" = binom.agresti.coull,
            "Exact" = binom.exact)
   })
   
