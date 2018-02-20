@@ -9,7 +9,7 @@ ui <- fluidPage(
     sidebarPanel(
       h3("Inputs:"),
       numericInput(inputId = "n", label = "Select number of bernoulli trials (n):", value = 20, min = 2, max = 1000000),
-      numericInput(inputId = "conf", label = "Select confidence level:", value = 0.95, min = 0.50, max = 0.9999),
+      sliderInput(inputId = "conf", label = "Select confidence level:", value = 0.95, min = 0.800, max = 0.999),
       selectInput("METH", "Choose a method:", 
                   choices = c("Asymptotic", "Wilson", "Agresti-Coull", "Exact"))
     ),
