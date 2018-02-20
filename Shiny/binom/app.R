@@ -2,6 +2,9 @@ library(shiny)
 library(binom)
 
 ui <- fluidPage(
+  p("This app shows the coverage probability for four types of 
+    confidence intervals for the population proportion"),
+  tags$hr(""),
   sidebarLayout(
     sidebarPanel(
       numericInput(inputId = "n", label = "n:", value = 20, min = 2, max = 1000000),
