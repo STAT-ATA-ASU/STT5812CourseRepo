@@ -193,6 +193,7 @@ powerg <- function(n = 36, delta = 1, sd = 6, alpha = 0.10, alternative = c("two
       y[x > qt(alpha, n - 1)] <- NA
       return(y)
     }
+    POWER <- round(pt(qt(alpha, n - 1), n-1, gamma), 4)
   }
   else if (alternative == "greater"){
     dt_fun1 <- function(x){
@@ -206,6 +207,7 @@ powerg <- function(n = 36, delta = 1, sd = 6, alpha = 0.10, alternative = c("two
       y[x < qt(1 - alpha, n - 1)] <- NA
       return(y)
     }
+    POWER <- round(pt(qt(1- alpha, n - 1), n-1, gamma, lower.tail = FALSE), 4)
   }
   else{
     dt_fun1 <- function(x){
@@ -219,6 +221,7 @@ powerg <- function(n = 36, delta = 1, sd = 6, alpha = 0.10, alternative = c("two
       y[x > qt(alpha/2, n - 1) & x < qt(1 - alpha /2, n - 1)] <- NA
       return(y)
     } 
+    POWER <- round(pt(qt(alpha/2, n-1), n-1, gamma) + pt(qt(1- alpha/2, n - 1), n-1, gamma, lower.tail = FALSE), 4)
   }
   
   p + stat_function(fun = dt_fun1, geom = "area", n = 500, fill = "red", alpha = 0.5) + 
@@ -227,7 +230,7 @@ powerg <- function(n = 36, delta = 1, sd = 6, alpha = 0.10, alternative = c("two
     stat_function(fun = dt, args = list(n - 1, gamma), n = 500, color = "blue") + 
     geom_hline(yintercept = 0) + 
     theme_bw() + 
-    labs(x = "", y = "", title = "Power is the sum of all blue and purple shaded areas")
+    labs(x = "", y = "", title = paste0("Power ","(",POWER,") is the sum of all blue and purple shaded areas"))
 }
 
 ##
