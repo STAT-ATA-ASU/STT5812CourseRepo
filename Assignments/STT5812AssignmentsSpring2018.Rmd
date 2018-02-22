@@ -153,30 +153,38 @@ If there are conflicts, you will need to resolve them before proceeding.
 
 **Feb 20:**
 
-* In class lecture on Shiny
-* Quiz #4
-* Assign groups and Shiny project (power)
+* In class lecture on Power
+* Assign groups and Shiny project (Power)
 
 --------------
 
 * Homework:
     + 9 problems 20-30 (evens)
-    + Work on Shiny project
-    + Write up selected homework problems in RMarkdown
-
+    + Work on Shiny project - Your shiny app should show rejection regions and power for a one sample test when sigma is known (z-test) and when sigma is estimated (t-test).  I look forward to your finished products!
+    
 --------------
 
 **Feb 27:**
 
-* Quiz #5
-* Group presentations:
-    + Imbed Shiny apps in slides
-    + Individual homework problems
+* Quiz #3 Take-home---Due March 13
+* Lecture/discuss chapter 9 material
+* Discuss:
+    + Group presentations---Imbed Shiny apps in slides
+    + Individual homework problems---Write up with Rmarkdown using `bookdown`
 
 * Homework:
-     + Read pages 781-822 of PASWR2E
+     + Finalize Power App and presentation
+     + Read and take notes on pages 781-822 of PASWR2E
      + Complete [DataCamp](https://www.datacamp.com) course _Correlation and Regression_ (Part 2) (4 hours)
      
+--------------
+
+**Mar 13:**
+
+* Group presentations on Power App---First part of class
+* Lecture on Regression
+
+
 --------------
 
 ### Final Exam {-}
