@@ -166,7 +166,7 @@ If there are conflicts, you will need to resolve them before proceeding.
 
 **Feb 27:**
 
-* Quiz #3 Take-home---Due March 13
+* Quiz #4 Take-home---Due March 13
 * Lecture/discuss chapter 9 material
 * Discuss:
     + Group presentations---Imbed Shiny apps in slides
