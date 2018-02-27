@@ -1,0 +1,126 @@
+---
+title: "Guessing Lengths"
+author: "Alan T. Arnholt"
+date: 'Last knit: `r format(Sys.time(), "%B %d, %Y")`'
+output: 
+  bookdown::html_document2: 
+    highlight: textmate
+    theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, fig.align = "center", warning = FALSE, message = FALSE)
+```
+
+# Problem taken from CHAPTER 2 of _A Handbook of Statistical Analyses Using R_
+
+Shortly after metric units of length were officially introduced in Australia in the 1970s, each of a group of 44 students was asked to guess, to the nearest meter, the width of the lecture hall in which they were sitting.  Another group of 69 students in the same room was asked to guess the width in feet, to the nearest foot.  The data are stored in the dataset `roomwidth` of the `HSAUR3` package.
+
+```{r}
+library(HSAUR3)
+DT::datatable(roomwidth)
+```
+
+The main question is whether estimation in feet and in meters gives different results.  If we convert the estimates of the room width in meters into feet by multiplying each by 3.28084 then we would like to test the hypothesis that the mean of the population of `meter` estimates is equal to the mean of the population of `feet` estimates.
+
+Use `verbs` from `dplyr` to create a new column `estimate` that was the estimates in feet.
+
+```{r}
+# Your Code Here
+```
+
+Start by checking the assumptions required to use a two-sample *t*-test.
+
+```{r}
+# Your Code Here
+```
+
+## Discussion -- Should we use a *t*-test?
+
+* 
+
+##  Five-Step Procedure
+
+1. 
+
+2. 
+
+```{r}
+# Use dplyr to find appropriate values for Mean, SD, and n
+```
+
+3. Rejection Region
+
+```{r}
+# Compute Rejection Regions
+```
+
+
+4. Statistical Conclusion
+
+a.  
+b.
+
+5. English Conclusion --- 
+
+* * *
+
+# Other Tests
+
+* Wilcox Test
+
+```{r, eval = FALSE}
+wilcox.test(estimate ~ unit, data = roomwidth)
+```
+* Permutation Test
+
+```{r}
+# Code for permutation test here
+```
+
+* * * 
+
+# Test for the Difference in Population Means When Sampling from Independent Normal Distributions with Known Variances
+
+* $H_0:\mu_x - \mu_y = 0$ versus $H_A:\mu_x - \mu_y > 0$
+
+Given $\sigma_x = 10$, $\sigma_y = 12$, $n_x = 10$, $n_y = 12$, and $\alpha = 0.10$, find the power of the test if $\mu_1(X, Y) = \mu_X - \mu_Y = 10$.
+
+```{r}
+# Code to compute power here
+# Draw this with base graphs now
+
+```
+
+## What Happens if We Use a *t*-test?
+
+* First compute the non-centrality parameter:
+
+$$\gamma = \frac{\mu_1(X, Y) - \mu_0(X, Y)}{\sigma_{\bar{X}-\bar{Y}}} = \frac{(10 - 0)}{\sqrt{\frac{10^2}{10} + \frac{12^2}{12}}}= `r 10/sqrt(10+12)`$$
+```{r}
+# Compute ncp, cv, and power here
+```
+
+Base graphics:
+
+```{r}
+# Show using base graphs
+```
+
+```{r}
+# Estimate of nu, cv, and power here 
+
+```
+
+## Power from `roomwidth`
+
+* Find $\text{Power}(\mu_1(X, Y)) = 5$
+
+* First compute the non-centrality parameter:
+
+$$\gamma = \frac{\mu_1(X, Y) - \mu_0(X, Y)}{\sigma_{\bar{X}-\bar{Y}}} = \frac{(5 - 0)}{\sqrt{\frac{12.5^2}{69} + \frac{23.4^2}{44}}}= `r 5/sqrt(12.5^2/69 + 23.4^2/44)`$$
+
+```{r}
+# Compute ncp, cv, and power here
+
+```
