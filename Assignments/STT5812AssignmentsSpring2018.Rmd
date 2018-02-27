@@ -168,9 +168,7 @@ If there are conflicts, you will need to resolve them before proceeding.
 
 * Quiz #4 Take-home---Due March 13
 * Lecture/discuss chapter 9 material
-* Discuss:
-    + Group presentations---Imbed Shiny apps in slides
-    + Individual homework problems---Write up with Rmarkdown using `bookdown`
+* Discuss: Group presentations---Imbed Shiny apps in slides
 
 * Homework:
      + Finalize Power App and presentation
@@ -183,6 +181,7 @@ If there are conflicts, you will need to resolve them before proceeding.
 
 * Group presentations on Power App---First part of class
 * Lecture on Regression
+* Individual homework problems---Write up with Rmarkdown using `bookdown`
 
 
 --------------
