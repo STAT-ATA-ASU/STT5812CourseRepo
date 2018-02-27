@@ -1,0 +1,118 @@
+---
+title: "Guessing Lengths"
+author: "Alan T. Arnholt"
+date: 'Last knit: `r format(Sys.time(), "%B %d, %Y")`'
+output: 
+  bookdown::html_document2: 
+    highlight: textmate
+    theme: yeti
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, fig.align = "center", warning = FALSE, message = FALSE)
+```
+
+# Problem taken from CHAPTER 2 of _A Handbook of Statistical Analyses Using R_
+
+Shortly after metric units of length were officially introduced in Australia in the 1970s, each of a group of 44 students was asked to guess, to the nearest meter, the width of the lecture hall in which they were sitting.  Another group of 69 students in the same room was asked to guess the width in feet, to the nearest foot.  The data are stored in the dataset `roomwidth` of the `HSAUR3` package.
+
+```{r}
+library(HSAUR3)
+DT::datatable(roomwidth)
+```
+
+The main question is whether estimation in feet and in meters gives different results.  If we convert the estimates of the room width in meters into feet by multiplying each by 3.28084 then we would like to test the hypothesis that the mean of the population of `meter` estimates is equal to the mean of the population of `feet` estimates.
+
+Use `verbs` from `dplyr` to create a new column `estimate` that was the estimates in feet.
+
+```{r}
+library(tidyverse)
+roomwidth <- roomwidth %>% 
+  mutate(estimate = ifelse(unit == "feet", 1*width, 3.28084*width))
+head(roomwidth)
+tail(roomwidth)
+```
+
+Start by checking the assumptions required to use a two-sample *t*-test.
+
+```{r}
+ggplot(data = roomwidth, aes(sample = estimate, color = unit)) + 
+  stat_qq() + 
+  theme_bw()
+ggplot(data = roomwidth, aes(x = estimate)) + 
+  geom_density(aes(fill = unit)) + 
+  theme_bw() +
+  facet_grid(unit ~. )
+ggplot(data = roomwidth, aes(x = unit, y = estimate)) +
+  geom_boxplot() + 
+  theme_bw()
+
+var.test(estimate ~ unit, data = roomwidth)
+```
+
+## Discussion -- Should we use a *t*-test?
+
+* Assumptions are pretty tenuous! - Not really normal based on the Q-Q plots, some outliers as well, and the variability for meter estimates is greater than the variability for feet estimates.  Caution using the *t*-test!  For now, we will go ahead and use a *t*-test.
+
+##  Five-Step Procedure
+
+1. $H_0:\mu_{feet} - \mu_{meter}=0$ versus $H_A:\mu_{feet} - \mu_{meter} \neq 0$
+
+2. Test statistic: $\bar{X}-\bar{Y}$.  The standardized test statistic $\frac{\bar{X} - \bar{Y}}{\sqrt{\tfrac{S_X^2}{n_X} + \tfrac{S_Y^2}{n_Y}}} \overset{\bullet}\sim t_{\nu}$.
+
+```{r}
+SA <- roomwidth %>% 
+  group_by(unit) %>% 
+  summarize(Mean = mean(estimate), SD = sd(estimate), n = n())
+SA
+```
+
+3. Rejection Region
+
+```{r}
+t.test(estimate ~ unit, data = roomwidth, var.equal = FALSE)
+t_obs <- t.test(estimate ~ unit, data = roomwidth, var.equal = FALSE)$stat
+t_obs
+dof <- t.test(estimate ~ unit, data = roomwidth, var.equal = FALSE)$parameter
+dof
+LRR <- qt(0.025, dof)
+URR <- qt(0.975, dof)
+c(LRR, URR)
+```
+The observed standardized test statistic is $t_{obs}=`r t_obs`$, and the lower and upper rejection regions for a two sided alternative are `r LRR`, and `r URR`, respectively.
+
+4. Statistical Conclusion
+
+a.  Reject the null hypothesis since $t_{obs}=`r t_obs` < `r LRR`$.
+b.  Reject the null hypothesis since the *p*-value `r t.test(estimate ~ unit, data = roomwidth)$p.value` is less than 0.05.
+
+```{r}
+pvalue <- pt(t_obs, dof)*2
+pvalue
+```
+
+5. English Conclusion --- There is evidence to suggest that the average estimate using feet is not the same as the average estimate (after conversion) using meters.
+
+* * *
+
+# Other Tests
+
+* Wilcox Test
+
+```{r}
+wilcox.test(estimate ~ unit, data = roomwidth)
+```
+* Permutation Test
+
+```{r}
+ts <- t.test(estimate ~ unit, data = roomwidth)$stat
+ts
+B <- 10000
+BT <- numeric(B)
+for(i in 1:B){
+  BT[i] <- t.test(estimate ~ sample(unit), data = roomwidth)$stat
+}
+pvalue <- mean(BT <= ts)*2
+pvalue
+```
+

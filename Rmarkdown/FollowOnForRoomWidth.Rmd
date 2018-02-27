@@ -1,0 +1,41 @@
+---
+title: "Not Clean Yet"
+author: "Alan T. Arnholt"
+date: "2/27/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Power
+
+Suppose the government is interested in the probability of detecting a difference in 5 feet.  That is, compute the $\text{Power}(\mu_1(X, Y) = 5)$.
+
+First we will need to compute the noncentrality parameter $\gamma = \frac{\mu_1(X, Y) - \mu_0(X, Y)}{\sigma_{\bar{X}- \bar{Y}}} = \frac{5 - 0}{\sqrt{\frac{23.4^2}{44}+\frac{12.5^2}{69}}}$.
+
+```{r}
+ncp <- 5/(sqrt(23.4^2/44 + 12.5^2/69))
+ncp
+power <- pt(LRR, dof, ncp) + pt(URR, dof, ncp, lower.tail = FALSE)
+power
+```
+
+## Simulation
+
+```{r}
+# set.seed(23)
+n1 <- 44
+n2 <- 69
+sims <- 50000
+tstar <- numeric(sims)
+for(i in 1:sims){
+  rs1 <- rnorm(n1, 5, 23.4)
+  rs2 <- rnorm(n2, 0, 12.5)
+  tstar[i] <- ((mean(rs1) - mean(rs2)) ) / (sqrt(((n1 - 1)*var(rs1) + (n2 - 1)*var(rs2))/(n1 + n2 - 2))*sqrt(1/n1 + 1/n2))
+}
+power <- mean(tstar < qt(0.025, 111)) + mean(tstar > qt(0.975, 111))
+power
+```
+
