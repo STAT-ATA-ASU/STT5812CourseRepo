@@ -116,3 +116,73 @@ pvalue <- mean(BT <= ts)*2
 pvalue
 ```
 
+* * * 
+
+# Test for the Difference in Population Means When Sampling from Independent Normal Distributions with Known Variances
+
+* $H_0:\mu_x - \mu_y = 0$ versus $H_A:\mu_x - \mu_y > 0$
+
+Given $\sigma_x = 10$, $\sigma_y = 12$, $n_x = 10$, $n_y = 12$, and $\alpha = 0.10$, find the power of the test if $\mu_1(X, Y) = \mu_X - \mu_Y = 10$.
+
+```{r}
+cv <- qnorm(.90, sqrt(10^2/10 + 12^2/12))
+power <- pnorm(cv, 10, sqrt(10^2/10 + 12^2/12), lower.tail = FALSE)
+power
+# Draw this with base graphs now
+curve(dnorm(x, 0, sqrt(10^2/10 + 12^2/12)), from = -3.4*sqrt(10^2/10 + 12^2/12), to = 3.4*sqrt(10^2/10 + 12^2/12) + 10)
+curve(dnorm(x, 10, sqrt(10^2/10 + 12^2/12)), add = TRUE, col = "red")
+abline(v = cv)
+abline(h = 0)
+```
+
+## What Happens if We Use a *t*-test?
+
+* First compute the non-centrality parameter:
+
+$$\gamma = \frac{\mu_1(X, Y) - \mu_0(X, Y)}{\sigma_{\bar{X}-\bar{Y}}} = \frac{(10 - 0)}{\sqrt{\frac{10^2}{10} + \frac{12^2}{12}}}= `r 10/sqrt(10+12)`$$
+```{r}
+ncp <- 10/sqrt(10^2/10 + 12^2/12)
+ncp
+cv <- qt(0.90, 10 + 12 - 2)
+cv
+power <- pt(cv, 20, ncp, lower.tail = FALSE)
+power
+```
+Base graphics:
+
+```{r}
+curve(dt(x, 20), -5, 8)
+curve(dt(x, 20, ncp), add = TRUE, col = "blue")
+abline(v = cv)
+abline(h = 0)
+```
+
+```{r}
+# Estimate of nu 
+nu <- (10^2/10 + 12^2/12)^2 / ((10^2/10)^2/9 + (12^2/12)^2/11)
+nu
+cv1 <- qt(0.90, nu)
+cv1
+power1 <- pt(cv1, nu, ncp, lower.tail = FALSE)
+power1
+```
+
+## Power from `roomwidth`
+
+* Find $\text{Power}(\mu_1(X, Y)) = 5$
+
+* First compute the non-centrality parameter:
+
+$$\gamma = \frac{\mu_1(X, Y) - \mu_0(X, Y)}{\sigma_{\bar{X}-\bar{Y}}} = \frac{(5 - 0)}{\sqrt{\frac{12.5^2}{69} + \frac{23.4^2}{44}}}= `r 5/sqrt(12.5^2/69 + 23.4^2/44)`$$
+
+```{r}
+ncp1 <- 5/(sqrt(12.5/69 + 23.4^2/44))
+ncp1
+# Estimate of nu 
+nu1 <- (12.5^2/69 + 23.4^2/44)^2 / ((12.5^2/69)^2/68 + (23.4^2/44)^2/43)
+nu1
+cv1 <- qt(0.90, nu1)
+cv1
+power2 <- pt(cv1, nu1, ncp1, lower.tail = FALSE)
+power2
+```
