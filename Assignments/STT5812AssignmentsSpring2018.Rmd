@@ -168,6 +168,7 @@ If there are conflicts, you will need to resolve them before proceeding.
 
 * Quiz #4 Take-home---Due March 13
 * Lecture/discuss chapter 9 material
+* [Class Outline](../Rmarkdown/ClassOutlineClass7.html)
 * Discuss: Group presentations---Imbed Shiny apps in slides
 
 * Homework:
