@@ -41,3 +41,22 @@ pvce <- MSE * XTXI
 pvce
 # The variance covariance matrix can be computed directly with vcov
 vcov(mod)
+# 
+sb0 <- vcov(mod)[1, 1]^.5
+sb0
+sb1 <- vcov(mod)[2, 2]^.5
+sb1
+# Recall betahat
+b0 <- betahat[1, 1]
+b0
+b1 <- betahat[2, 1]
+b1
+#
+# CI
+b1 + c(-1, 1)*qt(.975, 198)*sb1
+# or using confint
+confint(mod, level = 0.95)
+# Test H_0; \beta_1 = 0
+#
+tobs <- b1/sb1
+tobs
