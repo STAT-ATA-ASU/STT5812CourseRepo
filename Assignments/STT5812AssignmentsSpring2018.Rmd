@@ -182,7 +182,7 @@ If there are conflicts, you will need to resolve them before proceeding.
 
 * Group presentations on Power App---First part of class
 * Lecture on Regression
-* Individual homework problems---Write up with Rmarkdown using `bookdown`
+* Individual homework problems Chapter 9: 19 and 31---Write up with Rmarkdown using `bookdown`---Due March 20, 2018
 
 
 --------------
