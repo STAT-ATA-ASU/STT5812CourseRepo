@@ -67,3 +67,42 @@ ggplot(data = HSWRESTLER, aes(x = tanfat, y = skfat)) +
   theme_bw() + 
   geom_smooth(method = "lm", se = FALSE) + 
   geom_smooth(se = FALSE)
+###
+mod_fat <- lm(skfat ~ tanfat, data = HSWRESTLER)
+X <- model.matrix(mod_fat)
+head(X)
+XTX <- t(X)%*%X
+XTX
+XTXI <- solve(XTX)
+XTXI
+# Question is XTXI*XTX? I_{2*2}
+I2_2 <- XTXI %*% XTX
+I2_2
+#####
+mod_3 <- lm(hwfat ~ abs + triceps,data = HSWRESTLER)
+X <- model.matrix(mod_3)
+head(X)
+XTX <- t(X)%*%X
+XTXI <- solve(XTX)
+XTXI
+# preferred way
+summary(mod_3)$cov.unscaled
+#
+betahat <- XTXI%*%t(X)%*%HSWRESTLER$hwfat
+betahat
+summary(mod_3)
+vcov(mod_3)
+#
+anova(mod_3)
+sum(anova(mod_3)[1:2, 2])
+J <- matrix(1, nrow = 78, ncol = 78)
+SSR <- t(betahat)%*%t(X)%*%HSWRESTLER$hwfat - 1/78*t(HSWRESTLER$hwfat)%*%J%*%HSWRESTLER$hwfat
+SSR
+
+
+
+
+
+nm <- matrix(c(1, 2, 2, 1), nrow = 2)
+nm
+eigen(nm)
