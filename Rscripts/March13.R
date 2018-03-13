@@ -60,3 +60,10 @@ confint(mod, level = 0.95)
 #
 tobs <- b1/sb1
 tobs
+#######################
+HSWRESTLER
+ggplot(data = HSWRESTLER, aes(x = tanfat, y = skfat)) + 
+  geom_point() + 
+  theme_bw() + 
+  geom_smooth(method = "lm", se = FALSE) + 
+  geom_smooth(se = FALSE)
