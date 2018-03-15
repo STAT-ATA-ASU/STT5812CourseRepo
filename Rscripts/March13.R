@@ -29,7 +29,7 @@ XTXI <- solve(t(X)%*%X)
 XTXI
 vce <- MSE*XTXI
 vce
-
+vce ^.5
 # Preferred way to compute (X'X)^-1 = XTXI is summary(lm.object)$cov.unscaled
 
 XTXI <- summary(mod)$cov.unscaled
@@ -76,8 +76,7 @@ XTX
 XTXI <- solve(XTX)
 XTXI
 # Question is XTXI*XTX? I_{2*2}
-I2_2 <- XTXI %*% XTX
-I2_2
+
 #####
 mod_3 <- lm(hwfat ~ abs + triceps,data = HSWRESTLER)
 X <- model.matrix(mod_3)
