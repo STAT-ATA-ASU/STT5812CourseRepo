@@ -187,6 +187,39 @@ If there are conflicts, you will need to resolve them before proceeding.
 
 --------------
 
+
+**Mar 20:**
+
+* Lecture on Regression
+* Individual homework problem Chapter 9: 2---Write up with Rmarkdown using `bookdown`---Due March 27, 2018
+* Group Assignment---in AsuLearn
+* Complete [DataCamp](https://www.datacamp.com) course _Multiple and Logistic Regression_ 
+
+**Mar 27:**
+
+* Lecture on Regression
+* Group Assignment---in AsuLearn
+* Complete [DataCamp](https://www.datacamp.com) course _Supervised Learning in R: Regression_ 
+
+**Apr 10:**
+
+* Lecture 
+
+**Apr 17:**
+
+* Lecture 
+
+**Apr 24:**
+
+* Lecture 
+
+**May 1:**
+
+* Lecture 
+
+
+
+
 ### Final Exam {-}
 
 ```{block, FINAL, type='rmdnote'}
