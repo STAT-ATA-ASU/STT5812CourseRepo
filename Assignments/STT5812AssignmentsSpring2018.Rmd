@@ -191,7 +191,7 @@ If there are conflicts, you will need to resolve them before proceeding.
 **Mar 20:**
 
 * Lecture on Regression
-* Individual homework problem Chapter 9: 2---Write up with Rmarkdown using `bookdown`---Due March 27, 2018
+* Individual homework problem Chapter 12: 2---Write up with Rmarkdown using `bookdown`---Due March 27, 2018
 * Group Assignment---in AsuLearn
 * Complete [DataCamp](https://www.datacamp.com) course _Multiple and Logistic Regression_ 
 
