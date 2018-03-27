@@ -198,7 +198,7 @@ If there are conflicts, you will need to resolve them before proceeding.
 **Mar 27:**
 
 * Lecture on Regression
-* Group Assignment---in AsuLearn
+* Group Assignment---in AsuLearn---Due Apr 10---
 * Complete [DataCamp](https://www.datacamp.com) course _Supervised Learning in R: Regression_ 
 
 **Apr 10:**
