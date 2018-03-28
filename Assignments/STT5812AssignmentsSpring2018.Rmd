@@ -200,7 +200,7 @@ If there are conflicts, you will need to resolve them before proceeding.
 * Lecture on Regression
 * Group Assignment---in AsuLearn---Due Apr 10---
 * Complete [DataCamp](https://www.datacamp.com) course _Supervised Learning in R: Regression_ 
-* [Linear Model Fitting with `caret` document from class]([Class Outline](../Rmarkdown/LMF2.html))
+* [Linear Model Fitting with `caret` document from class](../Rmarkdown/LMF2.html))
 
 **Apr 10:**
 
