@@ -192,7 +192,7 @@ If there are conflicts, you will need to resolve them before proceeding.
 
 * Lecture on Regression
 * Individual homework problem Chapter 12: 2---Write up with Rmarkdown using `bookdown`---Due March 27, 2018
-* Group Assignment---in AsuLearn
+* Group Assignment---in AsuLearn---Directions in AsuLearn
 * Complete [DataCamp](https://www.datacamp.com) course _Multiple and Logistic Regression_ 
 
 **Mar 27:**
@@ -200,6 +200,7 @@ If there are conflicts, you will need to resolve them before proceeding.
 * Lecture on Regression
 * Group Assignment---in AsuLearn---Due Apr 10---
 * Complete [DataCamp](https://www.datacamp.com) course _Supervised Learning in R: Regression_ 
+* [Linear Model Fitting with `caret` document from class]([Class Outline](../Rmarkdown/LMF2.html))
 
 **Apr 10:**
 
