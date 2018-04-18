@@ -1976,7 +1976,8 @@ dim(DFdummies)
 Altogether, I have removed 49 one-hot encoded predictors with little or no variance. Although this may seem a significant number, it is actually much less than the number of predictors that were taken out by using caret's `near zero variance` function (using its default thresholds).
 
 ```{r}
-combined <- cbind(DFnorm, DFdummies) #combining all (now numeric) predictors into one dataframe 
+combined <- cbind(DFnorm, DFdummies) #combining all (now numeric) predictors into one dataframe
+dim(combined)
 ```
 
 ##Dealing with skewness of response variable
@@ -2009,6 +2010,10 @@ qqline(all$SalePrice)
 ```{r}
 train1 <- combined[!is.na(all$SalePrice), ]
 test1 <- combined[is.na(all$SalePrice), ]
+dim(train1)
+dim(test1)
+names(train1)
+names(test1)
 ```
 
 # Modeling
@@ -2076,7 +2081,7 @@ xgbcv <- xgb.cv( params = default_param, data = dtrain, nrounds = 500, nfold = 5
 
 ```{r}
 #train the model using the best iteration found by cross validation
-xgb_mod <- xgb.train(data = dtrain, params=default_param, nrounds = 115)
+xgb_mod <- xgb.train(data = dtrain, params=default_param, nrounds = 139)
 ```
 
 ```{r}
@@ -2092,16 +2097,44 @@ mat <- xgb.importance (feature_names = colnames(train1),model = xgb_mod)
 xgb.ggplot.importance(importance_matrix = mat[1:20], rel_to_first = TRUE) 
 ```
 
-##Averaging predictions
 
-Since the lasso and XGBoost algorithms are very different, averaging predictions likely improves the scores. As the lasso model does better regarding the cross validated RMSE score (0.1137 versus 0.1225), I am weighting the lasso model double.
+
+# Random Forest---Alan's stuff
 
 ```{r}
-sub_avg <- data.frame(Id = test_labels, SalePrice = (predictions_XGB + 2*predictions_lasso)/3)
-head(sub_avg)
-write.csv(sub_avg, file = 'average.csv', row.names = F)
+fitControl <- trainControl(method = "cv", number = 10)
+set.seed(52)
+mtry <- sqrt(dim(train1)[1])
+gridRF <- expand.grid(.mtry = mtry)
+
+mod_RF <- train(x = train1, 
+                   y = all$SalePrice[!is.na(all$SalePrice)], 
+                   method = 'rf', 
+                   trControl = fitControl, 
+                   tuneGrid = gridRF) 
+mod_RF$bestTune
+min(mod_RF$results$RMSE)
 ```
 
-#Next steps
+```{r}
+RFpred <- predict(mod_RF, test1)
+predictions_RF <- exp(RFpred) #need to reverse the log to the real values
+head(predictions_RF)
+```
+
+
+## Averaging predictions
+
+Since the lasso and XGBoost algorithms are very different, averaging predictions likely improves the scores. As the lasso model does better regarding the cross validated RMSE score (`r min(lasso_mod$results$RMSE)` versus 0.1235), I am weighting the lasso model double.
+
+Alan is doing a 30/30/40 split with RF, XGB, and lasso. -> Public score 0.12267 worse.  Next, trying a 40/60 split with XGB and lasso.
+
+```{r}
+sub_avg <- data.frame(Id = test_labels, SalePrice = (0.4*predictions_XGB + 0.60*predictions_lasso))
+head(sub_avg)
+write.csv(sub_avg, file = '3average.csv', row.names = F)
+```
+
+# Next steps
 
 In upcoming versions I will further optimize by more features engineering, and hyper parameter tuning.
