@@ -991,7 +991,7 @@ predictions_RF <- exp(RFpred) #need to reverse the log to the real values
 head(predictions_RF)
 
 ## ------------------------------------------------------------------------
-sub_avg <- data.frame(Id = test_labels, SalePrice = (0.40*predictions_XGB + 0.60*predictions_lasso))
+sub_avg <- data.frame(Id = test_labels, SalePrice = (0.38*predictions_XGB + 0.62*predictions_lasso))
 head(sub_avg)
 write.csv(sub_avg, file = 'average.csv', row.names = F)
 
@@ -1002,7 +1002,7 @@ library(doMC)
 registerDoMC(cores = 12)
 myControl <- trainControl(method = "repeatedcv",
                           number = 10,
-                          repeats = 5,
+                          repeats = 3,
                           allowParallel = TRUE)
 library(caretEnsemble)
 set.seed(32)
@@ -1012,7 +1012,7 @@ models <- caretList(x = train1,
                     tuneList = list(
                       # mod_lm = caretModelSpec(method = "lm"),
                       mod_gbm = caretModelSpec(method = "gbm"),
-                      mod_BIC = caretModelSpec(method = "lmStepAIC", k = log(1458)),
+                      # mod_BIC = caretModelSpec(method = "lmStepAIC", k = log(1458)),
                       # mod_AIC = caretModelSpec(method = "lmStepAIC"),
                       # mod_BE = caretModelSpec(method = "leapBackward"),
                       # mod_FS = caretModelSpec(method = "leapForward"),
@@ -1048,3 +1048,4 @@ head(sub_avg)
 write.csv(sub_avg, file = 'thegoods.csv', row.names = F)
 # 4/22/18-8:11 this turns out to be worse...back to the drawing board
 # Drop the correlated and high RMSE methods next?
+# Need to tune the gbm better.....
