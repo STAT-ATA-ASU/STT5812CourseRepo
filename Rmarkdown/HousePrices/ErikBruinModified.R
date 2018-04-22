@@ -995,3 +995,56 @@ sub_avg <- data.frame(Id = test_labels, SalePrice = (0.40*predictions_XGB + 0.60
 head(sub_avg)
 write.csv(sub_avg, file = 'average.csv', row.names = F)
 
+
+
+############### Combine stuff-----4/22/18
+library(doMC)
+registerDoMC(cores = 12)
+myControl <- trainControl(method = "repeatedcv",
+                          number = 10,
+                          repeats = 5,
+                          allowParallel = TRUE)
+library(caretEnsemble)
+set.seed(32)
+models <- caretList(x = train1,
+                    y = all$SalePrice[!is.na(all$SalePrice)],
+                    trControl = myControl,
+                    tuneList = list(
+                      # mod_lm = caretModelSpec(method = "lm"),
+                      mod_gbm = caretModelSpec(method = "gbm"),
+                      mod_BIC = caretModelSpec(method = "lmStepAIC", k = log(1458)),
+                      # mod_AIC = caretModelSpec(method = "lmStepAIC"),
+                      # mod_BE = caretModelSpec(method = "leapBackward"),
+                      # mod_FS = caretModelSpec(method = "leapForward"),
+                      # mod_SS = caretModelSpec(method = "leapSeq"),
+                      # mod_RF = caretModelSpec(method = "ranger"),
+                      mod_EN = caretModelSpec(method = "glmnet", 
+                                              tuneGrid = expand.grid(alpha = c(0, 0.5, 1), 
+                                                                     lambda = seq(0.0001, 1, length = 20)))
+                      
+                    ))
+
+models_pred <- lapply(models, predict, newdata = test1)
+models_pred <- as.data.frame((models_pred))
+models_pred <- exp(models_pred)
+head(models_pred)
+bwplot(resamples(models))
+modelCor(resamples(models))
+####
+set.seed(31)
+ensemble <- caretEnsemble(models, trControl = myControl)
+summary(ensemble)
+coef(ensemble$ens_model$finalModel)[-1]
+####
+sum(coef(ensemble$ens_model$finalModel)[-1])
+####
+BM <- as.matrix(models_pred)
+BETA <- t(coef(ensemble$ens_model$finalModel)[-1])
+dim(BETA)
+ANS <- BM %*% t(BETA)
+ANS # This has the goods
+sub_avg <- data.frame(Id = test_labels, SalePrice = ANS)
+head(sub_avg)
+write.csv(sub_avg, file = 'thegoods.csv', row.names = F)
+# 4/22/18-8:11 this turns out to be worse...back to the drawing board
+# Drop the correlated and high RMSE methods next?
