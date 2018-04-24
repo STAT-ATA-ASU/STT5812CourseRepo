@@ -1039,9 +1039,11 @@ coef(ensemble$ens_model$finalModel)[-1]
 sum(coef(ensemble$ens_model$finalModel)[-1])
 ####
 BM <- as.matrix(models_pred)
-BETA <- t(coef(ensemble$ens_model$finalModel)[-1])
+X <- cbind(rep(1, dim(BM)[1]), BM)
+dim(X)
+BETA <- t(coef(ensemble$ens_model$finalModel))
 dim(BETA)
-ANS <- BM %*% t(BETA)
+ANS <- X %*% t(BETA)
 ANS # This has the goods
 sub_avg <- data.frame(Id = test_labels, SalePrice = ANS)
 head(sub_avg)
@@ -1049,3 +1051,24 @@ write.csv(sub_avg, file = 'thegoods.csv', row.names = F)
 # 4/22/18-8:11 this turns out to be worse...back to the drawing board
 # Drop the correlated and high RMSE methods next?
 # Need to tune the gbm better.....
+
+## Trying the cubist 4/24/18 14:35
+myControl <- trainControl(method = "repeatedcv",
+                          number = 10,
+                          repeats = 3,
+                          allowParallel = TRUE)
+mod_C5 <- train(x = train1, 
+                y = all$SalePrice[!is.na(all$SalePrice)], 
+                trControl = myControl,
+                method = "cubist",
+                preProc = "BoxCox"
+                )
+mod_C5
+yhatC5 <- exp(predict(mod_C5, test1))
+newstuff <- data.frame(Id = test_labels, SalePrice = yhatC5)
+head(newstuff)
+write.csv(newstuff, file = 'newstuff.csv', row.names = F)
+
+subc5_avg <- data.frame(Id = test_labels, SalePrice = (0.20*predictions_XGB + 0.30*predictions_lasso + 0.5*yhatC5))
+head(subc5_avg)
+write.csv(subc5_avg, file = 'averagec5.csv', row.names = F)
